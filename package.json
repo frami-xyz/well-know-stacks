@@ -1,0 +1,44 @@
+{
+  "name": "well-know-stack",
+  "version": "0.0.0-development",
+  "description": "utility collection to makes pulumi easier",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "18.*",
+    "npm": "8.*"
+  },
+  "scripts": {
+    "aws.iam.policies": "rm ./src/aws/iam/policy/*.ts && ts-node ./bin/aws.iam.policies.ts",
+    "test": "jest",
+    "ts": "ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frami-xyz/well-know-stack.git"
+  },
+  "keywords": [
+    "pulumi"
+  ],
+  "author": "frami <hi@frami.xyz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frami-xyz/well-know-stack/issues"
+  },
+  "homepage": "https://github.com/frami-xyz/well-know-stack#readme",
+  "peerDependencies": {
+    "@pulumi/aws": "^5.0.0",
+    "@pulumi/pulumi": "^3.0.0"
+  },
+  "devDependencies": {
+    "@pulumi/aws": "^5.9.1",
+    "@pulumi/pulumi": "^3.35.1",
+    "@types/jest": "^28.1.3",
+    "@types/jsdom": "^16.2.14",
+    "@types/node": "^18.0.0",
+    "jest": "^28.1.1",
+    "jsdom": "^20.0.0",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
