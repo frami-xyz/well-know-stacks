@@ -25,7 +25,22 @@
   "author": "frami <hi@frami.xyz>",
   "license": "MIT",
   "release": {
-    "ci": false
+    "ci": false,
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "master",
+      "main",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ]
   },
   "bugs": {
     "url": "https://github.com/frami-xyz/well-know-stack/issues"
