@@ -1,0 +1,7 @@
+.github/*
+bin/*
+src/*
+images/*
+node_modules/*
+tsconfig.json
+README.md

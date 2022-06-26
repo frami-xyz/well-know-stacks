@@ -1,0 +1,63 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  release:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: node.js 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+          cache: 'npm'
+
+      - name: installing
+        run: npm ci
+
+      # - name: linters
+      #   uses: wearerequired/lint-action@v1
+      #   with:
+      #     eslint: true
+      #     eslint_extensions: ts,tsx,js,jsx
+      #     eslint_dir: src/
+      #     prettier: true
+      #     prettier_extensions: ts,tsx,js,jsx,json,md,mdx,css
+      #     continue_on_error: false
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: testing
+      #   run: npm test -- --coverage
+
+      # - name: coveralls
+      #   uses: coverallsapp/github-action@v1.1.2
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: building
+        run: npm run build
+
+      # - name: building documents
+      #   run: npm run build-storybook
+
+      - name: releasing
+        run: npm run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
+      # publish to gh pages
+      # - name: publishing documents
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      #     PUBLISH_BRANCH: gh-pages
+      #     PUBLISH_DIR: ./public

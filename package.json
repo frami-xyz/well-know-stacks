@@ -9,6 +9,8 @@
   },
   "scripts": {
     "aws.iam.policies": "rm ./src/aws/iam/policy/*.ts && ts-node ./bin/aws.iam.policies.ts",
+    "build": "tsc -p . -outDir dist --sourceMap false --skipLibCheck",
+    "semantic-release": "semantic-release",
     "test": "jest",
     "ts": "ts-node"
   },
@@ -21,6 +23,9 @@
   ],
   "author": "frami <hi@frami.xyz>",
   "license": "MIT",
+  "release": {
+    "ci": false
+  },
   "bugs": {
     "url": "https://github.com/frami-xyz/well-know-stack/issues"
   },
@@ -40,5 +45,8 @@
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "semantic-release": "^19.0.3"
   }
 }
