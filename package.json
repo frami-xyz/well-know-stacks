@@ -10,7 +10,7 @@
   },
   "scripts": {
     "aws.iam.policies": "rm ./src/aws/iam/policy/*.ts && ts-node ./bin/aws.iam.policies.ts",
-    "build": "tsc -p . -outDir dist --sourceMap false --skipLibCheck",
+    "build": "tsc -p . -outDir lib --sourceMap false --skipLibCheck",
     "semantic-release": "semantic-release",
     "test": "jest",
     "ts": "ts-node"
