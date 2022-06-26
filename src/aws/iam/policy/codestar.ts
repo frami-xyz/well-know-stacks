@@ -5,7 +5,7 @@
 export enum CodestarAction {
 
   /**
-   * Permissions management - Adds a user to the team for an AWS CodeStar project.
+   * PermissionsManagement - Adds a user to the team for an AWS CodeStar project.
    * @see https://docs.aws.amazon.com/codestar/latest/APIReference/API_AssociateTeamMember.html
    * 
    * @remarks
@@ -16,7 +16,7 @@ export enum CodestarAction {
   AssociateTeamMember = "codestar:AssociateTeamMember",
 
   /**
-   * Permissions management - Creates a project with minimal structure, customer policies, and no resources.
+   * PermissionsManagement - Creates a project with minimal structure, customer policies, and no resources.
    * @see https://docs.aws.amazon.com/codestar/latest/APIReference/API_CreateProject.html
    * 
    * @remarks
@@ -50,7 +50,7 @@ export enum CodestarAction {
   DeleteExtendedAccess = "codestar:DeleteExtendedAccess",
 
   /**
-   * Permissions management - Deletes a project, including project resources. Does not delete users associated with the project, but does delete the IAM roles that allowed access to the project.
+   * PermissionsManagement - Deletes a project, including project resources. Does not delete users associated with the project, but does delete the IAM roles that allowed access to the project.
    * @see https://docs.aws.amazon.com/codestar/latest/APIReference/API_DeleteProject.html
    * 
    * @remarks
@@ -89,7 +89,7 @@ export enum CodestarAction {
   DescribeUserProfile = "codestar:DescribeUserProfile",
 
   /**
-   * Permissions management - Removes a user from a project. Removing a user from a project also removes the IAM policies from that user that allowed access to the project and its resources.
+   * PermissionsManagement - Removes a user from a project. Removing a user from a project also removes the IAM policies from that user that allowed access to the project and its resources.
    * @see https://docs.aws.amazon.com/codestar/latest/APIReference/API_DisassociateTeamMember.html
    * 
    * @remarks
@@ -207,7 +207,7 @@ export enum CodestarAction {
   UpdateProject = "codestar:UpdateProject",
 
   /**
-   * Permissions management - Updates team member attributes within a CodeStar project.
+   * PermissionsManagement - Updates team member attributes within a CodeStar project.
    * @see https://docs.aws.amazon.com/codestar/latest/APIReference/API_UpdateTeamMember.html
    * 
    * @remarks
@@ -275,6 +275,6 @@ export const CodestarResource = {
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `iam:ResourceTag/${TagKey}`:  ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_awscodestar.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  user: (options: Partial<{partition: string, account: string}> = {}) => `arn:${options.partition || '*'}:iam::${options.account || '*'}:user/${aws:username}`,
+  user: (options: Partial<{partition: string, account: string, awsUsername: string}> = {}) => `arn:${options.partition || '*'}:iam::${options.account || '*'}:user/${options.awsUsername || '*'}`,
 }
 

@@ -580,7 +580,7 @@ export enum OpsworksAction {
   SetLoadBasedAutoScaling = "opsworks:SetLoadBasedAutoScaling",
 
   /**
-   * Permissions management - Grants permission to specify a user's permissions
+   * PermissionsManagement - Grants permission to specify a user's permissions
    * @see https://docs.aws.amazon.com/opsworks/latest/APIReference/API_SetPermission.html
    * 
    * @remarks
@@ -762,7 +762,7 @@ export enum OpsworksAction {
   UpdateStack = "opsworks:UpdateStack",
 
   /**
-   * Permissions management - Grants permission to update a specified user profile
+   * PermissionsManagement - Grants permission to update a specified user profile
    * @see https://docs.aws.amazon.com/opsworks/latest/APIReference/API_UpdateUserProfile.html
    */
   UpdateUserProfile = "opsworks:UpdateUserProfile",

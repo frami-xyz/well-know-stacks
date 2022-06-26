@@ -27,7 +27,7 @@ export enum SsmContactsAction {
   ActivateContactChannel = "ssm-contacts:ActivateContactChannel",
 
   /**
-   * Permissions management - Grants permission to use a contact in an escalation plan
+   * PermissionsManagement - Grants permission to use a contact in an escalation plan
    * @see https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_SSMContacts_AssociateContact.html
    * 
    * @remarks

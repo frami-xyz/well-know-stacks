@@ -58,7 +58,7 @@ export enum KmsAction {
   CreateCustomKeyStore = "kms:CreateCustomKeyStore",
 
   /**
-   * Permissions management - Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy
+   * PermissionsManagement - Controls permission to add a grant to an AWS KMS key. You can use grants to add permissions without changing the key policy or IAM policy
    * @see https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html
    * 
    * @remarks
@@ -536,7 +536,7 @@ export enum KmsAction {
   ListRetirableGrants = "kms:ListRetirableGrants",
 
   /**
-   * Permissions management - Controls permission to replace the key policy for the specified AWS KMS key
+   * PermissionsManagement - Controls permission to replace the key policy for the specified AWS KMS key
    * @see https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html
    * 
    * @remarks
@@ -608,7 +608,7 @@ export enum KmsAction {
   ReplicateKey = "kms:ReplicateKey",
 
   /**
-   * Permissions management - Controls permission to retire a grant. The RetireGrant operation is typically called by the grant user after they complete the tasks that the grant allowed them to perform
+   * PermissionsManagement - Controls permission to retire a grant. The RetireGrant operation is typically called by the grant user after they complete the tasks that the grant allowed them to perform
    * @see https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html
    * 
    * @remarks
@@ -619,7 +619,7 @@ export enum KmsAction {
   RetireGrant = "kms:RetireGrant",
 
   /**
-   * Permissions management - Controls permission to revoke a grant, which denies permission for all operations that depend on the grant
+   * PermissionsManagement - Controls permission to revoke a grant, which denies permission for all operations that depend on the grant
    * @see https://docs.aws.amazon.com/kms/latest/APIReference/API_RevokeGrant.html
    * 
    * @remarks

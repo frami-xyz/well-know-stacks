@@ -52,7 +52,7 @@ export enum KafkaconnectAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KafkaconnectResource.custom plugin `KafkaconnectResource.custom plugin`} 
+   * - {@link KafkaconnectResource.customPlugin `KafkaconnectResource.customPlugin`} 
    */
   DescribeCustomPlugin = "kafkaconnect:DescribeCustomPlugin",
 
@@ -63,7 +63,7 @@ export enum KafkaconnectAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KafkaconnectResource.worker configuration `KafkaconnectResource.worker configuration`} 
+   * - {@link KafkaconnectResource.workerConfiguration `KafkaconnectResource.workerConfiguration`} 
    */
   DescribeWorkerConfiguration = "kafkaconnect:DescribeWorkerConfiguration",
 
@@ -99,8 +99,8 @@ export enum KafkaconnectAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link KafkaconnectResource.connector `KafkaconnectResource.connector`} 
-   * - {@link KafkaconnectResource.custom plugin `KafkaconnectResource.custom plugin`} 
-   * - {@link KafkaconnectResource.worker configuration `KafkaconnectResource.worker configuration`} 
+   * - {@link KafkaconnectResource.customPlugin `KafkaconnectResource.customPlugin`} 
+   * - {@link KafkaconnectResource.workerConfiguration `KafkaconnectResource.workerConfiguration`} 
    */
   All = "kafkaconnect:*",
 }
@@ -119,11 +119,11 @@ export const KafkaconnectResource = {
   /**
    * @see https://docs.aws.amazon.com/MSKC/latest/mskc/API_CustomPlugin.html
    */
-  custom plugin: (options: Partial<{partition: string, region: string, account: string, customPluginName: string, uUID: string}> = {}) => `arn:${options.partition || '*'}:kafkaconnect:${options.region || '*'}:${options.account || '*'}:custom-plugin/${options.customPluginName || '*'}/${options.uUID || '*'}`,
+  customPlugin: (options: Partial<{partition: string, region: string, account: string, customPluginName: string, uUID: string}> = {}) => `arn:${options.partition || '*'}:kafkaconnect:${options.region || '*'}:${options.account || '*'}:custom-plugin/${options.customPluginName || '*'}/${options.uUID || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/MSKC/latest/mskc/API_WorkerConfiguration.html
    */
-  worker configuration: (options: Partial<{partition: string, region: string, account: string, workerConfigurationName: string, uUID: string}> = {}) => `arn:${options.partition || '*'}:kafkaconnect:${options.region || '*'}:${options.account || '*'}:worker-configuration/${options.workerConfigurationName || '*'}/${options.uUID || '*'}`,
+  workerConfiguration: (options: Partial<{partition: string, region: string, account: string, workerConfigurationName: string, uUID: string}> = {}) => `arn:${options.partition || '*'}:kafkaconnect:${options.region || '*'}:${options.account || '*'}:worker-configuration/${options.workerConfigurationName || '*'}/${options.uUID || '*'}`,
 }
 

@@ -11,7 +11,7 @@ export enum WafRegionalAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link WafRegionalResource.loadbalancer/app/ `WafRegionalResource.loadbalancer/app/`} 
+   * - {@link WafRegionalResource.loadbalancerApp `WafRegionalResource.loadbalancerApp`} 
    * - {@link WafRegionalResource.webacl `WafRegionalResource.webacl`} 
    */
   AssociateWebACL = "waf-regional:AssociateWebACL",
@@ -139,7 +139,7 @@ export enum WafRegionalAction {
   CreateSqlInjectionMatchSet = "waf-regional:CreateSqlInjectionMatchSet",
 
   /**
-   * Permissions management - Grants permission to create a WebACL
+   * PermissionsManagement - Grants permission to create a WebACL
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_CreateWebACL.html
    * 
    * @remarks
@@ -220,7 +220,7 @@ export enum WafRegionalAction {
   DeleteLoggingConfiguration = "waf-regional:DeleteLoggingConfiguration",
 
   /**
-   * Permissions management - Grants permission to delete an IAM policy from a rule group
+   * PermissionsManagement - Grants permission to delete an IAM policy from a rule group
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeletePermissionPolicy.html
    * 
    * @remarks
@@ -308,7 +308,7 @@ export enum WafRegionalAction {
   DeleteSqlInjectionMatchSet = "waf-regional:DeleteSqlInjectionMatchSet",
 
   /**
-   * Permissions management - Grants permission to delete a WebACL
+   * PermissionsManagement - Grants permission to delete a WebACL
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_DeleteWebACL.html
    * 
    * @remarks
@@ -336,7 +336,7 @@ export enum WafRegionalAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link WafRegionalResource.loadbalancer/app/ `WafRegionalResource.loadbalancer/app/`} 
+   * - {@link WafRegionalResource.loadbalancerApp `WafRegionalResource.loadbalancerApp`} 
    */
   DisassociateWebACL = "waf-regional:DisassociateWebACL",
 
@@ -525,7 +525,7 @@ export enum WafRegionalAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link WafRegionalResource.loadbalancer/app/ `WafRegionalResource.loadbalancer/app/`} 
+   * - {@link WafRegionalResource.loadbalancerApp `WafRegionalResource.loadbalancerApp`} 
    */
   GetWebACLForResource = "waf-regional:GetWebACLForResource",
 
@@ -667,7 +667,7 @@ export enum WafRegionalAction {
   PutLoggingConfiguration = "waf-regional:PutLoggingConfiguration",
 
   /**
-   * Permissions management - Grants permission to attach an IAM policy to a specified rule group, to support rule group sharing between accounts
+   * PermissionsManagement - Grants permission to attach an IAM policy to a specified rule group, to support rule group sharing between accounts
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_PutPermissionPolicy.html
    * 
    * @remarks
@@ -823,7 +823,7 @@ export enum WafRegionalAction {
   UpdateSqlInjectionMatchSet = "waf-regional:UpdateSqlInjectionMatchSet",
 
   /**
-   * Permissions management - Grants permission to insert or delete ActivatedRule objects in a WebACL
+   * PermissionsManagement - Grants permission to insert or delete ActivatedRule objects in a WebACL
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_UpdateWebACL.html
    * 
    * @remarks
@@ -851,7 +851,7 @@ export enum WafRegionalAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link WafRegionalResource.loadbalancer/app/ `WafRegionalResource.loadbalancer/app/`} 
+   * - {@link WafRegionalResource.loadbalancerApp `WafRegionalResource.loadbalancerApp`} 
    * - {@link WafRegionalResource.webacl `WafRegionalResource.webacl`} 
    * - {@link WafRegionalResource.bytematchset `WafRegionalResource.bytematchset`} 
    * - {@link WafRegionalResource.geomatchset `WafRegionalResource.geomatchset`} 
@@ -891,7 +891,7 @@ export const WafRegionalResource = {
   /**
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_WebACL.html
    */
-  loadbalancer/app/: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:loadbalancer/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}`,
+  loadbalancerApp: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:loadbalancer/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_RateBasedRule.html

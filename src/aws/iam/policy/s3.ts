@@ -27,7 +27,7 @@ export enum S3Action {
   AbortMultipartUpload = "s3:AbortMultipartUpload",
 
   /**
-   * Permissions management - Grants permission to allow circumvention of governance-mode object retention settings
+   * PermissionsManagement - Grants permission to allow circumvention of governance-mode object retention settings
    * @see https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-managing.html#object-lock-managing-bypass
    * 
    * @remarks
@@ -225,7 +225,7 @@ export enum S3Action {
   DeleteAccessPointForObjectLambda = "s3:DeleteAccessPointForObjectLambda",
 
   /**
-   * Permissions management - Grants permission to delete the policy on a specified access point
+   * PermissionsManagement - Grants permission to delete the policy on a specified access point
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessPointPolicy.html
    * 
    * @remarks
@@ -247,7 +247,7 @@ export enum S3Action {
   DeleteAccessPointPolicy = "s3:DeleteAccessPointPolicy",
 
   /**
-   * Permissions management - Grants permission to delete the policy on a specified object lambda enabled access point
+   * PermissionsManagement - Grants permission to delete the policy on a specified object lambda enabled access point
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessPointPolicyForObjectLambda.html
    * 
    * @remarks
@@ -288,7 +288,7 @@ export enum S3Action {
   DeleteBucket = "s3:DeleteBucket",
 
   /**
-   * Permissions management - Grants permission to delete the policy on a specified bucket
+   * PermissionsManagement - Grants permission to delete the policy on a specified bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_DeleteBucketPolicy.html
    * 
    * @remarks
@@ -849,7 +849,6 @@ export enum S3Action {
    * - `s3:signatureAge`: Filters access by the age in milliseconds of the request signature ({@link https://docs.aws.amazon.com/AmazonS3/latest/API/bucket-policy-s3-sigv4-conditions.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Numeric `Numeric`})
    * - `s3:signatureversion`: Filters access by the version of AWS Signature used on the request ({@link https://docs.aws.amazon.com/AmazonS3/latest/API/bucket-policy-s3-sigv4-conditions.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    * - `s3:TlsVersion`: Filters access by the TLS version used by the client ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html#example-object-tls-version documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_Numeric `Numeric`})
-   * - `s3:signatureversion`: Filters access by the version of AWS Signature used on the request ({@link https://docs.aws.amazon.com/AmazonS3/latest/API/bucket-policy-s3-sigv4-conditions.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   GetBucketObjectLockConfiguration = "s3:GetBucketObjectLockConfiguration",
 
@@ -1752,7 +1751,7 @@ export enum S3Action {
   ListStorageLensConfigurations = "s3:ListStorageLensConfigurations",
 
   /**
-   * Permissions management - Grants permission to change replica ownership
+   * PermissionsManagement - Grants permission to change replica ownership
    * @see https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-change-owner.html#repl-ownership-add-role-permission
    * 
    * @remarks
@@ -1812,7 +1811,7 @@ export enum S3Action {
   PutAccessPointConfigurationForObjectLambda = "s3:PutAccessPointConfigurationForObjectLambda",
 
   /**
-   * Permissions management - Grants permission to associate an access policy with a specified access point
+   * PermissionsManagement - Grants permission to associate an access policy with a specified access point
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutAccessPointPolicy.html
    * 
    * @remarks
@@ -1834,7 +1833,7 @@ export enum S3Action {
   PutAccessPointPolicy = "s3:PutAccessPointPolicy",
 
   /**
-   * Permissions management - Grants permission to associate an access policy with a specified object lambda enabled access point
+   * PermissionsManagement - Grants permission to associate an access policy with a specified object lambda enabled access point
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutAccessPointPolicyForObjectLambda.html
    * 
    * @remarks
@@ -1856,13 +1855,13 @@ export enum S3Action {
   PutAccessPointPolicyForObjectLambda = "s3:PutAccessPointPolicyForObjectLambda",
 
   /**
-   * Permissions management - Grants permission to associate public access block configurations with a specified access point, while creating a access point
+   * PermissionsManagement - Grants permission to associate public access block configurations with a specified access point, while creating a access point
    * @see https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html#access-control-block-public-access-examples-access-point
    */
   PutAccessPointPublicAccessBlock = "s3:PutAccessPointPublicAccessBlock",
 
   /**
-   * Permissions management - Grants permission to create or modify the PublicAccessBlock configuration for an AWS account
+   * PermissionsManagement - Grants permission to create or modify the PublicAccessBlock configuration for an AWS account
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutPublicAccessBlock.html
    * 
    * @remarks
@@ -1897,7 +1896,7 @@ export enum S3Action {
   PutAnalyticsConfiguration = "s3:PutAnalyticsConfiguration",
 
   /**
-   * Permissions management - Grants permission to set the permissions on an existing bucket using access control lists (ACLs)
+   * PermissionsManagement - Grants permission to set the permissions on an existing bucket using access control lists (ACLs)
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketAcl.html
    * 
    * @remarks
@@ -2016,7 +2015,7 @@ export enum S3Action {
   PutBucketOwnershipControls = "s3:PutBucketOwnershipControls",
 
   /**
-   * Permissions management - Grants permission to add or replace a bucket policy on a bucket
+   * PermissionsManagement - Grants permission to add or replace a bucket policy on a bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketPolicy.html
    * 
    * @remarks
@@ -2035,7 +2034,7 @@ export enum S3Action {
   PutBucketPolicy = "s3:PutBucketPolicy",
 
   /**
-   * Permissions management - Grants permission to create or modify the PublicAccessBlock configuration for a specific Amazon S3 bucket
+   * PermissionsManagement - Grants permission to create or modify the PublicAccessBlock configuration for a specific Amazon S3 bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutPublicAccessBlock.html
    * 
    * @remarks
@@ -2248,7 +2247,7 @@ export enum S3Action {
   PutMetricsConfiguration = "s3:PutMetricsConfiguration",
 
   /**
-   * Permissions management - Grants permission to associate an access policy with a specified multi region access point
+   * PermissionsManagement - Grants permission to associate an access policy with a specified multi region access point
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutMultiRegionAccessPointPolicy.html
    * 
    * @remarks
@@ -2309,7 +2308,7 @@ export enum S3Action {
   PutObject = "s3:PutObject",
 
   /**
-   * Permissions management - Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket
+   * PermissionsManagement - Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html
    * 
    * @remarks
@@ -2412,7 +2411,7 @@ export enum S3Action {
   PutObjectTagging = "s3:PutObjectTagging",
 
   /**
-   * Permissions management - Grants permission to use the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket
+   * PermissionsManagement - Grants permission to use the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html
    * 
    * @remarks

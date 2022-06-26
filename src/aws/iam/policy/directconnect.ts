@@ -110,7 +110,6 @@ export enum DirectconnectAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link DirectconnectResource.dxcon `DirectconnectResource.dxcon`} 
-   * - {@link DirectconnectResource.dxcon `DirectconnectResource.dxcon`} 
    * - {@link DirectconnectResource.dxlag `DirectconnectResource.dxlag`} 
    */
   AssociateHostedConnection = "directconnect:AssociateHostedConnection",

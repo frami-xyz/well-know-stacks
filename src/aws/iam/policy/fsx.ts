@@ -382,7 +382,7 @@ export enum FsxAction {
   ListTagsForResource = "fsx:ListTagsForResource",
 
   /**
-   * Permissions management - Grants permission to manage backup principal associations through AWS Backup
+   * PermissionsManagement - Grants permission to manage backup principal associations through AWS Backup
    * @see https://docs.aws.amazon.com/fsx/latest/APIReference/API_CopyBackup.html
    * 
    * @remarks

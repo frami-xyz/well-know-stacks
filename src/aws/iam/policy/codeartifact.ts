@@ -74,7 +74,7 @@ export enum CodeartifactAction {
   DeleteDomain = "codeartifact:DeleteDomain",
 
   /**
-   * Permissions management - Grants permission to delete the resource policy set on a domain
+   * PermissionsManagement - Grants permission to delete the resource policy set on a domain
    * @see https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DeleteDomainPermissionsPolicy.html
    * 
    * @remarks
@@ -107,7 +107,7 @@ export enum CodeartifactAction {
   DeleteRepository = "codeartifact:DeleteRepository",
 
   /**
-   * Permissions management - Grants permission to delete the resource policy set on a repository
+   * PermissionsManagement - Grants permission to delete the resource policy set on a repository
    * @see https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DeleteRepositoryPermissionsPolicy.html
    * 
    * @remarks

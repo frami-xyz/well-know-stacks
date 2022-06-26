@@ -5,7 +5,7 @@
 export enum SqsAction {
 
   /**
-   * Permissions management - Grants permission to a queue for a specific principal
+   * PermissionsManagement - Grants permission to a queue for a specific principal
    * @see https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_AddPermission.html
    * 
    * @remarks
@@ -132,7 +132,7 @@ export enum SqsAction {
   ReceiveMessage = "sqs:ReceiveMessage",
 
   /**
-   * Permissions management - Grants permission to revoke any permissions in the queue policy that matches the specified Label parameter
+   * PermissionsManagement - Grants permission to revoke any permissions in the queue policy that matches the specified Label parameter
    * @see https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_RemovePermission.html
    * 
    * @remarks

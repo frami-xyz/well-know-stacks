@@ -152,7 +152,7 @@ export enum GrafanaAction {
   UntagResource = "grafana:UntagResource",
 
   /**
-   * Permissions management - Grants permission to modify the permissions on a workspace
+   * PermissionsManagement - Grants permission to modify the permissions on a workspace
    * @see https://docs.aws.amazon.com/grafana/latest/userguide/AMG-and-IAM.html
    * 
    * @remarks

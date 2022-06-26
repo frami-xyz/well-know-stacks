@@ -1022,7 +1022,7 @@ export enum SsmAction {
   ListTagsForResource = "ssm:ListTagsForResource",
 
   /**
-   * Permissions management - Grants permission to share a custom SSM document publicly or privately with specified AWS accounts
+   * PermissionsManagement - Grants permission to share a custom SSM document publicly or privately with specified AWS accounts
    * @see https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_ModifyDocumentPermission.html
    * 
    * @remarks

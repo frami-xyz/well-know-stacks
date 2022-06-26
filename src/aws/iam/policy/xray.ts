@@ -173,7 +173,7 @@ export enum XrayAction {
   ListTagsForResource = "xray:ListTagsForResource",
 
   /**
-   * Permissions management - Grants permission to update the encryption configuration for X-Ray data
+   * PermissionsManagement - Grants permission to update the encryption configuration for X-Ray data
    * @see https://docs.aws.amazon.com/xray/latest/api/API_PutEncryptionConfig.html
    */
   PutEncryptionConfig = "xray:PutEncryptionConfig",

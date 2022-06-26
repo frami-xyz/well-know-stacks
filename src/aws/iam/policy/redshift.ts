@@ -40,7 +40,7 @@ export enum RedshiftAction {
   AuthorizeClusterSecurityGroupIngress = "redshift:AuthorizeClusterSecurityGroupIngress",
 
   /**
-   * Permissions management - Grants permission to authorize the specified datashare consumer to consume a datashare
+   * PermissionsManagement - Grants permission to authorize the specified datashare consumer to consume a datashare
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_AuthorizeDataShare.html
    * 
    * @remarks
@@ -54,13 +54,13 @@ export enum RedshiftAction {
   AuthorizeDataShare = "redshift:AuthorizeDataShare",
 
   /**
-   * Permissions management - Grants permission to authorize endpoint related activities for redshift-managed vpc endpoint
+   * PermissionsManagement - Grants permission to authorize endpoint related activities for redshift-managed vpc endpoint
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_AuthorizeEndpointAccess.html
    */
   AuthorizeEndpointAccess = "redshift:AuthorizeEndpointAccess",
 
   /**
-   * Permissions management - Grants permission to the specified AWS account to restore a snapshot
+   * PermissionsManagement - Grants permission to the specified AWS account to restore a snapshot
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_AuthorizeSnapshotAccess.html
    * 
    * @remarks
@@ -212,7 +212,7 @@ export enum RedshiftAction {
   CreateClusterSubnetGroup = "redshift:CreateClusterSubnetGroup",
 
   /**
-   * Permissions management - Grants permission to automatically create the specified Amazon Redshift user if it does not exist
+   * PermissionsManagement - Grants permission to automatically create the specified Amazon Redshift user if it does not exist
    * @see https://docs.aws.amazon.com/redshift/latest/mgmt/generating-iam-credentials-role-permissions.html
    * 
    * @remarks
@@ -289,7 +289,7 @@ export enum RedshiftAction {
   CreateScheduledAction = "redshift:CreateScheduledAction",
 
   /**
-   * Permissions management - Grants permission to create a snapshot copy grant and encrypt copied snapshots in a destination AWS Region
+   * PermissionsManagement - Grants permission to create a snapshot copy grant and encrypt copied snapshots in a destination AWS Region
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_CreateSnapshotCopyGrant.html
    * 
    * @remarks
@@ -364,7 +364,7 @@ export enum RedshiftAction {
   CreateUsageLimit = "redshift:CreateUsageLimit",
 
   /**
-   * Permissions management - Grants permission to remove permission from the specified datashare consumer to consume a datashare
+   * PermissionsManagement - Grants permission to remove permission from the specified datashare consumer to consume a datashare
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeauthorizeDataShare.html
    * 
    * @remarks
@@ -659,7 +659,7 @@ export enum RedshiftAction {
   DescribeEndpointAccess = "redshift:DescribeEndpointAccess",
 
   /**
-   * Permissions management - Grants permission to authorize describe activity for redshift-managed vpc endpoint
+   * PermissionsManagement - Grants permission to authorize describe activity for redshift-managed vpc endpoint
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_DescribeEndpointAuthorization.html
    */
   DescribeEndpointAuthorization = "redshift:DescribeEndpointAuthorization",
@@ -940,7 +940,7 @@ export enum RedshiftAction {
   GetReservedNodeExchangeOfferings = "redshift:GetReservedNodeExchangeOfferings",
 
   /**
-   * Permissions management - Grants permission to join the specified Amazon Redshift group
+   * PermissionsManagement - Grants permission to join the specified Amazon Redshift group
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_GetClusterCredentials.html
    * 
    * @remarks
@@ -1014,7 +1014,7 @@ export enum RedshiftAction {
   ModifyClusterDbRevision = "redshift:ModifyClusterDbRevision",
 
   /**
-   * Permissions management - Grants permission to modify the list of AWS Identity and Access Management (IAM) roles that can be used by a cluster to access other AWS services
+   * PermissionsManagement - Grants permission to modify the list of AWS Identity and Access Management (IAM) roles that can be used by a cluster to access other AWS services
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyClusterIamRoles.html
    * 
    * @remarks
@@ -1165,7 +1165,7 @@ export enum RedshiftAction {
   RebootCluster = "redshift:RebootCluster",
 
   /**
-   * Permissions management - Grants permission to decline a datashare shared from another account
+   * PermissionsManagement - Grants permission to decline a datashare shared from another account
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_RejectDataShare.html
    * 
    * @remarks
@@ -1249,13 +1249,13 @@ export enum RedshiftAction {
   RevokeClusterSecurityGroupIngress = "redshift:RevokeClusterSecurityGroupIngress",
 
   /**
-   * Permissions management - Grants permission to revoke access for endpoint related activities for redshift-managed vpc endpoint
+   * PermissionsManagement - Grants permission to revoke access for endpoint related activities for redshift-managed vpc endpoint
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_RevokeEndpointAccess.html
    */
   RevokeEndpointAccess = "redshift:RevokeEndpointAccess",
 
   /**
-   * Permissions management - Grants permission to revoke access from the specified AWS account to restore a snapshot
+   * PermissionsManagement - Grants permission to revoke access from the specified AWS account to restore a snapshot
    * @see https://docs.aws.amazon.com/redshift/latest/APIReference/API_RevokeSnapshotAccess.html
    * 
    * @remarks

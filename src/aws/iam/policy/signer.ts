@@ -5,7 +5,7 @@
 export enum SignerAction {
 
   /**
-   * Permissions management - Grants permission to add cross-account permissions to a Signing Profile
+   * PermissionsManagement - Grants permission to add cross-account permissions to a Signing Profile
    * @see https://docs.aws.amazon.com/signer/latest/api/API_AddProfilePermission.html
    * 
    * @remarks
@@ -116,7 +116,7 @@ export enum SignerAction {
   PutSigningProfile = "signer:PutSigningProfile",
 
   /**
-   * Permissions management - Grants permission to remove cross-account permissions from a Signing Profile
+   * PermissionsManagement - Grants permission to remove cross-account permissions from a Signing Profile
    * @see https://docs.aws.amazon.com/signer/latest/api/API_RemoveProfilePermission.html
    * 
    * @remarks

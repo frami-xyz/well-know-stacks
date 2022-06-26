@@ -554,7 +554,7 @@ export enum Route53resolverAction {
   ListTagsForResource = "route53resolver:ListTagsForResource",
 
   /**
-   * Permissions management - Grants permission to specify an AWS account that you want to share a Firewall rule group with, the Firewall rule group that you want to share, and the operations that you want the account to be able to perform on the configuration
+   * PermissionsManagement - Grants permission to specify an AWS account that you want to share a Firewall rule group with, the Firewall rule group that you want to share, and the operations that you want the account to be able to perform on the configuration
    * @see https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_PutFirewallRuleGroupPolicy.html
    * 
    * @remarks
@@ -565,7 +565,7 @@ export enum Route53resolverAction {
   PutFirewallRuleGroupPolicy = "route53resolver:PutFirewallRuleGroupPolicy",
 
   /**
-   * Permissions management - Grants permission to specify an AWS account that you want to share a query logging configuration with, the query logging configuration that you want to share, and the operations that you want the account to be able to perform on the configuration
+   * PermissionsManagement - Grants permission to specify an AWS account that you want to share a query logging configuration with, the query logging configuration that you want to share, and the operations that you want the account to be able to perform on the configuration
    * @see https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_PutResolverQueryLogConfigPolicy.html
    * 
    * @remarks
@@ -576,7 +576,7 @@ export enum Route53resolverAction {
   PutResolverQueryLogConfigPolicy = "route53resolver:PutResolverQueryLogConfigPolicy",
 
   /**
-   * Permissions management - Grants permission to specify an AWS account that you want to share rules with, the Resolver rules that you want to share, and the operations that you want the account to be able to perform on those rules
+   * PermissionsManagement - Grants permission to specify an AWS account that you want to share rules with, the Resolver rules that you want to share, and the operations that you want the account to be able to perform on those rules
    * @see https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53resolver_PutResolverRulePolicy.html
    * 
    * @remarks

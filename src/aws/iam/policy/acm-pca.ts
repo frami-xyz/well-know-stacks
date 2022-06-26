@@ -28,7 +28,7 @@ export enum AcmPcaAction {
   CreateCertificateAuthorityAuditReport = "acm-pca:CreateCertificateAuthorityAuditReport",
 
   /**
-   * Permissions management - Grants permission to create a permission for an ACM Private CA
+   * PermissionsManagement - Grants permission to create a permission for an ACM Private CA
    * @see https://docs.aws.amazon.com/acm-pca/latest/APIReference/API_CreatePermission.html
    * 
    * @remarks
@@ -50,7 +50,7 @@ export enum AcmPcaAction {
   DeleteCertificateAuthority = "acm-pca:DeleteCertificateAuthority",
 
   /**
-   * Permissions management - Grants permission to delete a permission for an ACM Private CA
+   * PermissionsManagement - Grants permission to delete a permission for an ACM Private CA
    * @see https://docs.aws.amazon.com/acm-pca/latest/APIReference/API_DeletePermission.html
    * 
    * @remarks
@@ -61,7 +61,7 @@ export enum AcmPcaAction {
   DeletePermission = "acm-pca:DeletePermission",
 
   /**
-   * Permissions management - Grants permission to delete the policy for an ACM Private CA
+   * PermissionsManagement - Grants permission to delete the policy for an ACM Private CA
    * @see https://docs.aws.amazon.com/acm-pca/latest/APIReference/API_DeletePolicy.html
    * 
    * @remarks
@@ -191,7 +191,7 @@ export enum AcmPcaAction {
   ListTags = "acm-pca:ListTags",
 
   /**
-   * Permissions management - Grants permission to put a policy on an ACM Private CA
+   * PermissionsManagement - Grants permission to put a policy on an ACM Private CA
    * @see https://docs.aws.amazon.com/acm-pca/latest/APIReference/API_PutPolicy.html
    * 
    * @remarks

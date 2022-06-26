@@ -51,7 +51,7 @@ export enum SsmIncidentsAction {
   DeleteReplicationSet = "ssm-incidents:DeleteReplicationSet",
 
   /**
-   * Permissions management - Grants permission to delete resource policy from a response plan
+   * PermissionsManagement - Grants permission to delete resource policy from a response plan
    * @see https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_DeleteResourcePolicy.html
    * 
    * @remarks
@@ -194,7 +194,7 @@ export enum SsmIncidentsAction {
   ListTimelineEvents = "ssm-incidents:ListTimelineEvents",
 
   /**
-   * Permissions management - Grants permission to put resource policy on a response plan
+   * PermissionsManagement - Grants permission to put resource policy on a response plan
    * @see https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_PutResourcePolicy.html
    * 
    * @remarks

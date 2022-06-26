@@ -11,13 +11,13 @@ export enum LakeformationAction {
   AddLFTagsToResource = "lakeformation:AddLFTagsToResource",
 
   /**
-   * Permissions management - Grants permission to data lake permissions to one or more principals in a batch
+   * PermissionsManagement - Grants permission to data lake permissions to one or more principals in a batch
    * @see https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-BatchGrantPermissions
    */
   BatchGrantPermissions = "lakeformation:BatchGrantPermissions",
 
   /**
-   * Permissions management - Grants permission to revoke data lake permissions from one or more principals in a batch
+   * PermissionsManagement - Grants permission to revoke data lake permissions from one or more principals in a batch
    * @see https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-BatchRevokePermissions
    */
   BatchRevokePermissions = "lakeformation:BatchRevokePermissions",
@@ -149,7 +149,7 @@ export enum LakeformationAction {
   GetWorkUnits = "lakeformation:GetWorkUnits",
 
   /**
-   * Permissions management - Grants permission to data lake permissions to a principal
+   * PermissionsManagement - Grants permission to data lake permissions to a principal
    * @see https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-GrantPermissions
    */
   GrantPermissions = "lakeformation:GrantPermissions",
@@ -191,7 +191,7 @@ export enum LakeformationAction {
   ListTransactions = "lakeformation:ListTransactions",
 
   /**
-   * Permissions management - Grants permission to overwrite data lake settings such as the list of data lake administrators and database and table default permissions
+   * PermissionsManagement - Grants permission to overwrite data lake settings such as the list of data lake administrators and database and table default permissions
    * @see https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-PutDataLakeSettings
    */
   PutDataLakeSettings = "lakeformation:PutDataLakeSettings",
@@ -209,7 +209,7 @@ export enum LakeformationAction {
   RemoveLFTagsFromResource = "lakeformation:RemoveLFTagsFromResource",
 
   /**
-   * Permissions management - Grants permission to revoke data lake permissions from a principal
+   * PermissionsManagement - Grants permission to revoke data lake permissions from a principal
    * @see https://docs.aws.amazon.com/lake-formation/latest/dg/aws-lake-formation-api-tagging-api.html#aws-lake-formation-api-tagging-api-RevokePermissions
    */
   RevokePermissions = "lakeformation:RevokePermissions",

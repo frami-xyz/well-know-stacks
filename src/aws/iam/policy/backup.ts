@@ -133,7 +133,7 @@ export enum BackupAction {
   DeleteBackupVault = "backup:DeleteBackupVault",
 
   /**
-   * Permissions management - Grants permission to delete backup vault access policy
+   * PermissionsManagement - Grants permission to delete backup vault access policy
    * @see https://docs.aws.amazon.com/aws-backup/latest/devguide/API_DeleteBackupVaultAccessPolicy.html
    * 
    * @remarks
@@ -489,7 +489,7 @@ export enum BackupAction {
   ListTags = "backup:ListTags",
 
   /**
-   * Permissions management - Grants permission to add an access policy to the backup vault
+   * PermissionsManagement - Grants permission to add an access policy to the backup vault
    * @see https://docs.aws.amazon.com/aws-backup/latest/devguide/API_PutBackupVaultAccessPolicy.html
    * 
    * @remarks

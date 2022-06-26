@@ -6,7 +6,7 @@
 export enum ApigatewayAction {
 
   /**
-   * Permissions management - Grants permission to add certificates for mutual TLS authentication to a domain name. This is an additional authorization control for managing the DomainName resource due to the sensitive nature of mTLS
+   * PermissionsManagement - Grants permission to add certificates for mutual TLS authentication to a domain name. This is an additional authorization control for managing the DomainName resource due to the sensitive nature of mTLS
    * @see https://docs.aws.amazon.com/apigateway/api-reference/ADD_CERTIFICATE_TO_DOMAIN.html
    * 
    * @remarks
@@ -46,6 +46,15 @@ export enum ApigatewayAction {
    * - {@link ApigatewayResource.usagePlan `ApigatewayResource.usagePlan`} 
    * - {@link ApigatewayResource.usagePlanKey `ApigatewayResource.usagePlanKey`} 
    * - {@link ApigatewayResource.vpcLink `ApigatewayResource.vpcLink`} 
+   * - {@link ApigatewayResource.accessLogSettings `ApigatewayResource.accessLogSettings`} 
+   * - {@link ApigatewayResource.api `ApigatewayResource.api`} 
+   * - {@link ApigatewayResource.apiMapping `ApigatewayResource.apiMapping`} 
+   * - {@link ApigatewayResource.authorizersCache `ApigatewayResource.authorizersCache`} 
+   * - {@link ApigatewayResource.cors `ApigatewayResource.cors`} 
+   * - {@link ApigatewayResource.route `ApigatewayResource.route`} 
+   * - {@link ApigatewayResource.routeRequestParameter `ApigatewayResource.routeRequestParameter`} 
+   * - {@link ApigatewayResource.routeResponse `ApigatewayResource.routeResponse`} 
+   * - {@link ApigatewayResource.routeSettings `ApigatewayResource.routeSettings`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -100,6 +109,23 @@ export enum ApigatewayAction {
    * - {@link ApigatewayResource.usagePlans `ApigatewayResource.usagePlans`} 
    * - {@link ApigatewayResource.vpcLink `ApigatewayResource.vpcLink`} 
    * - {@link ApigatewayResource.vpcLinks `ApigatewayResource.vpcLinks`} 
+   * - {@link ApigatewayResource.accessLogSettings `ApigatewayResource.accessLogSettings`} 
+   * - {@link ApigatewayResource.api `ApigatewayResource.api`} 
+   * - {@link ApigatewayResource.apiMapping `ApigatewayResource.apiMapping`} 
+   * - {@link ApigatewayResource.apiMappings `ApigatewayResource.apiMappings`} 
+   * - {@link ApigatewayResource.apis `ApigatewayResource.apis`} 
+   * - {@link ApigatewayResource.authorizersCache `ApigatewayResource.authorizersCache`} 
+   * - {@link ApigatewayResource.cors `ApigatewayResource.cors`} 
+   * - {@link ApigatewayResource.exportedAPI `ApigatewayResource.exportedAPI`} 
+   * - {@link ApigatewayResource.integrationResponses `ApigatewayResource.integrationResponses`} 
+   * - {@link ApigatewayResource.integrations `ApigatewayResource.integrations`} 
+   * - {@link ApigatewayResource.modelTemplate `ApigatewayResource.modelTemplate`} 
+   * - {@link ApigatewayResource.route `ApigatewayResource.route`} 
+   * - {@link ApigatewayResource.routeRequestParameter `ApigatewayResource.routeRequestParameter`} 
+   * - {@link ApigatewayResource.routeResponse `ApigatewayResource.routeResponse`} 
+   * - {@link ApigatewayResource.routeResponses `ApigatewayResource.routeResponses`} 
+   * - {@link ApigatewayResource.routeSettings `ApigatewayResource.routeSettings`} 
+   * - {@link ApigatewayResource.routes `ApigatewayResource.routes`} 
    */
   GET = "apigateway:GET",
 
@@ -133,6 +159,11 @@ export enum ApigatewayAction {
    * - {@link ApigatewayResource.usagePlan `ApigatewayResource.usagePlan`} 
    * - {@link ApigatewayResource.usagePlanKey `ApigatewayResource.usagePlanKey`} 
    * - {@link ApigatewayResource.vpcLink `ApigatewayResource.vpcLink`} 
+   * - {@link ApigatewayResource.api `ApigatewayResource.api`} 
+   * - {@link ApigatewayResource.apiMapping `ApigatewayResource.apiMapping`} 
+   * - {@link ApigatewayResource.route `ApigatewayResource.route`} 
+   * - {@link ApigatewayResource.routeRequestParameter `ApigatewayResource.routeRequestParameter`} 
+   * - {@link ApigatewayResource.routeResponse `ApigatewayResource.routeResponse`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -166,6 +197,12 @@ export enum ApigatewayAction {
    * - {@link ApigatewayResource.usagePlanKeys `ApigatewayResource.usagePlanKeys`} 
    * - {@link ApigatewayResource.usagePlans `ApigatewayResource.usagePlans`} 
    * - {@link ApigatewayResource.vpcLinks `ApigatewayResource.vpcLinks`} 
+   * - {@link ApigatewayResource.apiMappings `ApigatewayResource.apiMappings`} 
+   * - {@link ApigatewayResource.apis `ApigatewayResource.apis`} 
+   * - {@link ApigatewayResource.integrationResponses `ApigatewayResource.integrationResponses`} 
+   * - {@link ApigatewayResource.integrations `ApigatewayResource.integrations`} 
+   * - {@link ApigatewayResource.routeResponses `ApigatewayResource.routeResponses`} 
+   * - {@link ApigatewayResource.routes `ApigatewayResource.routes`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -185,6 +222,7 @@ export enum ApigatewayAction {
    * - {@link ApigatewayResource.integrationResponse `ApigatewayResource.integrationResponse`} 
    * - {@link ApigatewayResource.methodResponse `ApigatewayResource.methodResponse`} 
    * - {@link ApigatewayResource.restApi `ApigatewayResource.restApi`} 
+   * - {@link ApigatewayResource.apis `ApigatewayResource.apis`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -193,7 +231,7 @@ export enum ApigatewayAction {
   PUT = "apigateway:PUT",
 
   /**
-   * Permissions management - Grants permission to remove certificates for mutual TLS authentication from a domain name. This is an additional authorization control for managing the DomainName resource due to the sensitive nature of mTLS
+   * PermissionsManagement - Grants permission to remove certificates for mutual TLS authentication from a domain name. This is an additional authorization control for managing the DomainName resource due to the sensitive nature of mTLS
    * @see https://docs.aws.amazon.com/apigateway/api-reference/REMOVE_CERTIFICATE_FROM_DOMAIN.html
    * 
    * @remarks
@@ -205,7 +243,7 @@ export enum ApigatewayAction {
   RemoveCertificateFromDomain = "apigateway:RemoveCertificateFromDomain",
 
   /**
-   * Permissions management - Grants permission set a WAF access control list (ACL). This is an additional authorization control for managing the Stage resource due to the sensitive nature of WebAcl's
+   * PermissionsManagement - Grants permission set a WAF access control list (ACL). This is an additional authorization control for managing the Stage resource due to the sensitive nature of WebAcl's
    * @see https://docs.aws.amazon.com/apigateway/api-reference/WEBACL_SET.html
    * 
    * @remarks
@@ -217,7 +255,7 @@ export enum ApigatewayAction {
   SetWebACL = "apigateway:SetWebACL",
 
   /**
-   * Permissions management - Grants permission to manage the IAM resource policy for an API. This is an additional authorization control for managing an API due to the sensitive nature of the resource policy
+   * PermissionsManagement - Grants permission to manage the IAM resource policy for an API. This is an additional authorization control for managing an API due to the sensitive nature of the resource policy
    * @see https://docs.aws.amazon.com/apigateway/api-reference/UPDATE_REST_API_POLICY.html
    * 
    * @remarks
@@ -227,136 +265,6 @@ export enum ApigatewayAction {
    * - {@link ApigatewayResource.restApis `ApigatewayResource.restApis`} 
    */
   UpdateRestApiPolicy = "apigateway:UpdateRestApiPolicy",
-
-  /**
-   * Write - Grants permission to delete a particular resource
-   * @see https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/API_DELETE.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ApigatewayResource.accessLogSettings `ApigatewayResource.accessLogSettings`} 
-   * - {@link ApigatewayResource.api `ApigatewayResource.api`} 
-   * - {@link ApigatewayResource.apiMapping `ApigatewayResource.apiMapping`} 
-   * - {@link ApigatewayResource.authorizer `ApigatewayResource.authorizer`} 
-   * - {@link ApigatewayResource.authorizersCache `ApigatewayResource.authorizersCache`} 
-   * - {@link ApigatewayResource.cors `ApigatewayResource.cors`} 
-   * - {@link ApigatewayResource.deployment `ApigatewayResource.deployment`} 
-   * - {@link ApigatewayResource.integration `ApigatewayResource.integration`} 
-   * - {@link ApigatewayResource.integrationResponse `ApigatewayResource.integrationResponse`} 
-   * - {@link ApigatewayResource.model `ApigatewayResource.model`} 
-   * - {@link ApigatewayResource.route `ApigatewayResource.route`} 
-   * - {@link ApigatewayResource.routeRequestParameter `ApigatewayResource.routeRequestParameter`} 
-   * - {@link ApigatewayResource.routeResponse `ApigatewayResource.routeResponse`} 
-   * - {@link ApigatewayResource.routeSettings `ApigatewayResource.routeSettings`} 
-   * - {@link ApigatewayResource.stage `ApigatewayResource.stage`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  DELETE = "apigateway:DELETE",
-
-  /**
-   * Read - Grants permission to read a particular resource
-   * @see https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/API_GET.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ApigatewayResource.accessLogSettings `ApigatewayResource.accessLogSettings`} 
-   * - {@link ApigatewayResource.api `ApigatewayResource.api`} 
-   * - {@link ApigatewayResource.apiMapping `ApigatewayResource.apiMapping`} 
-   * - {@link ApigatewayResource.apiMappings `ApigatewayResource.apiMappings`} 
-   * - {@link ApigatewayResource.apis `ApigatewayResource.apis`} 
-   * - {@link ApigatewayResource.authorizer `ApigatewayResource.authorizer`} 
-   * - {@link ApigatewayResource.authorizers `ApigatewayResource.authorizers`} 
-   * - {@link ApigatewayResource.authorizersCache `ApigatewayResource.authorizersCache`} 
-   * - {@link ApigatewayResource.cors `ApigatewayResource.cors`} 
-   * - {@link ApigatewayResource.deployment `ApigatewayResource.deployment`} 
-   * - {@link ApigatewayResource.deployments `ApigatewayResource.deployments`} 
-   * - {@link ApigatewayResource.exportedAPI `ApigatewayResource.exportedAPI`} 
-   * - {@link ApigatewayResource.integration `ApigatewayResource.integration`} 
-   * - {@link ApigatewayResource.integrationResponse `ApigatewayResource.integrationResponse`} 
-   * - {@link ApigatewayResource.integrationResponses `ApigatewayResource.integrationResponses`} 
-   * - {@link ApigatewayResource.integrations `ApigatewayResource.integrations`} 
-   * - {@link ApigatewayResource.model `ApigatewayResource.model`} 
-   * - {@link ApigatewayResource.modelTemplate `ApigatewayResource.modelTemplate`} 
-   * - {@link ApigatewayResource.models `ApigatewayResource.models`} 
-   * - {@link ApigatewayResource.route `ApigatewayResource.route`} 
-   * - {@link ApigatewayResource.routeRequestParameter `ApigatewayResource.routeRequestParameter`} 
-   * - {@link ApigatewayResource.routeResponse `ApigatewayResource.routeResponse`} 
-   * - {@link ApigatewayResource.routeResponses `ApigatewayResource.routeResponses`} 
-   * - {@link ApigatewayResource.routeSettings `ApigatewayResource.routeSettings`} 
-   * - {@link ApigatewayResource.routes `ApigatewayResource.routes`} 
-   * - {@link ApigatewayResource.stage `ApigatewayResource.stage`} 
-   * - {@link ApigatewayResource.stages `ApigatewayResource.stages`} 
-   */
-  GET = "apigateway:GET",
-
-  /**
-   * Write - Grants permission to update a particular resource
-   * @see https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/API_PATCH.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ApigatewayResource.api `ApigatewayResource.api`} 
-   * - {@link ApigatewayResource.apiMapping `ApigatewayResource.apiMapping`} 
-   * - {@link ApigatewayResource.authorizer `ApigatewayResource.authorizer`} 
-   * - {@link ApigatewayResource.deployment `ApigatewayResource.deployment`} 
-   * - {@link ApigatewayResource.integration `ApigatewayResource.integration`} 
-   * - {@link ApigatewayResource.integrationResponse `ApigatewayResource.integrationResponse`} 
-   * - {@link ApigatewayResource.model `ApigatewayResource.model`} 
-   * - {@link ApigatewayResource.route `ApigatewayResource.route`} 
-   * - {@link ApigatewayResource.routeRequestParameter `ApigatewayResource.routeRequestParameter`} 
-   * - {@link ApigatewayResource.routeResponse `ApigatewayResource.routeResponse`} 
-   * - {@link ApigatewayResource.stage `ApigatewayResource.stage`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PATCH = "apigateway:PATCH",
-
-  /**
-   * Write - Grants permission to create a particular resource
-   * @see https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/API_POST.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ApigatewayResource.apiMappings `ApigatewayResource.apiMappings`} 
-   * - {@link ApigatewayResource.apis `ApigatewayResource.apis`} 
-   * - {@link ApigatewayResource.authorizers `ApigatewayResource.authorizers`} 
-   * - {@link ApigatewayResource.deployments `ApigatewayResource.deployments`} 
-   * - {@link ApigatewayResource.integrationResponses `ApigatewayResource.integrationResponses`} 
-   * - {@link ApigatewayResource.integrations `ApigatewayResource.integrations`} 
-   * - {@link ApigatewayResource.models `ApigatewayResource.models`} 
-   * - {@link ApigatewayResource.routeResponses `ApigatewayResource.routeResponses`} 
-   * - {@link ApigatewayResource.routes `ApigatewayResource.routes`} 
-   * - {@link ApigatewayResource.stages `ApigatewayResource.stages`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  POST = "apigateway:POST",
-
-  /**
-   * Write - Grants permission to update a particular resource
-   * @see https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/API_PUT.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ApigatewayResource.apis `ApigatewayResource.apis`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PUT = "apigateway:PUT",
 
   /**
    * * - Grant all apigateway permissions
@@ -388,6 +296,15 @@ export enum ApigatewayAction {
    * - {@link ApigatewayResource.usagePlan `ApigatewayResource.usagePlan`} 
    * - {@link ApigatewayResource.usagePlanKey `ApigatewayResource.usagePlanKey`} 
    * - {@link ApigatewayResource.vpcLink `ApigatewayResource.vpcLink`} 
+   * - {@link ApigatewayResource.accessLogSettings `ApigatewayResource.accessLogSettings`} 
+   * - {@link ApigatewayResource.api `ApigatewayResource.api`} 
+   * - {@link ApigatewayResource.apiMapping `ApigatewayResource.apiMapping`} 
+   * - {@link ApigatewayResource.authorizersCache `ApigatewayResource.authorizersCache`} 
+   * - {@link ApigatewayResource.cors `ApigatewayResource.cors`} 
+   * - {@link ApigatewayResource.route `ApigatewayResource.route`} 
+   * - {@link ApigatewayResource.routeRequestParameter `ApigatewayResource.routeRequestParameter`} 
+   * - {@link ApigatewayResource.routeResponse `ApigatewayResource.routeResponse`} 
+   * - {@link ApigatewayResource.routeSettings `ApigatewayResource.routeSettings`} 
    * - {@link ApigatewayResource.account `ApigatewayResource.account`} 
    * - {@link ApigatewayResource.apiKeys `ApigatewayResource.apiKeys`} 
    * - {@link ApigatewayResource.authorizers `ApigatewayResource.authorizers`} 
@@ -406,15 +323,6 @@ export enum ApigatewayAction {
    * - {@link ApigatewayResource.usagePlanKeys `ApigatewayResource.usagePlanKeys`} 
    * - {@link ApigatewayResource.usagePlans `ApigatewayResource.usagePlans`} 
    * - {@link ApigatewayResource.vpcLinks `ApigatewayResource.vpcLinks`} 
-   * - {@link ApigatewayResource.accessLogSettings `ApigatewayResource.accessLogSettings`} 
-   * - {@link ApigatewayResource.api `ApigatewayResource.api`} 
-   * - {@link ApigatewayResource.apiMapping `ApigatewayResource.apiMapping`} 
-   * - {@link ApigatewayResource.authorizersCache `ApigatewayResource.authorizersCache`} 
-   * - {@link ApigatewayResource.cors `ApigatewayResource.cors`} 
-   * - {@link ApigatewayResource.route `ApigatewayResource.route`} 
-   * - {@link ApigatewayResource.routeRequestParameter `ApigatewayResource.routeRequestParameter`} 
-   * - {@link ApigatewayResource.routeResponse `ApigatewayResource.routeResponse`} 
-   * - {@link ApigatewayResource.routeSettings `ApigatewayResource.routeSettings`} 
    * - {@link ApigatewayResource.apiMappings `ApigatewayResource.apiMappings`} 
    * - {@link ApigatewayResource.apis `ApigatewayResource.apis`} 
    * - {@link ApigatewayResource.exportedAPI `ApigatewayResource.exportedAPI`} 
@@ -546,6 +454,7 @@ export const ApigatewayResource = {
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `apigateway:Request/StageName`: Filters access by stage name of the deployment that you attempt to create. Available during the CreateDeployment operation ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
+   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   deployments: (options: Partial<{partition: string, region: string, restApiId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/restapis/${options.restApiId || '*'}/deployments`,
 
@@ -910,32 +819,6 @@ export const ApigatewayResource = {
 
   /**
    * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `apigateway:Request/AuthorizerType`: Filters access by type of authorizer in the request, for example TOKEN, REQUEST, JWT. Available during CreateAuthorizer and UpdateAuthorizer. Also available during import and reimport as an ArrayOfString ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `apigateway:Request/AuthorizerUri`: Filters access by URI of a Lambda authorizer function. Available during CreateAuthorizer and UpdateAuthorizer. Also available during import and reimport as an ArrayOfString ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `apigateway:Resource/AuthorizerType`: Filters access by the current type of authorizer, for example TOKEN, REQUEST, JWT. Available during UpdateAuthorizer and DeleteAuthorizer operations. Also available during reimport as an ArrayOfString ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `apigateway:Resource/AuthorizerUri`: Filters access by URI of a Lambda authorizer function. Available during UpdateAuthorizer and DeleteAuthorizer operations. Also available during reimport as an ArrayOfString ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  authorizer: (options: Partial<{partition: string, region: string, apiId: string, authorizerId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/authorizers/${options.authorizerId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `apigateway:Request/AuthorizerType`: Filters access by type of authorizer in the request, for example TOKEN, REQUEST, JWT. Available during CreateAuthorizer and UpdateAuthorizer. Also available during import and reimport as an ArrayOfString ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `apigateway:Request/AuthorizerUri`: Filters access by URI of a Lambda authorizer function. Available during CreateAuthorizer and UpdateAuthorizer. Also available during import and reimport as an ArrayOfString ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  authorizers: (options: Partial<{partition: string, region: string, apiId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/authorizers`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
    */
   authorizersCache: (options: Partial<{partition: string, region: string, apiId: string, stageName: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/stages/${options.stageName || '*'}/cache/authorizers`,
 
@@ -943,27 +826,6 @@ export const ApigatewayResource = {
    * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
    */
   cors: (options: Partial<{partition: string, region: string, apiId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/cors`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  deployment: (options: Partial<{partition: string, region: string, apiId: string, deploymentId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/deployments/${options.deploymentId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `apigateway:Request/StageName`: Filters access by stage name of the deployment that you attempt to create. Available during the CreateDeployment operation ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  deployments: (options: Partial<{partition: string, region: string, apiId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/deployments`,
 
   /**
    * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
@@ -978,47 +840,12 @@ export const ApigatewayResource = {
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  integration: (options: Partial<{partition: string, region: string, apiId: string, integrationId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/integrations/${options.integrationId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
   integrations: (options: Partial<{partition: string, region: string, apiId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/integrations`,
 
   /**
    * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
    */
-  integrationResponse: (options: Partial<{partition: string, region: string, apiId: string, integrationId: string, integrationResponseId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/integrations/${options.integrationId || '*'}/integrationresponses/${options.integrationResponseId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   */
   integrationResponses: (options: Partial<{partition: string, region: string, apiId: string, integrationId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/integrations/${options.integrationId || '*'}/integrationresponses`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  model: (options: Partial<{partition: string, region: string, apiId: string, modelId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/models/${options.modelId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  models: (options: Partial<{partition: string, region: string, apiId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/models`,
 
   /**
    * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
@@ -1070,31 +897,5 @@ export const ApigatewayResource = {
    * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
    */
   routeSettings: (options: Partial<{partition: string, region: string, apiId: string, stageName: string, routeKey: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/stages/${options.stageName || '*'}/routesettings/${options.routeKey || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `apigateway:Request/AccessLoggingDestination`: Filters access by access log destination. Available during the CreateStage and UpdateStage operations ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `apigateway:Request/AccessLoggingFormat`: Filters access by access log format. Available during the CreateStage and UpdateStage operations ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `apigateway:Resource/AccessLoggingDestination`: Filters access by access log destination of the current Stage resource. Available during the UpdateStage and DeleteStage operations ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `apigateway:Resource/AccessLoggingFormat`: Filters access by access log format of the current Stage resource. Available during the UpdateStage and DeleteStage operations ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  stage: (options: Partial<{partition: string, region: string, apiId: string, stageName: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/stages/${options.stageName || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `apigateway:Request/AccessLoggingDestination`: Filters access by access log destination. Available during the CreateStage and UpdateStage operations ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `apigateway:Request/AccessLoggingFormat`: Filters access by access log format. Available during the CreateStage and UpdateStage operations ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/security_iam_service-with-iam.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  stages: (options: Partial<{partition: string, region: string, apiId: string}> = {}) => `arn:${options.partition || '*'}:apigateway:${options.region || '*'}::/apis/${options.apiId || '*'}/stages`,
 }
 

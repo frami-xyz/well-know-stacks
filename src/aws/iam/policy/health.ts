@@ -89,13 +89,13 @@ export enum HealthAction {
   DescribeHealthServiceStatusForOrganization = "health:DescribeHealthServiceStatusForOrganization",
 
   /**
-   * Permissions management - Grants permission to disable the Organizational View feature
+   * PermissionsManagement - Grants permission to disable the Organizational View feature
    * @see https://docs.aws.amazon.com/health/latest/APIReference/API_DisableHealthServiceAccessForOrganization.html
    */
   DisableHealthServiceAccessForOrganization = "health:DisableHealthServiceAccessForOrganization",
 
   /**
-   * Permissions management - Grants permission to enable the Organizational View feature
+   * PermissionsManagement - Grants permission to enable the Organizational View feature
    * @see https://docs.aws.amazon.com/health/latest/APIReference/API_EnableHealthServiceAccessForOrganization.html
    */
   EnableHealthServiceAccessForOrganization = "health:EnableHealthServiceAccessForOrganization",

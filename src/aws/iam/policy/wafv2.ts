@@ -14,7 +14,7 @@ export enum Wafv2Action {
    * - {@link Wafv2Resource.webacl `Wafv2Resource.webacl`} 
    * - {@link Wafv2Resource.apigateway `Wafv2Resource.apigateway`} 
    * - {@link Wafv2Resource.appsync `Wafv2Resource.appsync`} 
-   * - {@link Wafv2Resource.loadbalancer/app/ `Wafv2Resource.loadbalancer/app/`} 
+   * - {@link Wafv2Resource.loadbalancerApp `Wafv2Resource.loadbalancerApp`} 
    */
   AssociateWebACL = "wafv2:AssociateWebACL",
 
@@ -124,7 +124,7 @@ export enum Wafv2Action {
   DeleteLoggingConfiguration = "wafv2:DeleteLoggingConfiguration",
 
   /**
-   * Permissions management - Grants permission to delete the PermissionPolicy on a RuleGroup
+   * PermissionsManagement - Grants permission to delete the PermissionPolicy on a RuleGroup
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_DeletePermissionPolicy.html
    * 
    * @remarks
@@ -193,7 +193,7 @@ export enum Wafv2Action {
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link Wafv2Resource.apigateway `Wafv2Resource.apigateway`} 
    * - {@link Wafv2Resource.appsync `Wafv2Resource.appsync`} 
-   * - {@link Wafv2Resource.loadbalancer/app/ `Wafv2Resource.loadbalancer/app/`} 
+   * - {@link Wafv2Resource.loadbalancerApp `Wafv2Resource.loadbalancerApp`} 
    */
   DisassociateWebACL = "wafv2:DisassociateWebACL",
 
@@ -335,7 +335,7 @@ export enum Wafv2Action {
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link Wafv2Resource.apigateway `Wafv2Resource.apigateway`} 
    * - {@link Wafv2Resource.appsync `Wafv2Resource.appsync`} 
-   * - {@link Wafv2Resource.loadbalancer/app/ `Wafv2Resource.loadbalancer/app/`} 
+   * - {@link Wafv2Resource.loadbalancerApp `Wafv2Resource.loadbalancerApp`} 
    */
   GetWebACLForResource = "wafv2:GetWebACLForResource",
 
@@ -456,7 +456,7 @@ export enum Wafv2Action {
   PutManagedRuleSetVersions = "wafv2:PutManagedRuleSetVersions",
 
   /**
-   * Permissions management - Grants permission to attach an IAM policy to a resource, used to share rule groups between accounts
+   * PermissionsManagement - Grants permission to attach an IAM policy to a resource, used to share rule groups between accounts
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_PutPermissionPolicy.html
    * 
    * @remarks
@@ -585,7 +585,7 @@ export enum Wafv2Action {
    * - {@link Wafv2Resource.webacl `Wafv2Resource.webacl`} 
    * - {@link Wafv2Resource.apigateway `Wafv2Resource.apigateway`} 
    * - {@link Wafv2Resource.appsync `Wafv2Resource.appsync`} 
-   * - {@link Wafv2Resource.loadbalancer/app/ `Wafv2Resource.loadbalancer/app/`} 
+   * - {@link Wafv2Resource.loadbalancerApp `Wafv2Resource.loadbalancerApp`} 
    * - {@link Wafv2Resource.ipset `Wafv2Resource.ipset`} 
    * - {@link Wafv2Resource.regexpatternset `Wafv2Resource.regexpatternset`} 
    * - {@link Wafv2Resource.rulegroup `Wafv2Resource.rulegroup`} 
@@ -653,7 +653,7 @@ export const Wafv2Resource = {
   /**
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html
    */
-  loadbalancer/app/: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:loadbalancer/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}`,
+  loadbalancerApp: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:loadbalancer/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_WebACL.html

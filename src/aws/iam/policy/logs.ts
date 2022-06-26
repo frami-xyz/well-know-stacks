@@ -112,7 +112,7 @@ export enum LogsAction {
   DeleteQueryDefinition = "logs:DeleteQueryDefinition",
 
   /**
-   * Permissions management - Grants permissions to delete a resource policy from this account
+   * PermissionsManagement - Grants permissions to delete a resource policy from this account
    * @see https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_DeleteResourcePolicy.html
    */
   DeleteResourcePolicy = "logs:DeleteResourcePolicy",
@@ -333,7 +333,7 @@ export enum LogsAction {
   PutQueryDefinition = "logs:PutQueryDefinition",
 
   /**
-   * Permissions management - Grants permissions to create or update a resource policy allowing other AWS services to put log events to this account
+   * PermissionsManagement - Grants permissions to create or update a resource policy allowing other AWS services to put log events to this account
    * @see https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutResourcePolicy.html
    */
   PutResourcePolicy = "logs:PutResourcePolicy",

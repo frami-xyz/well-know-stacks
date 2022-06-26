@@ -17,7 +17,7 @@ export enum SsoAction {
   AssociateProfile = "sso:AssociateProfile",
 
   /**
-   * Permissions management - Grants permission to attach an AWS managed policy to a permission set
+   * PermissionsManagement - Grants permission to attach an AWS managed policy to a permission set
    * @see https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_AttachManagedPolicyToPermissionSet.html
    * 
    * @remarks
@@ -164,7 +164,7 @@ export enum SsoAction {
   DeletePermissionSet = "sso:DeletePermissionSet",
 
   /**
-   * Permissions management - Grants permission to delete the permission policy associated with a permission set
+   * PermissionsManagement - Grants permission to delete the permission policy associated with a permission set
    * @see https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
    */
   DeletePermissionsPolicy = "sso:DeletePermissionsPolicy",
@@ -244,7 +244,7 @@ export enum SsoAction {
   DescribeRegisteredRegions = "sso:DescribeRegisteredRegions",
 
   /**
-   * Permissions management - Grants permission to detach the attached AWS managed policy from the specified permission set
+   * PermissionsManagement - Grants permission to detach the attached AWS managed policy from the specified permission set
    * @see https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_DetachManagedPolicyFromPermissionSet.html
    * 
    * @remarks
@@ -536,7 +536,7 @@ export enum SsoAction {
   PutMfaDeviceManagementForDirectory = "sso:PutMfaDeviceManagementForDirectory",
 
   /**
-   * Permissions management - Grants permission to add a policy to a permission set
+   * PermissionsManagement - Grants permission to add a policy to a permission set
    * @see https://docs.aws.amazon.com/singlesignon/latest/userguide/iam-auth-access-using-id-policies.html#policyexample
    */
   PutPermissionsPolicy = "sso:PutPermissionsPolicy",
@@ -657,7 +657,7 @@ export enum SsoAction {
   UpdateManagedApplicationInstanceStatus = "sso:UpdateManagedApplicationInstanceStatus",
 
   /**
-   * Permissions management - Grants permission to update the permission set
+   * PermissionsManagement - Grants permission to update the permission set
    * @see https://docs.aws.amazon.com/service-authorization/latest/reference/%7BDocHomeURL%7Dsinglesignon/latest/APIReference/API_UpdatePermissionSet.html
    * 
    * @remarks

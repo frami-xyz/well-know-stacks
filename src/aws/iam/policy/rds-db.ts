@@ -5,7 +5,7 @@
 export enum RdsDbAction {
 
   /**
-   * Permissions management - Allows IAM role or user to connect to RDS database
+   * PermissionsManagement - Allows IAM role or user to connect to RDS database
    * @see https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.IAMPolicy.html
    * 
    * @remarks

@@ -127,7 +127,7 @@ export enum WafAction {
   CreateSqlInjectionMatchSet = "waf:CreateSqlInjectionMatchSet",
 
   /**
-   * Permissions management - Grants permission to create a WebACL, which contains rules for filtering web requests
+   * PermissionsManagement - Grants permission to create a WebACL, which contains rules for filtering web requests
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_CreateWebACL.html
    * 
    * @remarks
@@ -208,7 +208,7 @@ export enum WafAction {
   DeleteLoggingConfiguration = "waf:DeleteLoggingConfiguration",
 
   /**
-   * Permissions management - Grants permission to delete an IAM policy from a rule group
+   * PermissionsManagement - Grants permission to delete an IAM policy from a rule group
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_DeletePermissionPolicy.html
    * 
    * @remarks
@@ -296,7 +296,7 @@ export enum WafAction {
   DeleteSqlInjectionMatchSet = "waf:DeleteSqlInjectionMatchSet",
 
   /**
-   * Permissions management - Grants permission to delete a WebACL
+   * PermissionsManagement - Grants permission to delete a WebACL
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_DeleteWebACL.html
    * 
    * @remarks
@@ -622,7 +622,7 @@ export enum WafAction {
   PutLoggingConfiguration = "waf:PutLoggingConfiguration",
 
   /**
-   * Permissions management - Grants permission to attach an IAM policy to a rule group, to share the rule group between accounts
+   * PermissionsManagement - Grants permission to attach an IAM policy to a rule group, to share the rule group between accounts
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_PutPermissionPolicy.html
    * 
    * @remarks
@@ -778,7 +778,7 @@ export enum WafAction {
   UpdateSqlInjectionMatchSet = "waf:UpdateSqlInjectionMatchSet",
 
   /**
-   * Permissions management - Grants permission to insert or delete ActivatedRule objects in a WebACL
+   * PermissionsManagement - Grants permission to insert or delete ActivatedRule objects in a WebACL
    * @see https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_UpdateWebACL.html
    * 
    * @remarks

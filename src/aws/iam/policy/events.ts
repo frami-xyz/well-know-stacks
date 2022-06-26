@@ -470,7 +470,7 @@ export enum EventsAction {
   PutPartnerEvents = "events:PutPartnerEvents",
 
   /**
-   * Permissions management - Grants permission to use the PutPermission action to grants permission to another AWS account to put events to your default event bus
+   * PermissionsManagement - Grants permission to use the PutPermission action to grants permission to another AWS account to put events to your default event bus
    * @see https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPermission.html
    */
   PutPermission = "events:PutPermission",
@@ -514,7 +514,7 @@ export enum EventsAction {
   PutTargets = "events:PutTargets",
 
   /**
-   * Permissions management - Grants permission to revoke the permission of another AWS account to put events to your default event bus
+   * PermissionsManagement - Grants permission to revoke the permission of another AWS account to put events to your default event bus
    * @see https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RemovePermission.html
    */
   RemovePermission = "events:RemovePermission",

@@ -592,7 +592,7 @@ export enum GlueAction {
   DeleteRegistry = "glue:DeleteRegistry",
 
   /**
-   * Permissions management - Grants permission to delete a resource policy
+   * PermissionsManagement - Grants permission to delete a resource policy
    * @see https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-security.html#aws-glue-api-jobs-security-DeleteResourcePolicy
    * 
    * @remarks
@@ -1480,7 +1480,7 @@ export enum GlueAction {
   PutDataCatalogEncryptionSettings = "glue:PutDataCatalogEncryptionSettings",
 
   /**
-   * Permissions management - Grants permission to update a resource policy
+   * PermissionsManagement - Grants permission to update a resource policy
    * @see https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-security.html#aws-glue-api-jobs-security-PutResourcePolicy
    * 
    * @remarks

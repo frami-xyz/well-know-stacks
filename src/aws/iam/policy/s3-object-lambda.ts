@@ -298,7 +298,7 @@ export enum S3ObjectLambdaAction {
   PutObject = "s3-object-lambda:PutObject",
 
   /**
-   * Permissions management - Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket.
+   * PermissionsManagement - Grants permission to set the access control list (ACL) permissions for new or existing objects in an S3 bucket.
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html
    * 
    * @remarks
@@ -362,7 +362,7 @@ export enum S3ObjectLambdaAction {
   PutObjectTagging = "s3-object-lambda:PutObjectTagging",
 
   /**
-   * Permissions management - Grants permission to use the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket
+   * PermissionsManagement - Grants permission to use the acl subresource to set the access control list (ACL) permissions for an object that already exists in a bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html
    * 
    * @remarks

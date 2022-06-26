@@ -202,17 +202,6 @@ export enum KinesisanalyticsAction {
   AddApplicationCloudWatchLoggingOption = "kinesisanalytics:AddApplicationCloudWatchLoggingOption",
 
   /**
-   * Write - Grants permission to add input to the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationInput.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  AddApplicationInput = "kinesisanalytics:AddApplicationInput",
-
-  /**
    * Write - Grants permission to add input processing configuration to the application
    * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationInputProcessingConfiguration.html
    * 
@@ -224,28 +213,6 @@ export enum KinesisanalyticsAction {
   AddApplicationInputProcessingConfiguration = "kinesisanalytics:AddApplicationInputProcessingConfiguration",
 
   /**
-   * Write - Grants permission to add output to the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationOutput.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  AddApplicationOutput = "kinesisanalytics:AddApplicationOutput",
-
-  /**
-   * Write - Grants permission to add reference data source to the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationReferenceDataSource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  AddApplicationReferenceDataSource = "kinesisanalytics:AddApplicationReferenceDataSource",
-
-  /**
    * Write - Grants permission to add VPC configuration to the application
    * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_AddApplicationVpcConfiguration.html
    * 
@@ -255,18 +222,6 @@ export enum KinesisanalyticsAction {
    * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
    */
   AddApplicationVpcConfiguration = "kinesisanalytics:AddApplicationVpcConfiguration",
-
-  /**
-   * Write - Grants permission to create an application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_CreateApplication.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of mandatory tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateApplication = "kinesisanalytics:CreateApplication",
 
   /**
    * Read - Grants permission to create and return a URL that you can use to connect to an application's extension
@@ -291,17 +246,6 @@ export enum KinesisanalyticsAction {
   CreateApplicationSnapshot = "kinesisanalytics:CreateApplicationSnapshot",
 
   /**
-   * Write - Grants permission to delete the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplication.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  DeleteApplication = "kinesisanalytics:DeleteApplication",
-
-  /**
    * Write - Grants permission to delete the specified cloudwatch logging option of the application
    * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationCloudWatchLoggingOption.html
    * 
@@ -322,28 +266,6 @@ export enum KinesisanalyticsAction {
    * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
    */
   DeleteApplicationInputProcessingConfiguration = "kinesisanalytics:DeleteApplicationInputProcessingConfiguration",
-
-  /**
-   * Write - Grants permission to delete the specified output of the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationOutput.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  DeleteApplicationOutput = "kinesisanalytics:DeleteApplicationOutput",
-
-  /**
-   * Write - Grants permission to delete the specified reference data source of the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DeleteApplicationReferenceDataSource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  DeleteApplicationReferenceDataSource = "kinesisanalytics:DeleteApplicationReferenceDataSource",
 
   /**
    * Write - Grants permission to delete a snapshot for an application
@@ -368,17 +290,6 @@ export enum KinesisanalyticsAction {
   DeleteApplicationVpcConfiguration = "kinesisanalytics:DeleteApplicationVpcConfiguration",
 
   /**
-   * Read - Grants permission to describe the specified application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DescribeApplication.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  DescribeApplication = "kinesisanalytics:DescribeApplication",
-
-  /**
    * Read - Grants permission to describe an application snapshot
    * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DescribeApplicationSnapshot.html
    * 
@@ -399,12 +310,6 @@ export enum KinesisanalyticsAction {
    * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
    */
   DescribeApplicationVersion = "kinesisanalytics:DescribeApplicationVersion",
-
-  /**
-   * Read - Grants permission to discover the input schema for the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_DiscoverInputSchema.html
-   */
-  DiscoverInputSchema = "kinesisanalytics:DiscoverInputSchema",
 
   /**
    * Read - Grants permission to list the snapshots for an application
@@ -429,23 +334,6 @@ export enum KinesisanalyticsAction {
   ListApplicationVersions = "kinesisanalytics:ListApplicationVersions",
 
   /**
-   * List - Grants permission to list applications for the account
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListApplications.html
-   */
-  ListApplications = "kinesisanalytics:ListApplications",
-
-  /**
-   * Read - Grants permission to fetch the tags associated with the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_ListTagsForResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  ListTagsForResource = "kinesisanalytics:ListTagsForResource",
-
-  /**
    * Write - Grants permission to perform rollback operation on an application
    * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_RollbackApplication.html
    * 
@@ -455,68 +343,6 @@ export enum KinesisanalyticsAction {
    * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
    */
   RollbackApplication = "kinesisanalytics:RollbackApplication",
-
-  /**
-   * Write - Grants permission to start the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StartsApplication.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  StartApplication = "kinesisanalytics:StartApplication",
-
-  /**
-   * Write - Grants permission to stop the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_StopApplication.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  StopApplication = "kinesisanalytics:StopApplication",
-
-  /**
-   * Tagging - Grants permission to add tags to the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_TagResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of mandatory tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  TagResource = "kinesisanalytics:TagResource",
-
-  /**
-   * Tagging - Grants permission to remove the specified tags from the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_UntagResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:TagKeys`: Filters actions based on the presence of mandatory tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  UntagResource = "kinesisanalytics:UntagResource",
-
-  /**
-   * Write - Grants permission to update the application
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/API_UpdateApplication.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link KinesisanalyticsResource.application `KinesisanalyticsResource.application`} 
-   */
-  UpdateApplication = "kinesisanalytics:UpdateApplication",
 
   /**
    * Write - Grants permission to update the maintenance configuration of an application
@@ -554,16 +380,6 @@ export const KinesisanalyticsResource = {
 
   /**
    * @see https://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag-value assoicated with the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  application: (options: Partial<{partition: string, region: string, account: string, applicationName: string}> = {}) => `arn:${options.partition || '*'}:kinesisanalytics:${options.region || '*'}:${options.account || '*'}:application/${options.applicationName || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/kinesisanalytics/latest/apiv2/how-it-works.html
    * 
    * @remarks
    * 

@@ -159,7 +159,7 @@ export enum ServicecatalogAction {
   CreatePortfolio = "servicecatalog:CreatePortfolio",
 
   /**
-   * Permissions management - Grants permission to share a portfolio you own with another AWS account
+   * PermissionsManagement - Grants permission to share a portfolio you own with another AWS account
    * @see https://docs.aws.amazon.com/servicecatalog/latest/dg/API_CreatePortfolioShare.html
    * 
    * @remarks
@@ -260,7 +260,7 @@ export enum ServicecatalogAction {
   DeletePortfolio = "servicecatalog:DeletePortfolio",
 
   /**
-   * Permissions management - Grants permission to unshare a portfolio you own from an AWS account you previously shared the portfolio with
+   * PermissionsManagement - Grants permission to unshare a portfolio you own from an AWS account you previously shared the portfolio with
    * @see https://docs.aws.amazon.com/servicecatalog/latest/dg/API_DeletePortfolioShare.html
    * 
    * @remarks
@@ -1010,7 +1010,7 @@ export enum ServicecatalogAction {
   UpdatePortfolio = "servicecatalog:UpdatePortfolio",
 
   /**
-   * Permissions management - Grants permission to enable or disable resource sharing for an existing portfolio share
+   * PermissionsManagement - Grants permission to enable or disable resource sharing for an existing portfolio share
    * @see https://docs.aws.amazon.com/servicecatalog/latest/dg/API_UpdatePortfolioShare.html
    * 
    * @remarks

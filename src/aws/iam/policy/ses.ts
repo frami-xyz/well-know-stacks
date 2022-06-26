@@ -12,6 +12,9 @@ export enum SesAction {
    * 
    * @remarks
    * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
+   * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
@@ -39,6 +42,9 @@ export enum SesAction {
    * @see https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_CreateDedicatedIpPool.html
    * 
    * @remarks
+   * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -68,6 +74,9 @@ export enum SesAction {
    * @see https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_CreateEmailIdentity.html
    * 
    * @remarks
+   * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SesResource.identity `SesResource.identity`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -347,6 +356,7 @@ export enum SesAction {
    * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
    * - {@link SesResource.deliverabilityTestReport `SesResource.deliverabilityTestReport`} 
    * - {@link SesResource.identity `SesResource.identity`} 
+   * - {@link SesResource.contactList `SesResource.contactList`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -525,6 +535,8 @@ export enum SesAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link SesResource.identity `SesResource.identity`} 
+   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
+   * - {@link SesResource.template `SesResource.template`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -546,6 +558,7 @@ export enum SesAction {
    * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
    * - {@link SesResource.deliverabilityTestReport `SesResource.deliverabilityTestReport`} 
    * - {@link SesResource.identity `SesResource.identity`} 
+   * - {@link SesResource.contactList `SesResource.contactList`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -565,6 +578,7 @@ export enum SesAction {
    * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
    * - {@link SesResource.deliverabilityTestReport `SesResource.deliverabilityTestReport`} 
    * - {@link SesResource.identity `SesResource.identity`} 
+   * - {@link SesResource.contactList `SesResource.contactList`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -599,28 +613,6 @@ export enum SesAction {
   CloneReceiptRuleSet = "ses:CloneReceiptRuleSet",
 
   /**
-   * Write - Grants permission to create a new configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSet.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateConfigurationSet = "ses:CreateConfigurationSet",
-
-  /**
-   * Write - Grants permission to create a configuration set event destination
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSetEventDestination.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateConfigurationSetEventDestination = "ses:CreateConfigurationSetEventDestination",
-
-  /**
    * Write - Grants permission to creates an association between a configuration set and a custom domain for open and click event tracking
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateConfigurationSetTrackingOptions.html
    * 
@@ -636,6 +628,9 @@ export enum SesAction {
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateCustomVerificationEmailTemplate.html
    * 
    * @remarks
+   * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -687,28 +682,6 @@ export enum SesAction {
   CreateTemplate = "ses:CreateTemplate",
 
   /**
-   * Write - Grants permission to delete an existing configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSet.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  DeleteConfigurationSet = "ses:DeleteConfigurationSet",
-
-  /**
-   * Write - Grants permission to delete an event destination
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSetEventDestination.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  DeleteConfigurationSetEventDestination = "ses:DeleteConfigurationSetEventDestination",
-
-  /**
    * Write - Grants permission to delete an association between a configuration set and a custom domain for open and click event tracking
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfigurationSetTrackingOptions.html
    * 
@@ -724,6 +697,9 @@ export enum SesAction {
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteCustomVerificationEmailTemplate.html
    * 
    * @remarks
+   * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -742,7 +718,7 @@ export enum SesAction {
   DeleteIdentity = "ses:DeleteIdentity",
 
   /**
-   * Permissions management - Grants permission to delete the specified sending authorization policy for the given identity (an email address or a domain)
+   * PermissionsManagement - Grants permission to delete the specified sending authorization policy for the given identity (an email address or a domain)
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteIdentityPolicy.html
    * 
    * @remarks
@@ -868,6 +844,9 @@ export enum SesAction {
    * 
    * @remarks
    * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
+   * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
@@ -962,17 +941,6 @@ export enum SesAction {
   GetTemplate = "ses:GetTemplate",
 
   /**
-   * List - Grants permission to list all of the configuration sets for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_ListConfigurationSets.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListConfigurationSets = "ses:ListConfigurationSets",
-
-  /**
    * List - Grants permission to list all of the existing custom verification email templates for your account
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_ListCustomVerificationEmailTemplates.html
    * 
@@ -1050,18 +1018,7 @@ export enum SesAction {
   ListVerifiedEmailAddresses = "ses:ListVerifiedEmailAddresses",
 
   /**
-   * Write - Grants permission to add or update the delivery options for a configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_PutConfigurationSetDeliveryOptions.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutConfigurationSetDeliveryOptions = "ses:PutConfigurationSetDeliveryOptions",
-
-  /**
-   * Permissions management - Grants permission to add or update a sending authorization policy for the specified identity (an email address or a domain)
+   * PermissionsManagement - Grants permission to add or update a sending authorization policy for the specified identity (an email address or a domain)
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_PutIdentityPolicy.html
    * 
    * @remarks
@@ -1125,6 +1082,7 @@ export enum SesAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link SesResource.identity `SesResource.identity`} 
+   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -1134,25 +1092,6 @@ export enum SesAction {
    * - `ses:Recipients`: Filters actions based on the recipient addresses of a message, which include the "To", "CC", and "BCC" addresses ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
    */
   SendCustomVerificationEmail = "ses:SendCustomVerificationEmail",
-
-  /**
-   * Write - Grants permission to send an email message
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_SendEmail.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `ses:FeedbackAddress`: Filters actions based on the "Return-Path" address, which specifies where bounces and complaints are sent by email feedback forwarding ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `ses:FromAddress`: Filters actions based on the "From" address of a message ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `ses:FromDisplayName`: Filters actions based on the "From" address that is used as the display name of a message ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `ses:Recipients`: Filters actions based on the recipient addresses of a message, which include the "To", "CC", and "BCC" addresses ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   */
-  SendEmail = "ses:SendEmail",
 
   /**
    * Write - Grants permission to send an email message, with header and content specified by the client
@@ -1293,17 +1232,6 @@ export enum SesAction {
   UpdateAccountSendingEnabled = "ses:UpdateAccountSendingEnabled",
 
   /**
-   * Write - Grants permission to update the event destination of a configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetEventDestination.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  UpdateConfigurationSetEventDestination = "ses:UpdateConfigurationSetEventDestination",
-
-  /**
    * Write - Grants permission to enable or disable the publishing of reputation metrics for emails sent using a specific configuration set
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetReputationMetricsEnabled.html
    * 
@@ -1341,6 +1269,9 @@ export enum SesAction {
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateCustomVerificationEmailTemplate.html
    * 
    * @remarks
+   * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -1414,37 +1345,6 @@ export enum SesAction {
   VerifyEmailIdentity = "ses:VerifyEmailIdentity",
 
   /**
-   * Write - Grants permission to create a new configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSet.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateConfigurationSet = "ses:CreateConfigurationSet",
-
-  /**
-   * Write - Grants permission to create a configuration set event destination
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateConfigurationSetEventDestination.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateConfigurationSetEventDestination = "ses:CreateConfigurationSetEventDestination",
-
-  /**
    * Write - Grants permission to create a contact
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateContact.html
    * 
@@ -1476,69 +1376,7 @@ export enum SesAction {
   CreateContactList = "ses:CreateContactList",
 
   /**
-   * Write - Grants permission to create a new custom verification email template
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateCustomVerificationEmailTemplate.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateCustomVerificationEmailTemplate = "ses:CreateCustomVerificationEmailTemplate",
-
-  /**
-   * Write - Grants permission to create a new pool of dedicated IP addresses
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateDedicatedIpPool.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateDedicatedIpPool = "ses:CreateDedicatedIpPool",
-
-  /**
-   * Write - Grants permission to create a new predictive inbox placement test
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateDeliverabilityTestReport.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateDeliverabilityTestReport = "ses:CreateDeliverabilityTestReport",
-
-  /**
-   * Write - Grants permission to start the process of verifying an email identity
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEmailIdentity.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateEmailIdentity = "ses:CreateEmailIdentity",
-
-  /**
-   * Permissions management - Grants permission to create the specified sending authorization policy for the given identity
+   * PermissionsManagement - Grants permission to create the specified sending authorization policy for the given identity
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateEmailIdentityPolicy.html
    * 
    * @remarks
@@ -1578,36 +1416,6 @@ export enum SesAction {
   CreateImportJob = "ses:CreateImportJob",
 
   /**
-   * Write - Grants permission to delete an existing configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteConfigurationSet.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  DeleteConfigurationSet = "ses:DeleteConfigurationSet",
-
-  /**
-   * Write - Grants permission to delete an event destination
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteConfigurationSetEventDestination.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  DeleteConfigurationSetEventDestination = "ses:DeleteConfigurationSetEventDestination",
-
-  /**
    * Write - Grants permission to delete a contact from a contact list
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteContact.html
    * 
@@ -1638,51 +1446,7 @@ export enum SesAction {
   DeleteContactList = "ses:DeleteContactList",
 
   /**
-   * Write - Grants permission to delete an existing custom verification email template
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteCustomVerificationEmailTemplate.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  DeleteCustomVerificationEmailTemplate = "ses:DeleteCustomVerificationEmailTemplate",
-
-  /**
-   * Write - Grants permission to delete a dedicated IP pool
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteDedicatedIpPool.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  DeleteDedicatedIpPool = "ses:DeleteDedicatedIpPool",
-
-  /**
-   * Write - Grants permission to delete an email identity
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEmailIdentity.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  DeleteEmailIdentity = "ses:DeleteEmailIdentity",
-
-  /**
-   * Permissions management - Grants permission to delete the specified sending authorization policy for the given identity (an email address or a domain)
+   * PermissionsManagement - Grants permission to delete the specified sending authorization policy for the given identity (an email address or a domain)
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeleteEmailIdentityPolicy.html
    * 
    * @remarks
@@ -1722,58 +1486,6 @@ export enum SesAction {
   DeleteSuppressedDestination = "ses:DeleteSuppressedDestination",
 
   /**
-   * Read - Grants permission to get information about the email-sending status and capabilities for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetAccount.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetAccount = "ses:GetAccount",
-
-  /**
-   * Read - Grants permission to retrieve a list of the deny lists on which your dedicated IP addresses or tracked domains appear
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetBlacklistReports.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetBlacklistReports = "ses:GetBlacklistReports",
-
-  /**
-   * Read - Grants permission to get information about an existing configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetConfigurationSet.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetConfigurationSet = "ses:GetConfigurationSet",
-
-  /**
-   * Read - Grants permission to retrieve a list of event destinations that are associated with a configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetConfigurationSetEventDestinations.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetConfigurationSetEventDestinations = "ses:GetConfigurationSetEventDestinations",
-
-  /**
    * Read - Grants permission to return a contact from a contact list
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetContact.html
    * 
@@ -1801,113 +1513,6 @@ export enum SesAction {
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   GetContactList = "ses:GetContactList",
-
-  /**
-   * Read - Grants permission to return the custom email verification template for the template name you specify
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetCustomVerificationEmailTemplate.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetCustomVerificationEmailTemplate = "ses:GetCustomVerificationEmailTemplate",
-
-  /**
-   * Read - Grants permission to get information about a dedicated IP address
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDedicatedIp.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetDedicatedIp = "ses:GetDedicatedIp",
-
-  /**
-   * Read - Grants permission to list the dedicated IP addresses a dedicated IP pool
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDedicatedIps.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetDedicatedIps = "ses:GetDedicatedIps",
-
-  /**
-   * Read - Grants permission to get the status of the Deliverability dashboard
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDeliverabilityDashboardOptions.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetDeliverabilityDashboardOptions = "ses:GetDeliverabilityDashboardOptions",
-
-  /**
-   * Read - Grants permission to retrieve the results of a predictive inbox placement test
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDeliverabilityTestReport.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.deliverabilityTestReport `SesResource.deliverabilityTestReport`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetDeliverabilityTestReport = "ses:GetDeliverabilityTestReport",
-
-  /**
-   * Read - Grants permission to retrieve all the deliverability data for a specific campaign
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDomainDeliverabilityCampaign.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetDomainDeliverabilityCampaign = "ses:GetDomainDeliverabilityCampaign",
-
-  /**
-   * Read - Grants permission to retrieve inbox placement and engagement rates for the domains that you use to send email
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDomainStatisticsReport.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetDomainStatisticsReport = "ses:GetDomainStatisticsReport",
-
-  /**
-   * Read - Grants permission to get information about a specific identity
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetEmailIdentity.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  GetEmailIdentity = "ses:GetEmailIdentity",
 
   /**
    * Read - Grants permission to return the requested sending authorization policies for the given identity (an email address or a domain)
@@ -1964,17 +1569,6 @@ export enum SesAction {
   GetSuppressedDestination = "ses:GetSuppressedDestination",
 
   /**
-   * List - Grants permission to list all of the configuration sets for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListConfigurationSets.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListConfigurationSets = "ses:ListConfigurationSets",
-
-  /**
    * List - Grants permission to list all of the contact lists available for your account
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListContactLists.html
    * 
@@ -1998,61 +1592,6 @@ export enum SesAction {
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   ListContacts = "ses:ListContacts",
-
-  /**
-   * List - Grants permission to list all of the existing custom verification email templates for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListCustomVerificationEmailTemplates.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListCustomVerificationEmailTemplates = "ses:ListCustomVerificationEmailTemplates",
-
-  /**
-   * List - Grants permission to list all of the dedicated IP pools for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListDedicatedIpPools.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListDedicatedIpPools = "ses:ListDedicatedIpPools",
-
-  /**
-   * List - Grants permission to retrieve the list of the predictive inbox placement tests that you've performed, regardless of their statuses, for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListDeliverabilityTestReports.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListDeliverabilityTestReports = "ses:ListDeliverabilityTestReports",
-
-  /**
-   * Read - Grants permission to list deliverability data for campaigns that used a specific domain to send email during a specified time range
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListDomainDeliverabilityCampaigns.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListDomainDeliverabilityCampaigns = "ses:ListDomainDeliverabilityCampaigns",
-
-  /**
-   * List - Grants permission to list the email identities for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListEmailIdentities.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListEmailIdentities = "ses:ListEmailIdentities",
 
   /**
    * List - Grants permission to list all of the email templates for your account
@@ -2088,35 +1627,6 @@ export enum SesAction {
   ListSuppressedDestinations = "ses:ListSuppressedDestinations",
 
   /**
-   * Read - Grants permission to retrieve a list of the tags (keys and values) that are associated with a specific resource for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListTagsForResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * - {@link SesResource.contactList `SesResource.contactList`} 
-   * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
-   * - {@link SesResource.deliverabilityTestReport `SesResource.deliverabilityTestReport`} 
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListTagsForResource = "ses:ListTagsForResource",
-
-  /**
-   * Write - Grants permission to enable or disable the automatic warm-up feature for dedicated IP addresses
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountDedicatedIpWarmupAttributes.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutAccountDedicatedIpWarmupAttributes = "ses:PutAccountDedicatedIpWarmupAttributes",
-
-  /**
    * Write - Grants permission to update your account details
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountDetails.html
    * 
@@ -2128,17 +1638,6 @@ export enum SesAction {
   PutAccountDetails = "ses:PutAccountDetails",
 
   /**
-   * Write - Grants permission to enable or disable the ability to send email for your account
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountSendingAttributes.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutAccountSendingAttributes = "ses:PutAccountSendingAttributes",
-
-  /**
    * Write - Grants permission to change the settings for the account-level suppression list
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccountSuppressionAttributes.html
    * 
@@ -2148,51 +1647,6 @@ export enum SesAction {
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   PutAccountSuppressionAttributes = "ses:PutAccountSuppressionAttributes",
-
-  /**
-   * Write - Grants permission to associate a configuration set with a dedicated IP pool
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetDeliveryOptions.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutConfigurationSetDeliveryOptions = "ses:PutConfigurationSetDeliveryOptions",
-
-  /**
-   * Write - Grants permission to enable or disable collection of reputation metrics for emails that you send using a particular configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetReputationOptions.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutConfigurationSetReputationOptions = "ses:PutConfigurationSetReputationOptions",
-
-  /**
-   * Write - Grants permission to enable or disable email sending for messages that use a particular configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetSendingOptions.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutConfigurationSetSendingOptions = "ses:PutConfigurationSetSendingOptions",
 
   /**
    * Write - Grants permission to specify the account suppression list preferences for a particular configuration set
@@ -2208,58 +1662,6 @@ export enum SesAction {
    * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   PutConfigurationSetSuppressionOptions = "ses:PutConfigurationSetSuppressionOptions",
-
-  /**
-   * Write - Grants permission to specify a custom domain to use for open and click tracking elements in email that you send for a particular configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutConfigurationSetTrackingOptions.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutConfigurationSetTrackingOptions = "ses:PutConfigurationSetTrackingOptions",
-
-  /**
-   * Write - Grants permission to move a dedicated IP address to an existing dedicated IP pool
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutDedicatedIpInPool.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutDedicatedIpInPool = "ses:PutDedicatedIpInPool",
-
-  /**
-   * Write - Grants permission to put Dedicated IP warm up attributes
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutDedicatedIpWarmupAttributes.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutDedicatedIpWarmupAttributes = "ses:PutDedicatedIpWarmupAttributes",
-
-  /**
-   * Write - Grants permission to enable or disable the Deliverability dashboard
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutDeliverabilityDashboardOption.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutDeliverabilityDashboardOption = "ses:PutDeliverabilityDashboardOption",
 
   /**
    * Write - Grants permission to associate a configuration set with an email identity
@@ -2278,21 +1680,6 @@ export enum SesAction {
   PutEmailIdentityConfigurationSetAttributes = "ses:PutEmailIdentityConfigurationSetAttributes",
 
   /**
-   * Write - Grants permission to enable or disable DKIM authentication for an email identity
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailIdentityDkimAttributes.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutEmailIdentityDkimAttributes = "ses:PutEmailIdentityDkimAttributes",
-
-  /**
    * Write - Grants permission to configure or change the DKIM authentication settings for an email domain identity
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailIdentityDkimSigningAttributes.html
    * 
@@ -2306,36 +1693,6 @@ export enum SesAction {
    * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   PutEmailIdentityDkimSigningAttributes = "ses:PutEmailIdentityDkimSigningAttributes",
-
-  /**
-   * Write - Grants permission to enable or disable feedback forwarding for an email identity
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailIdentityFeedbackAttributes.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutEmailIdentityFeedbackAttributes = "ses:PutEmailIdentityFeedbackAttributes",
-
-  /**
-   * Write - Grants permission to enable or disable the custom MAIL FROM domain configuration for an email identity
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailIdentityMailFromAttributes.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  PutEmailIdentityMailFromAttributes = "ses:PutEmailIdentityMailFromAttributes",
 
   /**
    * Write - Grants permission to add an email address to the suppression list
@@ -2365,60 +1722,6 @@ export enum SesAction {
   SendBulkEmail = "ses:SendBulkEmail",
 
   /**
-   * Write - Grants permission to add an email address to the list of identities and attempts to verify it
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendCustomVerificationEmail.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  SendCustomVerificationEmail = "ses:SendCustomVerificationEmail",
-
-  /**
-   * Write - Grants permission to send an email message
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * - {@link SesResource.template `SesResource.template`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `ses:FeedbackAddress`: Filters actions based on the "Return-Path" address, which specifies where bounces and complaints are sent by email feedback forwarding ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `ses:FromAddress`: Filters actions based on the "From" address of a message ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `ses:FromDisplayName`: Filters actions based on the "From" address that is used as the display name of a message ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `ses:Recipients`: Filters actions based on the recipient addresses of a message, which include the "To", "CC", and "BCC" addresses ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   */
-  SendEmail = "ses:SendEmail",
-
-  /**
-   * Tagging - Grants permission to add one or more tags (keys and values) to a specified resource
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TagResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * - {@link SesResource.contactList `SesResource.contactList`} 
-   * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
-   * - {@link SesResource.deliverabilityTestReport `SesResource.deliverabilityTestReport`} 
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the presence of tag key-value pairs in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  TagResource = "ses:TagResource",
-
-  /**
    * Write - Grants permission to create a preview of the MIME content of an email when provided with a template and a set of replacement data
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TestRenderEmailTemplate.html
    * 
@@ -2431,40 +1734,6 @@ export enum SesAction {
    * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   TestRenderEmailTemplate = "ses:TestRenderEmailTemplate",
-
-  /**
-   * Tagging - Grants permission to remove one or more tags (keys and values) from a specified resource
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UntagResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * - {@link SesResource.contactList `SesResource.contactList`} 
-   * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
-   * - {@link SesResource.deliverabilityTestReport `SesResource.deliverabilityTestReport`} 
-   * - {@link SesResource.identity `SesResource.identity`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   */
-  UntagResource = "ses:UntagResource",
-
-  /**
-   * Write - Grants permission to update the configuration of an event destination for a configuration set
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateConfigurationSetEventDestination.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  UpdateConfigurationSetEventDestination = "ses:UpdateConfigurationSetEventDestination",
 
   /**
    * Write - Grants permission to update a contact's preferences for a list
@@ -2497,21 +1766,7 @@ export enum SesAction {
   UpdateContactList = "ses:UpdateContactList",
 
   /**
-   * Write - Grants permission to update an existing custom verification email template
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateCustomVerificationEmailTemplate.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `ses:ApiVersion`: Filters actions based on the SES API version ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonses.html#amazonses-policy-keys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  UpdateCustomVerificationEmailTemplate = "ses:UpdateCustomVerificationEmailTemplate",
-
-  /**
-   * Permissions management - Grants permission to update the specified sending authorization policy for the given identity (an email address or a domain)
+   * PermissionsManagement - Grants permission to update the specified sending authorization policy for the given identity (an email address or a domain)
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateEmailIdentityPolicy.html
    * 
    * @remarks
@@ -2547,11 +1802,11 @@ export enum SesAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link SesResource.configurationSet `SesResource.configurationSet`} 
-   * - {@link SesResource.identity `SesResource.identity`} 
    * - {@link SesResource.dedicatedIpPool `SesResource.dedicatedIpPool`} 
+   * - {@link SesResource.identity `SesResource.identity`} 
    * - {@link SesResource.deliverabilityTestReport `SesResource.deliverabilityTestReport`} 
-   * - {@link SesResource.template `SesResource.template`} 
    * - {@link SesResource.contactList `SesResource.contactList`} 
+   * - {@link SesResource.template `SesResource.template`} 
    * - {@link SesResource.customVerificationEmailTemplate `SesResource.customVerificationEmailTemplate`} 
    * - {@link SesResource.importJob `SesResource.importJob`} 
    * 
@@ -2617,34 +1872,14 @@ export const SesResource = {
   identity: (options: Partial<{partition: string, region: string, account: string, identityName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:identity/${options.identityName || '*'}`,
 
   /**
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_ConfigurationSet.html
-   */
-  configurationSet: (options: Partial<{partition: string, region: string, account: string, configurationSetName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:configuration-set/${options.configurationSetName || '*'}`,
-
-  /**
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_CustomVerificationEmailTemplate.html
    */
   customVerificationEmailTemplate: (options: Partial<{partition: string, region: string, account: string, templateName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:custom-verification-email-template/${options.templateName || '*'}`,
 
   /**
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_IdentityInfo.html
-   */
-  identity: (options: Partial<{partition: string, region: string, account: string, identityName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:identity/${options.identityName || '*'}`,
-
-  /**
    * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_Template.html
    */
   template: (options: Partial<{partition: string, region: string, account: string, templateName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:template/${options.templateName || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference/API_ConfigurationSet.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  configurationSet: (options: Partial<{partition: string, region: string, account: string, configurationSetName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:configuration-set/${options.configurationSetName || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ContactList.html
@@ -2657,48 +1892,8 @@ export const SesResource = {
   contactList: (options: Partial<{partition: string, region: string, account: string, contactListName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:contact-list/${options.contactListName || '*'}`,
 
   /**
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CustomVerificationEmailTemplateMetadata.html
-   */
-  customVerificationEmailTemplate: (options: Partial<{partition: string, region: string, account: string, templateName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:custom-verification-email-template/${options.templateName || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DedicatedIp.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  dedicatedIpPool: (options: Partial<{partition: string, region: string, account: string, dedicatedIPPool: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:dedicated-ip-pool/${options.dedicatedIPPool || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DeliverabilityTestReport.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  deliverabilityTestReport: (options: Partial<{partition: string, region: string, account: string, reportId: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:deliverability-test-report/${options.reportId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_IdentityInfo.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on tag key-value pairs attached to the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  identity: (options: Partial<{partition: string, region: string, account: string, identityName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:identity/${options.identityName || '*'}`,
-
-  /**
    * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ImportJobSummary.html
    */
   importJob: (options: Partial<{partition: string, region: string, account: string, importJobId: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:import-job/${options.importJobId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Template.html
-   */
-  template: (options: Partial<{partition: string, region: string, account: string, templateName: string}> = {}) => `arn:${options.partition || '*'}:ses:${options.region || '*'}:${options.account || '*'}:template/${options.templateName || '*'}`,
 }
 

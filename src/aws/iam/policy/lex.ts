@@ -12,7 +12,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
+   * - {@link LexResource.bot `LexResource.bot`} 
    */
   CreateBotVersion = "lex:CreateBotVersion",
 
@@ -23,7 +24,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.intent version `LexResource.intent version`} 
+   * - {@link LexResource.intentVersion `LexResource.intentVersion`} 
    */
   CreateIntentVersion = "lex:CreateIntentVersion",
 
@@ -34,7 +35,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.slottype version `LexResource.slottype version`} 
+   * - {@link LexResource.slottypeVersion `LexResource.slottypeVersion`} 
    */
   CreateSlotTypeVersion = "lex:CreateSlotTypeVersion",
 
@@ -45,7 +46,9 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
+   * - {@link LexResource.bot `LexResource.bot`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   DeleteBot = "lex:DeleteBot",
 
@@ -56,7 +59,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   DeleteBotAlias = "lex:DeleteBotAlias",
 
@@ -78,7 +81,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
+   * - {@link LexResource.bot `LexResource.bot`} 
    */
   DeleteBotVersion = "lex:DeleteBotVersion",
 
@@ -89,7 +93,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.intent version `LexResource.intent version`} 
+   * - {@link LexResource.intentVersion `LexResource.intentVersion`} 
+   * - {@link LexResource.bot `LexResource.bot`} 
    */
   DeleteIntent = "lex:DeleteIntent",
 
@@ -100,7 +105,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.intent version `LexResource.intent version`} 
+   * - {@link LexResource.intentVersion `LexResource.intentVersion`} 
    */
   DeleteIntentVersion = "lex:DeleteIntentVersion",
 
@@ -111,8 +116,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   DeleteSession = "lex:DeleteSession",
 
@@ -123,7 +128,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.slottype version `LexResource.slottype version`} 
+   * - {@link LexResource.slottypeVersion `LexResource.slottypeVersion`} 
+   * - {@link LexResource.bot `LexResource.bot`} 
    */
   DeleteSlotType = "lex:DeleteSlotType",
 
@@ -134,7 +140,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.slottype version `LexResource.slottype version`} 
+   * - {@link LexResource.slottypeVersion `LexResource.slottypeVersion`} 
    */
   DeleteSlotTypeVersion = "lex:DeleteSlotTypeVersion",
 
@@ -145,7 +151,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
+   * - {@link LexResource.bot `LexResource.bot`} 
    */
   DeleteUtterances = "lex:DeleteUtterances",
 
@@ -156,8 +163,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   GetBot = "lex:GetBot",
 
@@ -168,7 +175,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   GetBotAlias = "lex:GetBotAlias",
 
@@ -207,7 +214,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   GetBotVersions = "lex:GetBotVersions",
 
@@ -242,7 +249,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   GetExport = "lex:GetExport",
 
@@ -259,7 +266,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.intent version `LexResource.intent version`} 
+   * - {@link LexResource.intentVersion `LexResource.intentVersion`} 
    */
   GetIntent = "lex:GetIntent",
 
@@ -270,7 +277,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.intent version `LexResource.intent version`} 
+   * - {@link LexResource.intentVersion `LexResource.intentVersion`} 
    */
   GetIntentVersions = "lex:GetIntentVersions",
 
@@ -299,8 +306,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   GetSession = "lex:GetSession",
 
@@ -311,7 +318,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.slottype version `LexResource.slottype version`} 
+   * - {@link LexResource.slottypeVersion `LexResource.slottypeVersion`} 
    */
   GetSlotType = "lex:GetSlotType",
 
@@ -322,7 +329,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.slottype version `LexResource.slottype version`} 
+   * - {@link LexResource.slottypeVersion `LexResource.slottypeVersion`} 
    */
   GetSlotTypeVersions = "lex:GetSlotTypeVersions",
 
@@ -339,7 +346,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   GetUtterancesView = "lex:GetUtterancesView",
 
@@ -351,7 +358,7 @@ export enum LexAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    * - {@link LexResource.channel `LexResource.channel`} 
    */
   ListTagsForResource = "lex:ListTagsForResource",
@@ -363,8 +370,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   PostContent = "lex:PostContent",
 
@@ -375,8 +382,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   PostText = "lex:PostText",
 
@@ -387,7 +394,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
@@ -402,7 +409,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
@@ -417,7 +424,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.intent version `LexResource.intent version`} 
+   * - {@link LexResource.intentVersion `LexResource.intentVersion`} 
    */
   PutIntent = "lex:PutIntent",
 
@@ -428,8 +435,8 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   PutSession = "lex:PutSession",
 
@@ -440,13 +447,23 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.slottype version `LexResource.slottype version`} 
+   * - {@link LexResource.slottypeVersion `LexResource.slottypeVersion`} 
    */
   PutSlotType = "lex:PutSlotType",
 
   /**
    * Write - Starts a job to import a resource to Amazon Lex
    * @see https://docs.aws.amazon.com/lex/latest/dg/API_StartImport.html
+   * 
+   * @remarks
+   * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link LexResource.bot `LexResource.bot`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
+   * 
+   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
+   * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
+   * - `aws:RequestTag/${TagKey}`: Filters access based on the tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   StartImport = "lex:StartImport",
 
@@ -457,7 +474,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    */
   StartMigration = "lex:StartMigration",
 
@@ -469,7 +486,7 @@ export enum LexAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    * - {@link LexResource.channel `LexResource.channel`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
@@ -486,7 +503,7 @@ export enum LexAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    * - {@link LexResource.channel `LexResource.channel`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
@@ -514,7 +531,7 @@ export enum LexAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
@@ -529,7 +546,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
@@ -558,17 +575,6 @@ export enum LexAction {
    * - {@link LexResource.bot `LexResource.bot`} 
    */
   CreateBotLocale = "lex:CreateBotLocale",
-
-  /**
-   * Write - Grants permission to create a new version of an existing bot
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_CreateBotVersion.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   */
-  CreateBotVersion = "lex:CreateBotVersion",
 
   /**
    * Write - Grants permission to create a new custom vocabulary in an existing bot locale
@@ -611,7 +617,7 @@ export enum LexAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   CreateResourcePolicy = "lex:CreateResourcePolicy",
 
@@ -644,29 +650,6 @@ export enum LexAction {
   CreateUploadUrl = "lex:CreateUploadUrl",
 
   /**
-   * Write - Grants permission to delete an existing bot
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteBot.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   */
-  DeleteBot = "lex:DeleteBot",
-
-  /**
-   * Write - Grants permission to delete an existing bot alias in a bot
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteBotAlias.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   */
-  DeleteBotAlias = "lex:DeleteBotAlias",
-
-  /**
    * Write - Grants permission to delete an existing bot channel
    * @see https://docs.aws.amazon.com/lexv2/latest/dg/deploying-messaging-platform.html
    * 
@@ -687,17 +670,6 @@ export enum LexAction {
    * - {@link LexResource.bot `LexResource.bot`} 
    */
   DeleteBotLocale = "lex:DeleteBotLocale",
-
-  /**
-   * Write - Grants permission to delete an existing bot version
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteBotVersion.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   */
-  DeleteBotVersion = "lex:DeleteBotVersion",
 
   /**
    * Write - Grants permission to delete an existing custom vocabulary in a bot locale
@@ -733,17 +705,6 @@ export enum LexAction {
   DeleteImport = "lex:DeleteImport",
 
   /**
-   * Write - Grants permission to delete an existing intent in a bot locale
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteIntent.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   */
-  DeleteIntent = "lex:DeleteIntent",
-
-  /**
    * Write - Grants permission to delete an existing resource policy for a Lex resource
    * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteResourcePolicy.html
    * 
@@ -751,20 +712,9 @@ export enum LexAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   DeleteResourcePolicy = "lex:DeleteResourcePolicy",
-
-  /**
-   * Write - Grants permission to delete session information for a bot alias and user ID
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_DeleteSession.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   */
-  DeleteSession = "lex:DeleteSession",
 
   /**
    * Write - Grants permission to delete an existing slot in an intent
@@ -776,28 +726,6 @@ export enum LexAction {
    * - {@link LexResource.bot `LexResource.bot`} 
    */
   DeleteSlot = "lex:DeleteSlot",
-
-  /**
-   * Write - Grants permission to delete an existing slot type in a bot locale
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteSlotType.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   */
-  DeleteSlotType = "lex:DeleteSlotType",
-
-  /**
-   * Write - Grants permission to delete utterance data for a bot
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_DeleteUtterances.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   */
-  DeleteUtterances = "lex:DeleteUtterances",
 
   /**
    * Read - Grants permission to retrieve an existing bot
@@ -817,7 +745,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   DescribeBotAlias = "lex:DescribeBotAlias",
 
@@ -928,7 +856,7 @@ export enum LexAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   DescribeResourcePolicy = "lex:DescribeResourcePolicy",
 
@@ -953,17 +881,6 @@ export enum LexAction {
    * - {@link LexResource.bot `LexResource.bot`} 
    */
   DescribeSlotType = "lex:DescribeSlotType",
-
-  /**
-   * Read - Grants permission to retrieve session information for a bot alias and user ID
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_GetSession.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   */
-  GetSession = "lex:GetSession",
 
   /**
    * List - Grants permission to list utterances and statistics for a bot
@@ -1106,36 +1023,13 @@ export enum LexAction {
   ListSlots = "lex:ListSlots",
 
   /**
-   * Read - Grants permission to lists tags for a Lex resource
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_ListTagsForResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   */
-  ListTagsForResource = "lex:ListTagsForResource",
-
-  /**
-   * Write - Grants permission to create a new session or modify an existing session for a bot alias and user ID
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_PutSession.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   */
-  PutSession = "lex:PutSession",
-
-  /**
    * Write - Grants permission to send user input (text-only) to an bot alias
    * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_runtime_RecognizeText.html
    * 
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   RecognizeText = "lex:RecognizeText",
 
@@ -1146,7 +1040,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   RecognizeUtterance = "lex:RecognizeUtterance",
 
@@ -1179,57 +1073,9 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   StartConversation = "lex:StartConversation",
-
-  /**
-   * Write - Grants permission to start a new import with the uploaded import file
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_StartImport.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:RequestTag/${TagKey}`: Filters access based on the tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  StartImport = "lex:StartImport",
-
-  /**
-   * Tagging - Grants permission to add or overwrite tags of a Lex resource
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_TagResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:RequestTag/${TagKey}`: Filters access based on the tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  TagResource = "lex:TagResource",
-
-  /**
-   * Tagging - Grants permission to remove tags from a Lex resource
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/API_UntagResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   * - `aws:RequestTag/${TagKey}`: Filters access based on the tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  UntagResource = "lex:UntagResource",
 
   /**
    * Write - Grants permission to update an existing bot
@@ -1249,7 +1095,7 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   UpdateBotAlias = "lex:UpdateBotAlias",
 
@@ -1316,7 +1162,7 @@ export enum LexAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LexResource.bot `LexResource.bot`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
    */
   UpdateResourcePolicy = "lex:UpdateResourcePolicy",
 
@@ -1349,12 +1195,12 @@ export enum LexAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LexResource.bot version `LexResource.bot version`} 
-   * - {@link LexResource.intent version `LexResource.intent version`} 
-   * - {@link LexResource.slottype version `LexResource.slottype version`} 
-   * - {@link LexResource.bot alias `LexResource.bot alias`} 
-   * - {@link LexResource.channel `LexResource.channel`} 
+   * - {@link LexResource.botVersion `LexResource.botVersion`} 
    * - {@link LexResource.bot `LexResource.bot`} 
+   * - {@link LexResource.intentVersion `LexResource.intentVersion`} 
+   * - {@link LexResource.slottypeVersion `LexResource.slottypeVersion`} 
+   * - {@link LexResource.botAlias `LexResource.botAlias`} 
+   * - {@link LexResource.channel `LexResource.channel`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:TagKeys`: Filters access based on the set of tag keys in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
@@ -1388,7 +1234,7 @@ export const LexResource = {
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:ResourceTag/${TagKey}`: Filters access by the tags attached to a Lex resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  bot version: (options: Partial<{partition: string, region: string, account: string, botName: string, botVersion: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:bot:${options.botName || '*'}:${options.botVersion || '*'}`,
+  botVersion: (options: Partial<{partition: string, region: string, account: string, botName: string, botVersion: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:bot:${options.botName || '*'}:${options.botVersion || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/lex/latest/dg/API_BotAliasMetadata.html
@@ -1398,7 +1244,7 @@ export const LexResource = {
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:ResourceTag/${TagKey}`: Filters access by the tags attached to a Lex resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  bot alias: (options: Partial<{partition: string, region: string, account: string, botName: string, botAlias: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:bot:${options.botName || '*'}:${options.botAlias || '*'}`,
+  botAlias: (options: Partial<{partition: string, region: string, account: string, botName: string, botAlias: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:bot:${options.botName || '*'}:${options.botAlias || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/lex/latest/dg/API_BotChannelAssociation.html
@@ -1413,31 +1259,11 @@ export const LexResource = {
   /**
    * @see https://docs.aws.amazon.com/lex/latest/dg/API_Intent.html
    */
-  intent version: (options: Partial<{partition: string, region: string, account: string, intentName: string, intentVersion: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:intent:${options.intentName || '*'}:${options.intentVersion || '*'}`,
+  intentVersion: (options: Partial<{partition: string, region: string, account: string, intentName: string, intentVersion: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:intent:${options.intentName || '*'}:${options.intentVersion || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/lex/latest/dg/API_SlotTypeMetadata.html
    */
-  slottype version: (options: Partial<{partition: string, region: string, account: string, slotName: string, slotVersion: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:slottype:${options.slotName || '*'}:${options.slotVersion || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/how-it-works.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters access by the tags attached to a Lex resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  bot: (options: Partial<{partition: string, region: string, account: string, botId: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:bot/${options.botId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/lexv2/latest/dg/how-it-works.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters access by the tags attached to a Lex resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  bot alias: (options: Partial<{partition: string, region: string, account: string, botId: string, botAliasId: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:bot-alias/${options.botId || '*'}/${options.botAliasId || '*'}`,
+  slottypeVersion: (options: Partial<{partition: string, region: string, account: string, slotName: string, slotVersion: string}> = {}) => `arn:${options.partition || '*'}:lex:${options.region || '*'}:${options.account || '*'}:slottype:${options.slotName || '*'}:${options.slotVersion || '*'}`,
 }
 

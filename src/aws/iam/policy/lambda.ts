@@ -5,7 +5,7 @@
 export enum LambdaAction {
 
   /**
-   * Permissions management - Grants permission to add permissions to the resource-based policy of a version of an AWS Lambda layer
+   * PermissionsManagement - Grants permission to add permissions to the resource-based policy of a version of an AWS Lambda layer
    * @see https://docs.aws.amazon.com/lambda/latest/dg/API_AddLayerVersionPermission.html
    * 
    * @remarks
@@ -16,7 +16,7 @@ export enum LambdaAction {
   AddLayerVersionPermission = "lambda:AddLayerVersionPermission",
 
   /**
-   * Permissions management - Grants permission to give an AWS service or another account permission to use an AWS Lambda function
+   * PermissionsManagement - Grants permission to give an AWS service or another account permission to use an AWS Lambda function
    * @see https://docs.aws.amazon.com/lambda/latest/dg/API_AddPermission.html
    * 
    * @remarks
@@ -109,7 +109,7 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.code signing config `LambdaResource.code signing config`} 
+   * - {@link LambdaResource.codeSigningConfig `LambdaResource.codeSigningConfig`} 
    */
   DeleteCodeSigningConfig = "lambda:DeleteCodeSigningConfig",
 
@@ -204,13 +204,13 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.function alias `LambdaResource.function alias`} 
-   * - {@link LambdaResource.function version `LambdaResource.function version`} 
+   * - {@link LambdaResource.functionAlias `LambdaResource.functionAlias`} 
+   * - {@link LambdaResource.functionVersion `LambdaResource.functionVersion`} 
    */
   DeleteProvisionedConcurrencyConfig = "lambda:DeleteProvisionedConcurrencyConfig",
 
   /**
-   * Permissions management - Grants permission to disable replication for a Lambda@Edge function
+   * PermissionsManagement - Grants permission to disable replication for a Lambda@Edge function
    * @see https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslambda.html
    * 
    * @remarks
@@ -221,7 +221,7 @@ export enum LambdaAction {
   DisableReplication = "lambda:DisableReplication",
 
   /**
-   * Permissions management - Grants permission to enable replication for a Lambda@Edge function
+   * PermissionsManagement - Grants permission to enable replication for a Lambda@Edge function
    * @see https://docs.aws.amazon.com/service-authorization/latest/reference/list_awslambda.html
    * 
    * @remarks
@@ -255,7 +255,7 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.code signing config `LambdaResource.code signing config`} 
+   * - {@link LambdaResource.codeSigningConfig `LambdaResource.codeSigningConfig`} 
    */
   GetCodeSigningConfig = "lambda:GetCodeSigningConfig",
 
@@ -383,8 +383,8 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.function alias `LambdaResource.function alias`} 
-   * - {@link LambdaResource.function version `LambdaResource.function version`} 
+   * - {@link LambdaResource.functionAlias `LambdaResource.functionAlias`} 
+   * - {@link LambdaResource.functionVersion `LambdaResource.functionVersion`} 
    */
   GetProvisionedConcurrencyConfig = "lambda:GetProvisionedConcurrencyConfig",
 
@@ -486,7 +486,7 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.code signing config `LambdaResource.code signing config`} 
+   * - {@link LambdaResource.codeSigningConfig `LambdaResource.codeSigningConfig`} 
    */
   ListFunctionsByCodeSigningConfig = "lambda:ListFunctionsByCodeSigningConfig",
 
@@ -564,7 +564,7 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.code signing config `LambdaResource.code signing config`} 
+   * - {@link LambdaResource.codeSigningConfig `LambdaResource.codeSigningConfig`} 
    * - {@link LambdaResource.function `LambdaResource.function`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
@@ -601,13 +601,13 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.function alias `LambdaResource.function alias`} 
-   * - {@link LambdaResource.function version `LambdaResource.function version`} 
+   * - {@link LambdaResource.functionAlias `LambdaResource.functionAlias`} 
+   * - {@link LambdaResource.functionVersion `LambdaResource.functionVersion`} 
    */
   PutProvisionedConcurrencyConfig = "lambda:PutProvisionedConcurrencyConfig",
 
   /**
-   * Permissions management - Grants permission to remove a statement from the permissions policy for a version of an AWS Lambda layer
+   * PermissionsManagement - Grants permission to remove a statement from the permissions policy for a version of an AWS Lambda layer
    * @see https://docs.aws.amazon.com/lambda/latest/dg/API_RemoveLayerVersionPermission.html
    * 
    * @remarks
@@ -618,7 +618,7 @@ export enum LambdaAction {
   RemoveLayerVersionPermission = "lambda:RemoveLayerVersionPermission",
 
   /**
-   * Permissions management - Grants permission to revoke function-use permission from an AWS service or another account
+   * PermissionsManagement - Grants permission to revoke function-use permission from an AWS service or another account
    * @see https://docs.aws.amazon.com/lambda/latest/dg/API_RemovePermission.html
    * 
    * @remarks
@@ -672,7 +672,7 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.code signing config `LambdaResource.code signing config`} 
+   * - {@link LambdaResource.codeSigningConfig `LambdaResource.codeSigningConfig`} 
    */
   UpdateCodeSigningConfig = "lambda:UpdateCodeSigningConfig",
 
@@ -708,7 +708,7 @@ export enum LambdaAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link LambdaResource.code signing config `LambdaResource.code signing config`} 
+   * - {@link LambdaResource.codeSigningConfig `LambdaResource.codeSigningConfig`} 
    * - {@link LambdaResource.function `LambdaResource.function`} 
    */
   UpdateFunctionCodeSigningConfig = "lambda:UpdateFunctionCodeSigningConfig",
@@ -765,10 +765,10 @@ export enum LambdaAction {
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link LambdaResource.layerVersion `LambdaResource.layerVersion`} 
    * - {@link LambdaResource.function `LambdaResource.function`} 
-   * - {@link LambdaResource.code signing config `LambdaResource.code signing config`} 
+   * - {@link LambdaResource.codeSigningConfig `LambdaResource.codeSigningConfig`} 
    * - {@link LambdaResource.eventSourceMapping `LambdaResource.eventSourceMapping`} 
-   * - {@link LambdaResource.function alias `LambdaResource.function alias`} 
-   * - {@link LambdaResource.function version `LambdaResource.function version`} 
+   * - {@link LambdaResource.functionAlias `LambdaResource.functionAlias`} 
+   * - {@link LambdaResource.functionVersion `LambdaResource.functionVersion`} 
    * - {@link LambdaResource.layer `LambdaResource.layer`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
@@ -793,7 +793,7 @@ export const LambdaResource = {
   /**
    * @see https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html
    */
-  code signing config: (options: Partial<{partition: string, region: string, account: string, codeSigningConfigId: string}> = {}) => `arn:${options.partition || '*'}:lambda:${options.region || '*'}:${options.account || '*'}:code-signing-config:${options.codeSigningConfigId || '*'}`,
+  codeSigningConfig: (options: Partial<{partition: string, region: string, account: string, codeSigningConfigId: string}> = {}) => `arn:${options.partition || '*'}:lambda:${options.region || '*'}:${options.account || '*'}:code-signing-config:${options.codeSigningConfigId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html
@@ -808,12 +808,12 @@ export const LambdaResource = {
   /**
    * @see https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html
    */
-  function alias: (options: Partial<{partition: string, region: string, account: string, functionName: string, alias: string}> = {}) => `arn:${options.partition || '*'}:lambda:${options.region || '*'}:${options.account || '*'}:function:${options.functionName || '*'}:${options.alias || '*'}`,
+  functionAlias: (options: Partial<{partition: string, region: string, account: string, functionName: string, alias: string}> = {}) => `arn:${options.partition || '*'}:lambda:${options.region || '*'}:${options.account || '*'}:function:${options.functionName || '*'}:${options.alias || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html
    */
-  function version: (options: Partial<{partition: string, region: string, account: string, functionName: string, version: string}> = {}) => `arn:${options.partition || '*'}:lambda:${options.region || '*'}:${options.account || '*'}:function:${options.functionName || '*'}:${options.version || '*'}`,
+  functionVersion: (options: Partial<{partition: string, region: string, account: string, functionName: string, version: string}> = {}) => `arn:${options.partition || '*'}:lambda:${options.region || '*'}:${options.account || '*'}:function:${options.functionName || '*'}:${options.version || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/lambda/latest/dg/lambda-api-permissions-ref.html

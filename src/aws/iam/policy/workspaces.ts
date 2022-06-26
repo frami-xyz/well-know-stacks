@@ -445,7 +445,7 @@ export enum WorkspacesAction {
   ModifyClientProperties = "workspaces:ModifyClientProperties",
 
   /**
-   * Permissions management - Grants permission to modify the self-service WorkSpace management capabilities for your users
+   * PermissionsManagement - Grants permission to modify the self-service WorkSpace management capabilities for your users
    * @see https://docs.aws.amazon.com/workspaces/latest/api/API_ModifySelfservicePermissions.html
    * 
    * @remarks
@@ -603,7 +603,7 @@ export enum WorkspacesAction {
   UpdateConnectClientAddIn = "workspaces:UpdateConnectClientAddIn",
 
   /**
-   * Permissions management - Grants permission to share or unshare connection aliases with other accounts
+   * PermissionsManagement - Grants permission to share or unshare connection aliases with other accounts
    * @see https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateConnectionAliasPermission.html
    * 
    * @remarks
@@ -637,7 +637,7 @@ export enum WorkspacesAction {
   UpdateWorkspaceBundle = "workspaces:UpdateWorkspaceBundle",
 
   /**
-   * Permissions management - Grants permission to share or unshare WorkSpace images with other accounts by specifying whether other accounts have permission to copy the image
+   * PermissionsManagement - Grants permission to share or unshare WorkSpace images with other accounts by specifying whether other accounts have permission to copy the image
    * @see https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateWorkspaceImagePermission.html
    * 
    * @remarks

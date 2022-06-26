@@ -172,7 +172,7 @@ export enum CodeguruProfilerAction {
   PostAgentProfile = "codeguru-profiler:PostAgentProfile",
 
   /**
-   * Permissions management - Grants permission to update the list of principals allowed for an action group in the resource policy associated with the specified Profiling Group
+   * PermissionsManagement - Grants permission to update the list of principals allowed for an action group in the resource policy associated with the specified Profiling Group
    * @see https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_PutPermission.html
    * 
    * @remarks
@@ -194,7 +194,7 @@ export enum CodeguruProfilerAction {
   RemoveNotificationChannel = "codeguru-profiler:RemoveNotificationChannel",
 
   /**
-   * Permissions management - Grants permission to remove the permission of specified Action Group from the resource policy associated with the specified Profiling Group
+   * PermissionsManagement - Grants permission to remove the permission of specified Action Group from the resource policy associated with the specified Profiling Group
    * @see https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_RemovePermission.html
    * 
    * @remarks

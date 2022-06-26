@@ -38,7 +38,7 @@ export enum IamAction {
   AddUserToGroup = "iam:AddUserToGroup",
 
   /**
-   * Permissions management - Grants permission to attach a managed policy to the specified IAM group
+   * PermissionsManagement - Grants permission to attach a managed policy to the specified IAM group
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachGroupPolicy.html
    * 
    * @remarks
@@ -52,7 +52,7 @@ export enum IamAction {
   AttachGroupPolicy = "iam:AttachGroupPolicy",
 
   /**
-   * Permissions management - Grants permission to attach a managed policy to the specified IAM role
+   * PermissionsManagement - Grants permission to attach a managed policy to the specified IAM role
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachRolePolicy.html
    * 
    * @remarks
@@ -67,7 +67,7 @@ export enum IamAction {
   AttachRolePolicy = "iam:AttachRolePolicy",
 
   /**
-   * Permissions management - Grants permission to attach a managed policy to the specified IAM user
+   * PermissionsManagement - Grants permission to attach a managed policy to the specified IAM user
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachUserPolicy.html
    * 
    * @remarks
@@ -162,7 +162,7 @@ export enum IamAction {
   CreateOpenIDConnectProvider = "iam:CreateOpenIDConnectProvider",
 
   /**
-   * Permissions management - Grants permission to create a new managed policy
+   * PermissionsManagement - Grants permission to create a new managed policy
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreatePolicy.html
    * 
    * @remarks
@@ -177,7 +177,7 @@ export enum IamAction {
   CreatePolicy = "iam:CreatePolicy",
 
   /**
-   * Permissions management - Grants permission to create a new version of the specified managed policy
+   * PermissionsManagement - Grants permission to create a new version of the specified managed policy
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreatePolicyVersion.html
    * 
    * @remarks
@@ -303,7 +303,7 @@ export enum IamAction {
   DeleteAccountAlias = "iam:DeleteAccountAlias",
 
   /**
-   * Permissions management - Grants permission to delete the password policy for the AWS account
+   * PermissionsManagement - Grants permission to delete the password policy for the AWS account
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteAccountPasswordPolicy.html
    */
   DeleteAccountPasswordPolicy = "iam:DeleteAccountPasswordPolicy",
@@ -320,7 +320,7 @@ export enum IamAction {
   DeleteGroup = "iam:DeleteGroup",
 
   /**
-   * Permissions management - Grants permission to delete the specified inline policy from its group
+   * PermissionsManagement - Grants permission to delete the specified inline policy from its group
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteGroupPolicy.html
    * 
    * @remarks
@@ -364,7 +364,7 @@ export enum IamAction {
   DeleteOpenIDConnectProvider = "iam:DeleteOpenIDConnectProvider",
 
   /**
-   * Permissions management - Grants permission to delete the specified managed policy and remove it from any IAM entities (users, groups, or roles) to which it is attached
+   * PermissionsManagement - Grants permission to delete the specified managed policy and remove it from any IAM entities (users, groups, or roles) to which it is attached
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletePolicy.html
    * 
    * @remarks
@@ -375,7 +375,7 @@ export enum IamAction {
   DeletePolicy = "iam:DeletePolicy",
 
   /**
-   * Permissions management - Grants permission to delete a version from the specified managed policy
+   * PermissionsManagement - Grants permission to delete a version from the specified managed policy
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletePolicyVersion.html
    * 
    * @remarks
@@ -397,7 +397,7 @@ export enum IamAction {
   DeleteRole = "iam:DeleteRole",
 
   /**
-   * Permissions management - Grants permission to remove the permissions boundary from a role
+   * PermissionsManagement - Grants permission to remove the permissions boundary from a role
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteRolePermissionsBoundary.html
    * 
    * @remarks
@@ -411,7 +411,7 @@ export enum IamAction {
   DeleteRolePermissionsBoundary = "iam:DeleteRolePermissionsBoundary",
 
   /**
-   * Permissions management - Grants permission to delete the specified inline policy from the specified role
+   * PermissionsManagement - Grants permission to delete the specified inline policy from the specified role
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteRolePolicy.html
    * 
    * @remarks
@@ -502,7 +502,7 @@ export enum IamAction {
   DeleteUser = "iam:DeleteUser",
 
   /**
-   * Permissions management - Grants permission to remove the permissions boundary from the specified IAM user
+   * PermissionsManagement - Grants permission to remove the permissions boundary from the specified IAM user
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteUserPermissionsBoundary.html
    * 
    * @remarks
@@ -516,7 +516,7 @@ export enum IamAction {
   DeleteUserPermissionsBoundary = "iam:DeleteUserPermissionsBoundary",
 
   /**
-   * Permissions management - Grants permission to delete the specified inline policy from an IAM user
+   * PermissionsManagement - Grants permission to delete the specified inline policy from an IAM user
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteUserPolicy.html
    * 
    * @remarks
@@ -542,7 +542,7 @@ export enum IamAction {
   DeleteVirtualMFADevice = "iam:DeleteVirtualMFADevice",
 
   /**
-   * Permissions management - Grants permission to detach a managed policy from the specified IAM group
+   * PermissionsManagement - Grants permission to detach a managed policy from the specified IAM group
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachGroupPolicy.html
    * 
    * @remarks
@@ -556,7 +556,7 @@ export enum IamAction {
   DetachGroupPolicy = "iam:DetachGroupPolicy",
 
   /**
-   * Permissions management - Grants permission to detach a managed policy from the specified role
+   * PermissionsManagement - Grants permission to detach a managed policy from the specified role
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachRolePolicy.html
    * 
    * @remarks
@@ -571,7 +571,7 @@ export enum IamAction {
   DetachRolePolicy = "iam:DetachRolePolicy",
 
   /**
-   * Permissions management - Grants permission to detach a managed policy from the specified IAM user
+   * PermissionsManagement - Grants permission to detach a managed policy from the specified IAM user
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachUserPolicy.html
    * 
    * @remarks
@@ -1214,7 +1214,7 @@ export enum IamAction {
   PassRole = "iam:PassRole",
 
   /**
-   * Permissions management - Grants permission to create or update an inline policy document that is embedded in the specified IAM group
+   * PermissionsManagement - Grants permission to create or update an inline policy document that is embedded in the specified IAM group
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutGroupPolicy.html
    * 
    * @remarks
@@ -1225,7 +1225,7 @@ export enum IamAction {
   PutGroupPolicy = "iam:PutGroupPolicy",
 
   /**
-   * Permissions management - Grants permission to set a managed policy as a permissions boundary for a role
+   * PermissionsManagement - Grants permission to set a managed policy as a permissions boundary for a role
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutRolePermissionsBoundary.html
    * 
    * @remarks
@@ -1239,7 +1239,7 @@ export enum IamAction {
   PutRolePermissionsBoundary = "iam:PutRolePermissionsBoundary",
 
   /**
-   * Permissions management - Grants permission to create or update an inline policy document that is embedded in the specified IAM role
+   * PermissionsManagement - Grants permission to create or update an inline policy document that is embedded in the specified IAM role
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutRolePolicy.html
    * 
    * @remarks
@@ -1253,7 +1253,7 @@ export enum IamAction {
   PutRolePolicy = "iam:PutRolePolicy",
 
   /**
-   * Permissions management - Grants permission to set a managed policy as a permissions boundary for an IAM user
+   * PermissionsManagement - Grants permission to set a managed policy as a permissions boundary for an IAM user
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPermissionsBoundary.html
    * 
    * @remarks
@@ -1267,7 +1267,7 @@ export enum IamAction {
   PutUserPermissionsBoundary = "iam:PutUserPermissionsBoundary",
 
   /**
-   * Permissions management - Grants permission to create or update an inline policy document that is embedded in the specified IAM user
+   * PermissionsManagement - Grants permission to create or update an inline policy document that is embedded in the specified IAM user
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPolicy.html
    * 
    * @remarks
@@ -1336,7 +1336,7 @@ export enum IamAction {
   ResyncMFADevice = "iam:ResyncMFADevice",
 
   /**
-   * Permissions management - Grants permission to set the version of the specified policy as the policy's default version
+   * PermissionsManagement - Grants permission to set the version of the specified policy as the policy's default version
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_SetDefaultPolicyVersion.html
    * 
    * @remarks
@@ -1621,7 +1621,7 @@ export enum IamAction {
   UpdateAccountPasswordPolicy = "iam:UpdateAccountPasswordPolicy",
 
   /**
-   * Permissions management - Grants permission to update the policy that grants an IAM entity permission to assume a role
+   * PermissionsManagement - Grants permission to update the policy that grants an IAM entity permission to assume a role
    * @see https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAssumeRolePolicy.html
    * 
    * @remarks

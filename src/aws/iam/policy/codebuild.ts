@@ -195,7 +195,7 @@ export enum CodebuildAction {
   DeleteReportGroup = "codebuild:DeleteReportGroup",
 
   /**
-   * Permissions management - Grants permission to delete a resource policy for the associated project or report group
+   * PermissionsManagement - Grants permission to delete a resource policy for the associated project or report group
    * @see https://docs.aws.amazon.com/codebuild/latest/APIReference/API_DeleteResourcePolicy.html
    * 
    * @remarks
@@ -391,7 +391,7 @@ export enum CodebuildAction {
   PersistOAuthToken = "codebuild:PersistOAuthToken",
 
   /**
-   * Permissions management - Grants permission to create a resource policy for the associated project or report group
+   * PermissionsManagement - Grants permission to create a resource policy for the associated project or report group
    * @see https://docs.aws.amazon.com/codebuild/latest/APIReference/API_PutResourcePolicy.html
    * 
    * @remarks

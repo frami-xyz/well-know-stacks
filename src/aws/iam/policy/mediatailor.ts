@@ -103,7 +103,7 @@ export enum MediatailorAction {
   DeleteChannel = "mediatailor:DeleteChannel",
 
   /**
-   * Permissions management - Grants permission to delete the IAM policy on the channel with the specified channel name
+   * PermissionsManagement - Grants permission to delete the IAM policy on the channel with the specified channel name
    * @see https://docs.aws.amazon.com/mediatailor/latest/apireference/channel-channelname-policy.html
    * 
    * @remarks
@@ -359,7 +359,7 @@ export enum MediatailorAction {
   ListVodSources = "mediatailor:ListVodSources",
 
   /**
-   * Permissions management - Grants permission to set the IAM policy on the channel with the specified channel name
+   * PermissionsManagement - Grants permission to set the IAM policy on the channel with the specified channel name
    * @see https://docs.aws.amazon.com/mediatailor/latest/apireference/channel-channelname-policy.html
    * 
    * @remarks

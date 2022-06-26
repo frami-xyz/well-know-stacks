@@ -5,7 +5,7 @@
 export enum DeeplensAction {
 
   /**
-   * Permissions management - Associates the user's account with IAM roles controlling various permissions needed by AWS DeepLens for proper functionality.
+   * PermissionsManagement - Associates the user's account with IAM roles controlling various permissions needed by AWS DeepLens for proper functionality.
    * @see https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsdeeplens.html
    */
   AssociateServiceRoleToAccount = "deeplens:AssociateServiceRoleToAccount",

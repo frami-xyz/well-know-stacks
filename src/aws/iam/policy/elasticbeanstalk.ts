@@ -286,7 +286,6 @@ export enum ElasticbeanstalkAction {
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
-   * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
    */
   DescribeConfigurationOptions = "elasticbeanstalk:DescribeConfigurationOptions",
 
@@ -301,7 +300,6 @@ export enum ElasticbeanstalkAction {
    * - {@link ElasticbeanstalkResource.environment `ElasticbeanstalkResource.environment`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
    * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
    */
   DescribeConfigurationSettings = "elasticbeanstalk:DescribeConfigurationSettings",
@@ -386,8 +384,6 @@ export enum ElasticbeanstalkAction {
    * - {@link ElasticbeanstalkResource.environment `ElasticbeanstalkResource.environment`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
-   * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
    * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
    */
   DescribeEvents = "elasticbeanstalk:DescribeEvents",
@@ -687,7 +683,6 @@ export enum ElasticbeanstalkAction {
    * - {@link ElasticbeanstalkResource.environment `ElasticbeanstalkResource.environment`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
    * - `elasticbeanstalk:InApplication`: Filters access by the application that contains the resource that the action operates on ({@link https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.iam.policies.actions.html#AWSHowTo.iam.policies.conditions documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ARN `ARN`})
    */
   ValidateConfigurationSettings = "elasticbeanstalk:ValidateConfigurationSettings",

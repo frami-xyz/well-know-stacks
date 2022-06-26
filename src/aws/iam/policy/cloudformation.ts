@@ -623,7 +623,7 @@ export enum CloudformationAction {
   RollbackStack = "cloudformation:RollbackStack",
 
   /**
-   * Permissions management - Grants permission to set a stack policy for a specified stack
+   * PermissionsManagement - Grants permission to set a stack policy for a specified stack
    * @see https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_SetStackPolicy.html
    * 
    * @remarks

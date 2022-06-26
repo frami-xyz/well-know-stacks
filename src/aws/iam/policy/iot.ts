@@ -53,7 +53,7 @@ export enum IotAction {
   AssociateTargetsWithJob = "iot:AssociateTargetsWithJob",
 
   /**
-   * Permissions management - Grants permission to attach a policy to the specified target
+   * PermissionsManagement - Grants permission to attach a policy to the specified target
    * @see https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPolicy.html
    * 
    * @remarks
@@ -65,7 +65,7 @@ export enum IotAction {
   AttachPolicy = "iot:AttachPolicy",
 
   /**
-   * Permissions management - Grants permission to attach the specified policy to the specified principal (certificate or other credential)
+   * PermissionsManagement - Grants permission to attach the specified policy to the specified principal (certificate or other credential)
    * @see https://docs.aws.amazon.com/iot/latest/apireference/API_AttachPrincipalPolicy.html
    * 
    * @remarks
@@ -1243,7 +1243,7 @@ export enum IotAction {
   DescribeTunnel = "iot:DescribeTunnel",
 
   /**
-   * Permissions management - Grants permission to detach a policy from the specified target
+   * PermissionsManagement - Grants permission to detach a policy from the specified target
    * @see https://docs.aws.amazon.com/iot/latest/apireference/API_DetachPolicy.html
    * 
    * @remarks
@@ -1255,7 +1255,7 @@ export enum IotAction {
   DetachPolicy = "iot:DetachPolicy",
 
   /**
-   * Permissions management - Grants permission to remove the specified policy from the specified certificate
+   * PermissionsManagement - Grants permission to remove the specified policy from the specified certificate
    * @see https://docs.aws.amazon.com/iot/latest/apireference/API_DetachPrincipalPolicy.html
    * 
    * @remarks
@@ -2104,7 +2104,7 @@ export enum IotAction {
   SearchIndex = "iot:SearchIndex",
 
   /**
-   * Permissions management - Grants permission to set the default authorizer. This will be used if a websocket connection is made without specifying an authorizer
+   * PermissionsManagement - Grants permission to set the default authorizer. This will be used if a websocket connection is made without specifying an authorizer
    * @see https://docs.aws.amazon.com/iot/latest/apireference/API_SetDefaultAuthorizer.html
    * 
    * @remarks
@@ -2115,7 +2115,7 @@ export enum IotAction {
   SetDefaultAuthorizer = "iot:SetDefaultAuthorizer",
 
   /**
-   * Permissions management - Grants permission to set the specified version of the specified policy as the policy's default (operative) version
+   * PermissionsManagement - Grants permission to set the specified version of the specified policy as the policy's default (operative) version
    * @see https://docs.aws.amazon.com/iot/latest/apireference/API_SetDefaultPolicyVersion.html
    * 
    * @remarks

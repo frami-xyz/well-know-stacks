@@ -45,7 +45,7 @@ export enum SecretsmanagerAction {
   CreateSecret = "secretsmanager:CreateSecret",
 
   /**
-   * Permissions management - Grants permission to delete the resource policy attached to a secret
+   * PermissionsManagement - Grants permission to delete the resource policy attached to a secret
    * @see https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_DeleteResourcePolicy.html
    * 
    * @remarks
@@ -169,7 +169,7 @@ export enum SecretsmanagerAction {
   ListSecrets = "secretsmanager:ListSecrets",
 
   /**
-   * Permissions management - Grants permission to attach a resource policy to a secret
+   * PermissionsManagement - Grants permission to attach a resource policy to a secret
    * @see https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_PutResourcePolicy.html
    * 
    * @remarks
@@ -379,7 +379,7 @@ export enum SecretsmanagerAction {
   UpdateSecretVersionStage = "secretsmanager:UpdateSecretVersionStage",
 
   /**
-   * Permissions management - Grants permission to validate a resource policy before attaching policy
+   * PermissionsManagement - Grants permission to validate a resource policy before attaching policy
    * @see https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_ValidateResourcePolicy.html
    * 
    * @remarks

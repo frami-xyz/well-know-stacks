@@ -17,7 +17,7 @@ export enum GreengrassAction {
   AssociateRoleToGroup = "greengrass:AssociateRoleToGroup",
 
   /**
-   * Permissions management - Grants permission to associate a role with your account. AWS IoT Greengrass uses this role to access your Lambda functions and AWS IoT resources
+   * PermissionsManagement - Grants permission to associate a role with your account. AWS IoT Greengrass uses this role to access your Lambda functions and AWS IoT resources
    * @see https://docs.aws.amazon.com/greengrass/latest/apireference/associateserviceroletoaccount-put.html
    */
   AssociateServiceRoleToAccount = "greengrass:AssociateServiceRoleToAccount",
@@ -76,6 +76,10 @@ export enum GreengrassAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link GreengrassResource.group `GreengrassResource.group`} 
+   * 
+   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
+   * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
+   * - `aws:TagKeys`: Filters actions based on the presence of mandatory tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   CreateDeployment = "greengrass:CreateDeployment",
 
@@ -810,6 +814,10 @@ export enum GreengrassAction {
    * - {@link GreengrassResource.loggerDefinition `GreengrassResource.loggerDefinition`} 
    * - {@link GreengrassResource.resourceDefinition `GreengrassResource.resourceDefinition`} 
    * - {@link GreengrassResource.subscriptionDefinition `GreengrassResource.subscriptionDefinition`} 
+   * - {@link GreengrassResource.component `GreengrassResource.component`} 
+   * - {@link GreengrassResource.componentVersion `GreengrassResource.componentVersion`} 
+   * - {@link GreengrassResource.coreDevice `GreengrassResource.coreDevice`} 
+   * - {@link GreengrassResource.deployment `GreengrassResource.deployment`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -867,6 +875,10 @@ export enum GreengrassAction {
    * - {@link GreengrassResource.loggerDefinition `GreengrassResource.loggerDefinition`} 
    * - {@link GreengrassResource.resourceDefinition `GreengrassResource.resourceDefinition`} 
    * - {@link GreengrassResource.subscriptionDefinition `GreengrassResource.subscriptionDefinition`} 
+   * - {@link GreengrassResource.component `GreengrassResource.component`} 
+   * - {@link GreengrassResource.componentVersion `GreengrassResource.componentVersion`} 
+   * - {@link GreengrassResource.coreDevice `GreengrassResource.coreDevice`} 
+   * - {@link GreengrassResource.deployment `GreengrassResource.deployment`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -890,9 +902,14 @@ export enum GreengrassAction {
    * - {@link GreengrassResource.loggerDefinition `GreengrassResource.loggerDefinition`} 
    * - {@link GreengrassResource.resourceDefinition `GreengrassResource.resourceDefinition`} 
    * - {@link GreengrassResource.subscriptionDefinition `GreengrassResource.subscriptionDefinition`} 
+   * - {@link GreengrassResource.component `GreengrassResource.component`} 
+   * - {@link GreengrassResource.componentVersion `GreengrassResource.componentVersion`} 
+   * - {@link GreengrassResource.coreDevice `GreengrassResource.coreDevice`} 
+   * - {@link GreengrassResource.deployment `GreengrassResource.deployment`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:TagKeys`: Filters actions based on the presence of mandatory tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
+   * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   UntagResource = "greengrass:UntagResource",
 
@@ -1018,12 +1035,6 @@ export enum GreengrassAction {
   UpdateThingRuntimeConfiguration = "greengrass:UpdateThingRuntimeConfiguration",
 
   /**
-   * Permissions management - Grants permission to associate a role with your account. AWS IoT Greengrass uses this role to access your Lambda functions and AWS IoT resources
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_AssociateServiceRoleToAccount.html
-   */
-  AssociateServiceRoleToAccount = "greengrass:AssociateServiceRoleToAccount",
-
-  /**
    * Write - Grants permission to associate a list of client devices with a core device
    * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_BatchAssociateClientDeviceWithCoreDevice.html
    * 
@@ -1072,18 +1083,6 @@ export enum GreengrassAction {
   CreateComponentVersion = "greengrass:CreateComponentVersion",
 
   /**
-   * Write - Grants permission to create a deployment
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_CreateDeployment.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of mandatory tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateDeployment = "greengrass:CreateDeployment",
-
-  /**
    * Write - Grants permission to delete a component
    * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_DeleteComponent.html
    * 
@@ -1117,12 +1116,6 @@ export enum GreengrassAction {
   DescribeComponent = "greengrass:DescribeComponent",
 
   /**
-   * Write - Grants permission to disassociate the service role from an account. Without a service role, deployments will not work
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_DisassociateServiceRoleFromAccount.html
-   */
-  DisassociateServiceRoleFromAccount = "greengrass:DisassociateServiceRoleFromAccount",
-
-  /**
    * Read - Grants permission to get the recipe for a version of a component
    * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetComponent.html
    * 
@@ -1145,17 +1138,6 @@ export enum GreengrassAction {
   GetComponentVersionArtifact = "greengrass:GetComponentVersionArtifact",
 
   /**
-   * Read - Grants permission to retrieve the connectivity information for a Greengrass core device
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetConnectivityInfo.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link GreengrassResource.connectivityInfo `GreengrassResource.connectivityInfo`} 
-   */
-  GetConnectivityInfo = "greengrass:GetConnectivityInfo",
-
-  /**
    * Read - Grants permission to retrieves metadata for a AWS IoT Greengrass core device
    * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetCoreDevice.html
    * 
@@ -1176,12 +1158,6 @@ export enum GreengrassAction {
    * - {@link GreengrassResource.deployment `GreengrassResource.deployment`} 
    */
   GetDeployment = "greengrass:GetDeployment",
-
-  /**
-   * Read - Grants permission to retrieve the service role that is attached to an account
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_GetServiceRoleForAccount.html
-   */
-  GetServiceRoleForAccount = "greengrass:GetServiceRoleForAccount",
 
   /**
    * List - Grants permission to retrieve a paginated list of client devices associated to a AWS IoT Greengrass core device
@@ -1218,12 +1194,6 @@ export enum GreengrassAction {
   ListCoreDevices = "greengrass:ListCoreDevices",
 
   /**
-   * List - Grants permission to retrieves a paginated list of deployments
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListDeployments.html
-   */
-  ListDeployments = "greengrass:ListDeployments",
-
-  /**
    * List - Grants permission to retrieves a paginated list of deployment jobs that AWS IoT Greengrass sends to AWS IoT Greengrass core devices
    * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListEffectiveDeployments.html
    * 
@@ -1246,24 +1216,6 @@ export enum GreengrassAction {
   ListInstalledComponents = "greengrass:ListInstalledComponents",
 
   /**
-   * Read - Grants permission to list the tags for a resource
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListTagsForResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link GreengrassResource.component `GreengrassResource.component`} 
-   * - {@link GreengrassResource.componentVersion `GreengrassResource.componentVersion`} 
-   * - {@link GreengrassResource.coreDevice `GreengrassResource.coreDevice`} 
-   * - {@link GreengrassResource.deployment `GreengrassResource.deployment`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of mandatory tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  ListTagsForResource = "greengrass:ListTagsForResource",
-
-  /**
    * List - Grants permission to list components that meet the component, version, and platform requirements of a deployment
    * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolveComponentCandidates.html
    * 
@@ -1273,53 +1225,6 @@ export enum GreengrassAction {
    * - {@link GreengrassResource.componentVersion `GreengrassResource.componentVersion`} 
    */
   ResolveComponentCandidates = "greengrass:ResolveComponentCandidates",
-
-  /**
-   * Tagging - Grants permission to add tags to a resource
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_TagResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link GreengrassResource.component `GreengrassResource.component`} 
-   * - {@link GreengrassResource.componentVersion `GreengrassResource.componentVersion`} 
-   * - {@link GreengrassResource.coreDevice `GreengrassResource.coreDevice`} 
-   * - {@link GreengrassResource.deployment `GreengrassResource.deployment`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of mandatory tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  TagResource = "greengrass:TagResource",
-
-  /**
-   * Tagging - Grants permission to remove tags from a resource
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_UntagResource.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link GreengrassResource.component `GreengrassResource.component`} 
-   * - {@link GreengrassResource.componentVersion `GreengrassResource.componentVersion`} 
-   * - {@link GreengrassResource.coreDevice `GreengrassResource.coreDevice`} 
-   * - {@link GreengrassResource.deployment `GreengrassResource.deployment`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters actions based on the presence of mandatory tags in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  UntagResource = "greengrass:UntagResource",
-
-  /**
-   * Write - Grants permission to update the connectivity information for a Greengrass core. Any devices that belong to the group that has this core will receive this information in order to find the location of the core and connect to it
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_UpdateConnectivityInfo.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link GreengrassResource.connectivityInfo `GreengrassResource.connectivityInfo`} 
-   */
-  UpdateConnectivityInfo = "greengrass:UpdateConnectivityInfo",
 
   /**
    * * - Grant all greengrass permissions
@@ -1350,9 +1255,9 @@ export enum GreengrassAction {
    * - {@link GreengrassResource.resourceDefinitionVersion `GreengrassResource.resourceDefinitionVersion`} 
    * - {@link GreengrassResource.subscriptionDefinitionVersion `GreengrassResource.subscriptionDefinitionVersion`} 
    * - {@link GreengrassResource.thingRuntimeConfig `GreengrassResource.thingRuntimeConfig`} 
-   * - {@link GreengrassResource.coreDevice `GreengrassResource.coreDevice`} 
    * - {@link GreengrassResource.component `GreengrassResource.component`} 
    * - {@link GreengrassResource.componentVersion `GreengrassResource.componentVersion`} 
+   * - {@link GreengrassResource.coreDevice `GreengrassResource.coreDevice`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: Filters actions based on the allowed set of values for each of the mandatory tags ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -1380,6 +1285,11 @@ export const GreengrassResource = {
 
   /**
    * @see https://docs.aws.amazon.com/greengrass/latest/apireference/definitions-createdeploymentrequest.html
+   * 
+   * @remarks
+   * 
+   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
+   * - `aws:ResourceTag/${TagKey}`: Filters actions based on the tag value associated with the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   deployment: (options: Partial<{partition: string, region: string, account: string, groupId: string, deploymentId: string}> = {}) => `arn:${options.partition || '*'}:greengrass:${options.region || '*'}:${options.account || '*'}:/greengrass/groups/${options.groupId || '*'}/deployments/${options.deploymentId || '*'}`,
 
@@ -1524,11 +1434,6 @@ export const GreengrassResource = {
   thingRuntimeConfig: (options: Partial<{partition: string, region: string, account: string, thingName: string}> = {}) => `arn:${options.partition || '*'}:greengrass:${options.region || '*'}:${options.account || '*'}:/greengrass/things/${options.thingName || '*'}/runtimeconfig`,
 
   /**
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ConnectivityInfo.html
-   */
-  connectivityInfo: (options: Partial<{partition: string, region: string, account: string, thingName: string}> = {}) => `arn:${options.partition || '*'}:greengrass:${options.region || '*'}:${options.account || '*'}:/greengrass/things/${options.thingName || '*'}/connectivityInfo`,
-
-  /**
    * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component.html
    * 
    * @remarks
@@ -1557,15 +1462,5 @@ export const GreengrassResource = {
    * - `aws:ResourceTag/${TagKey}`: Filters actions based on the tag value associated with the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
   coreDevice: (options: Partial<{partition: string, region: string, account: string, coreDeviceThingName: string}> = {}) => `arn:${options.partition || '*'}:greengrass:${options.region || '*'}:${options.account || '*'}:coreDevices:${options.coreDeviceThingName || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Deployment.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:ResourceTag/${TagKey}`: Filters actions based on the tag value associated with the resource ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  deployment: (options: Partial<{partition: string, region: string, account: string, deploymentId: string}> = {}) => `arn:${options.partition || '*'}:greengrass:${options.region || '*'}:${options.account || '*'}:deployments:${options.deploymentId || '*'}`,
 }
 

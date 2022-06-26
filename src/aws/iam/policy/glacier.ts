@@ -16,7 +16,7 @@ export enum GlacierAction {
   AbortMultipartUpload = "glacier:AbortMultipartUpload",
 
   /**
-   * Permissions management - Grants permission to abort the vault locking process if the vault lock is not in the Locked state
+   * PermissionsManagement - Grants permission to abort the vault locking process if the vault lock is not in the Locked state
    * @see https://docs.aws.amazon.com/amazonglacier/latest/dev/api-AbortVaultLock.html
    * 
    * @remarks
@@ -53,7 +53,7 @@ export enum GlacierAction {
   CompleteMultipartUpload = "glacier:CompleteMultipartUpload",
 
   /**
-   * Permissions management - Grants permission to complete the vault locking process
+   * PermissionsManagement - Grants permission to complete the vault locking process
    * @see https://docs.aws.amazon.com/amazonglacier/latest/dev/api-CompleteVaultLock.html
    * 
    * @remarks
@@ -100,7 +100,7 @@ export enum GlacierAction {
   DeleteVault = "glacier:DeleteVault",
 
   /**
-   * Permissions management - Grants permission to delete the access policy associated with the specified vault
+   * PermissionsManagement - Grants permission to delete the access policy associated with the specified vault
    * @see https://docs.aws.amazon.com/amazonglacier/latest/dev/api-DeleteVaultAccessPolicy.html
    * 
    * @remarks
@@ -219,7 +219,7 @@ export enum GlacierAction {
   InitiateMultipartUpload = "glacier:InitiateMultipartUpload",
 
   /**
-   * Permissions management - Grants permission to initiate the vault locking process
+   * PermissionsManagement - Grants permission to initiate the vault locking process
    * @see https://docs.aws.amazon.com/amazonglacier/latest/dev/api-InitiateVaultLock.html
    * 
    * @remarks
@@ -303,13 +303,13 @@ export enum GlacierAction {
   RemoveTagsFromVault = "glacier:RemoveTagsFromVault",
 
   /**
-   * Permissions management - Grants permission to set and then enacts a data retrieval policy in the region specified in the PUT request
+   * PermissionsManagement - Grants permission to set and then enacts a data retrieval policy in the region specified in the PUT request
    * @see https://docs.aws.amazon.com/amazonglacier/latest/dev/api-SetDataRetrievalPolicy.html
    */
   SetDataRetrievalPolicy = "glacier:SetDataRetrievalPolicy",
 
   /**
-   * Permissions management - Grants permission to configure an access policy for a vault; will overwrite an existing policy
+   * PermissionsManagement - Grants permission to configure an access policy for a vault; will overwrite an existing policy
    * @see https://docs.aws.amazon.com/amazonglacier/latest/dev/api-SetVaultAccessPolicy.html
    * 
    * @remarks

@@ -93,7 +93,7 @@ export enum S3OutpostsAction {
   DeleteAccessPoint = "s3-outposts:DeleteAccessPoint",
 
   /**
-   * Permissions management - Grants permission to delete the policy on a specified access point
+   * PermissionsManagement - Grants permission to delete the policy on a specified access point
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessPointPolicy.html
    * 
    * @remarks
@@ -130,7 +130,7 @@ export enum S3OutpostsAction {
   DeleteBucket = "s3-outposts:DeleteBucket",
 
   /**
-   * Permissions management - Grants permission to delete the policy on a specified bucket
+   * PermissionsManagement - Grants permission to delete the policy on a specified bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteBucketPolicy.html
    * 
    * @remarks
@@ -451,7 +451,7 @@ export enum S3OutpostsAction {
   ListSharedEndpoints = "s3-outposts:ListSharedEndpoints",
 
   /**
-   * Permissions management - Grants permission to associate an access policy with a specified access point
+   * PermissionsManagement - Grants permission to associate an access policy with a specified access point
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutAccessPointPolicy.html
    * 
    * @remarks
@@ -471,7 +471,7 @@ export enum S3OutpostsAction {
   PutAccessPointPolicy = "s3-outposts:PutAccessPointPolicy",
 
   /**
-   * Permissions management - Grants permission to add or replace a bucket policy on a bucket
+   * PermissionsManagement - Grants permission to add or replace a bucket policy on a bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutBucketPolicy.html
    * 
    * @remarks
@@ -549,7 +549,7 @@ export enum S3OutpostsAction {
   PutObject = "s3-outposts:PutObject",
 
   /**
-   * Permissions management - Grants permission to set the access control list (ACL) permissions for an object that already exists in a bucket
+   * PermissionsManagement - Grants permission to set the access control list (ACL) permissions for an object that already exists in a bucket
    * @see https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectAcl.html
    * 
    * @remarks

@@ -167,7 +167,7 @@ export enum AwsMarketplaceAction {
    * - {@link AwsMarketplaceResource.entity `AwsMarketplaceResource.entity`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `catalog:ChangeType`: Filters access by the change type in the StartChangeSet request ({@link https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/api-access-control.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
+   * - catalog:ChangeType
    */
   StartChangeSet = "aws-marketplace:StartChangeSet",
 
@@ -278,7 +278,7 @@ export enum AwsMarketplaceAction {
    * - {@link AwsMarketplaceResource.entity `AwsMarketplaceResource.entity`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `catalog:ChangeType`: Filters access by the change type in the StartChangeSet request ({@link https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/api-access-control.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
+   * - catalog:ChangeType
    */
   All = "aws-marketplace:*",
 }
@@ -294,15 +294,5 @@ export enum AwsMarketplaceAction {
  * @see https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsmarketplaceprocurementsystemsintegration.html
  */
 export const AwsMarketplaceResource = {
-
-  /**
-   * @see https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_DescribeEntity.html#API_DescribeEntity_ResponseSyntax
-   */
-  entity: (options: Partial<{partition: string, region: string, account: string, catalog: string, entityType: string, resourceId: string}> = {}) => `arn:${options.partition || '*'}:aws-marketplace:${options.region || '*'}:${options.account || '*'}:${options.catalog || '*'}/${options.entityType || '*'}/${options.resourceId || '*'}`,
-
-  /**
-   * @see https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/API_StartChangeSet.html#API_StartChangeSet_ResponseSyntax
-   */
-  changeSet: (options: Partial<{partition: string, region: string, account: string, catalog: string, resourceId: string}> = {}) => `arn:${options.partition || '*'}:aws-marketplace:${options.region || '*'}:${options.account || '*'}:${options.catalog || '*'}/ChangeSet/${options.resourceId || '*'}`,
 }
 

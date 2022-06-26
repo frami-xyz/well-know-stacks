@@ -213,7 +213,7 @@ export enum EcrPublicAction {
   PutRepositoryCatalogData = "ecr-public:PutRepositoryCatalogData",
 
   /**
-   * Permissions management - Grants permission to apply a repository policy on a specified repository to control access permissions
+   * PermissionsManagement - Grants permission to apply a repository policy on a specified repository to control access permissions
    * @see https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_SetRepositoryPolicy.html
    * 
    * @remarks

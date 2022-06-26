@@ -148,7 +148,7 @@ export enum ElasticfilesystemAction {
   DeleteFileSystem = "elasticfilesystem:DeleteFileSystem",
 
   /**
-   * Permissions management - Grants permission to delete the resource-level policy for a file system
+   * PermissionsManagement - Grants permission to delete the resource-level policy for a file system
    * @see https://docs.aws.amazon.com/efs/latest/ug/API_DeleteFileSystemPolicy.html
    * 
    * @remarks
@@ -333,7 +333,7 @@ export enum ElasticfilesystemAction {
   PutBackupPolicy = "elasticfilesystem:PutBackupPolicy",
 
   /**
-   * Permissions management - Grants permission to apply a resource-level policy that defines the actions allowed or denied from given actors for the specified file system
+   * PermissionsManagement - Grants permission to apply a resource-level policy that defines the actions allowed or denied from given actors for the specified file system
    * @see https://docs.aws.amazon.com/efs/latest/ug/API_PutFileSystemPolicy.html
    * 
    * @remarks

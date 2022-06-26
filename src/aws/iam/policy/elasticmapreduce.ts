@@ -196,7 +196,7 @@ export enum ElasticmapreduceAction {
   DeleteStudioSessionMapping = "elasticmapreduce:DeleteStudioSessionMapping",
 
   /**
-   * Permissions management - Grants permission to block an identity from opening a collaborative workspace
+   * PermissionsManagement - Grants permission to block an identity from opening a collaborative workspace
    * @see https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html
    * 
    * @remarks
@@ -561,7 +561,7 @@ export enum ElasticmapreduceAction {
   PutAutoTerminationPolicy = "elasticmapreduce:PutAutoTerminationPolicy",
 
   /**
-   * Permissions management - Grants permission to create or update the EMR block public access configuration for the AWS account in the Region
+   * PermissionsManagement - Grants permission to create or update the EMR block public access configuration for the AWS account in the Region
    * @see https://docs.aws.amazon.com/emr/latest/APIReference/API_PutBlockPublicAccessConfiguration.html
    */
   PutBlockPublicAccessConfiguration = "elasticmapreduce:PutBlockPublicAccessConfiguration",
@@ -578,7 +578,7 @@ export enum ElasticmapreduceAction {
   PutManagedScalingPolicy = "elasticmapreduce:PutManagedScalingPolicy",
 
   /**
-   * Permissions management - Grants permission to allow an identity to open a collaborative workspace
+   * PermissionsManagement - Grants permission to allow an identity to open a collaborative workspace
    * @see https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-managed-notebooks-working-with.html
    * 
    * @remarks

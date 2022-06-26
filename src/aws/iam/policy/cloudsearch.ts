@@ -313,7 +313,7 @@ export enum CloudsearchAction {
   UpdateScalingParameters = "cloudsearch:UpdateScalingParameters",
 
   /**
-   * Permissions management - Configures the access rules that control access to the domain's document and search endpoints.
+   * PermissionsManagement - Configures the access rules that control access to the domain's document and search endpoints.
    * @see https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_UpdateServiceAccessPolicies.html
    * 
    * @remarks

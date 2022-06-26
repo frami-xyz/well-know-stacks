@@ -8,6 +8,12 @@ export enum SmsVoiceAction {
   /**
    * Write - Create a new configuration set. After you create the configuration set, you can add one or more event destinations to it.
    * @see https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/v1-sms-voice-configuration-sets.html
+   * 
+   * @remarks
+   * 
+   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
+   * - `aws:RequestTag/${TagKey}`: Filters access by the tags that are passed in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
+   * - `aws:TagKeys`: Filters access by the tag keys that are passed in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
    */
   CreateConfigurationSet = "sms-voice:CreateConfigurationSet",
 
@@ -20,6 +26,11 @@ export enum SmsVoiceAction {
   /**
    * Write - Deletes an existing configuration set.
    * @see https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/v1-sms-voice-configuration-sets-configurationsetname.html
+   * 
+   * @remarks
+   * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SmsVoiceResource.configurationSet `SmsVoiceResource.configurationSet`} 
    */
   DeleteConfigurationSet = "sms-voice:DeleteConfigurationSet",
 
@@ -44,6 +55,12 @@ export enum SmsVoiceAction {
   /**
    * Write - Create a new voice message and send it to a recipient's phone number.
    * @see https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/v1-sms-voice-voice-message.html
+   * 
+   * @remarks
+   * 
+   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
+   * - {@link SmsVoiceResource.phoneNumber `SmsVoiceResource.phoneNumber`} 
+   * - {@link SmsVoiceResource.pool `SmsVoiceResource.pool`} 
    */
   SendVoiceMessage = "sms-voice:SendVoiceMessage",
 
@@ -65,18 +82,6 @@ export enum SmsVoiceAction {
    * - {@link SmsVoiceResource.senderId `SmsVoiceResource.senderId`} 
    */
   AssociateOriginationIdentity = "sms-voice:AssociateOriginationIdentity",
-
-  /**
-   * Write - Grants permission to create a configuration set
-   * @see https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateConfigurationSet.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: Filters access by the tags that are passed in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: Filters access by the tag keys that are passed in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
-   */
-  CreateConfigurationSet = "sms-voice:CreateConfigurationSet",
 
   /**
    * Write - Grants permission to create an event destination within a configuration set
@@ -116,17 +121,6 @@ export enum SmsVoiceAction {
    * - `aws:TagKeys`: Filters access by the tag keys that are passed in the request ({@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_ArrayOfString `ArrayOfString`})
    */
   CreatePool = "sms-voice:CreatePool",
-
-  /**
-   * Write - Grants permission to delete a configuration set
-   * @see https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DeleteConfigurationSet.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SmsVoiceResource.configurationSet `SmsVoiceResource.configurationSet`} 
-   */
-  DeleteConfigurationSet = "sms-voice:DeleteConfigurationSet",
 
   /**
    * Write - Grants permission to delete the default message type for a configuration set
@@ -416,18 +410,6 @@ export enum SmsVoiceAction {
   SendTextMessage = "sms-voice:SendTextMessage",
 
   /**
-   * Write - Grants permission to send a voice message to a destination phone number
-   * @see https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendVoiceMessage.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SmsVoiceResource.phoneNumber `SmsVoiceResource.phoneNumber`} 
-   * - {@link SmsVoiceResource.pool `SmsVoiceResource.pool`} 
-   */
-  SendVoiceMessage = "sms-voice:SendVoiceMessage",
-
-  /**
    * Write - Grants permission to set the default message type for a configuration set
    * @see https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SetDefaultMessageType.html
    * 
@@ -539,10 +521,10 @@ export enum SmsVoiceAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link SmsVoiceResource.pool `SmsVoiceResource.pool`} 
-   * - {@link SmsVoiceResource.phoneNumber `SmsVoiceResource.phoneNumber`} 
-   * - {@link SmsVoiceResource.senderId `SmsVoiceResource.senderId`} 
    * - {@link SmsVoiceResource.configurationSet `SmsVoiceResource.configurationSet`} 
+   * - {@link SmsVoiceResource.phoneNumber `SmsVoiceResource.phoneNumber`} 
+   * - {@link SmsVoiceResource.pool `SmsVoiceResource.pool`} 
+   * - {@link SmsVoiceResource.senderId `SmsVoiceResource.senderId`} 
    * - {@link SmsVoiceResource.optOutList `SmsVoiceResource.optOutList`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:

@@ -466,7 +466,7 @@ export enum ImagebuilderAction {
   ListTagsForResource = "imagebuilder:ListTagsForResource",
 
   /**
-   * Permissions management - Grants permission to set the resource policy associated with a component
+   * PermissionsManagement - Grants permission to set the resource policy associated with a component
    * @see https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_PutComponentPolicy.html
    * 
    * @remarks
@@ -477,7 +477,7 @@ export enum ImagebuilderAction {
   PutComponentPolicy = "imagebuilder:PutComponentPolicy",
 
   /**
-   * Permissions management - Grants permission to set the resource policy associated with a container recipe
+   * PermissionsManagement - Grants permission to set the resource policy associated with a container recipe
    * @see https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_PutContainerRecipePolicy.html
    * 
    * @remarks
@@ -488,7 +488,7 @@ export enum ImagebuilderAction {
   PutContainerRecipePolicy = "imagebuilder:PutContainerRecipePolicy",
 
   /**
-   * Permissions management - Grants permission to set the resource policy associated with an image
+   * PermissionsManagement - Grants permission to set the resource policy associated with an image
    * @see https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_PutImagePolicy.html
    * 
    * @remarks
@@ -499,7 +499,7 @@ export enum ImagebuilderAction {
   PutImagePolicy = "imagebuilder:PutImagePolicy",
 
   /**
-   * Permissions management - Grants permission to set the resource policy associated with an image recipe
+   * PermissionsManagement - Grants permission to set the resource policy associated with an image recipe
    * @see https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_PutImageRecipePolicy.html
    * 
    * @remarks

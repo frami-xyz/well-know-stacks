@@ -68,7 +68,7 @@ export enum QuicksightAction {
   CreateAnalysis = "quicksight:CreateAnalysis",
 
   /**
-   * Permissions management - Grants permission to create a custom permissions resource for restricting user access
+   * PermissionsManagement - Grants permission to create a custom permissions resource for restricting user access
    * @see https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
    * 
    * @remarks
@@ -352,7 +352,7 @@ export enum QuicksightAction {
   DeleteAnalysis = "quicksight:DeleteAnalysis",
 
   /**
-   * Permissions management - Grants permission to delete a custom permissions resource
+   * PermissionsManagement - Grants permission to delete a custom permissions resource
    * @see https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
    */
   DeleteCustomPermissions = "quicksight:DeleteCustomPermissions",
@@ -636,7 +636,7 @@ export enum QuicksightAction {
   DescribeDataSet = "quicksight:DescribeDataSet",
 
   /**
-   * Permissions management - Grants permission to describe the resource policy of a dataset
+   * PermissionsManagement - Grants permission to describe the resource policy of a dataset
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDataSetPermissions.html
    * 
    * @remarks
@@ -666,7 +666,7 @@ export enum QuicksightAction {
   DescribeDataSource = "quicksight:DescribeDataSource",
 
   /**
-   * Permissions management - Grants permission to describe the resource policy of a data source
+   * PermissionsManagement - Grants permission to describe the resource policy of a data source
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeDataSourcePermissions.html
    * 
    * @remarks
@@ -1388,7 +1388,7 @@ export enum QuicksightAction {
   UpdateAnalysis = "quicksight:UpdateAnalysis",
 
   /**
-   * Permissions management - Grants permission to update permissions for an analysis
+   * PermissionsManagement - Grants permission to update permissions for an analysis
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateAnalysisPermissions.html
    * 
    * @remarks
@@ -1399,7 +1399,7 @@ export enum QuicksightAction {
   UpdateAnalysisPermissions = "quicksight:UpdateAnalysisPermissions",
 
   /**
-   * Permissions management - Grants permission to update a custom permissions resource
+   * PermissionsManagement - Grants permission to update a custom permissions resource
    * @see https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html
    */
   UpdateCustomPermissions = "quicksight:UpdateCustomPermissions",
@@ -1416,7 +1416,7 @@ export enum QuicksightAction {
   UpdateDashboard = "quicksight:UpdateDashboard",
 
   /**
-   * Permissions management - Grants permission to update permissions for a QuickSight Dashboard
+   * PermissionsManagement - Grants permission to update permissions for a QuickSight Dashboard
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDashboardPermissions.html
    * 
    * @remarks
@@ -1454,7 +1454,7 @@ export enum QuicksightAction {
   UpdateDataSet = "quicksight:UpdateDataSet",
 
   /**
-   * Permissions management - Grants permission to update the resource policy of a dataset
+   * PermissionsManagement - Grants permission to update the resource policy of a dataset
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDataSetPermissions.html
    * 
    * @remarks
@@ -1484,7 +1484,7 @@ export enum QuicksightAction {
   UpdateDataSource = "quicksight:UpdateDataSource",
 
   /**
-   * Permissions management - Grants permission to update the resource policy of a data source
+   * PermissionsManagement - Grants permission to update the resource policy of a data source
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateDataSourcePermissions.html
    * 
    * @remarks
@@ -1521,7 +1521,7 @@ export enum QuicksightAction {
   UpdateFolder = "quicksight:UpdateFolder",
 
   /**
-   * Permissions management - Grants permission to update permissions for a QuickSight Folder
+   * PermissionsManagement - Grants permission to update permissions for a QuickSight Folder
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateFolderPermissions.html
    * 
    * @remarks
@@ -1588,7 +1588,7 @@ export enum QuicksightAction {
   UpdateTemplateAlias = "quicksight:UpdateTemplateAlias",
 
   /**
-   * Permissions management - Grants permission to update permissions for a template
+   * PermissionsManagement - Grants permission to update permissions for a template
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateTemplatePermissions.html
    * 
    * @remarks
@@ -1621,7 +1621,7 @@ export enum QuicksightAction {
   UpdateThemeAlias = "quicksight:UpdateThemeAlias",
 
   /**
-   * Permissions management - Grants permission to update permissions for a theme
+   * PermissionsManagement - Grants permission to update permissions for a theme
    * @see https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateThemePermissions.html
    * 
    * @remarks

@@ -81,7 +81,7 @@ export enum RdsAction {
   ApplyPendingMaintenanceAction = "rds:ApplyPendingMaintenanceAction",
 
   /**
-   * Permissions management - Grants permission to enable ingress to a DBSecurityGroup using one of two forms of authorization
+   * PermissionsManagement - Grants permission to enable ingress to a DBSecurityGroup using one of two forms of authorization
    * @see https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_AuthorizeDBSecurityGroupIngress.html
    * 
    * @remarks

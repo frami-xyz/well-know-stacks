@@ -438,7 +438,7 @@ export enum LicenseManagerAction {
   UpdateLicenseSpecificationsForResource = "license-manager:UpdateLicenseSpecificationsForResource",
 
   /**
-   * Permissions management - Grants permission to updates service settings
+   * PermissionsManagement - Grants permission to updates service settings
    * @see https://docs.aws.amazon.com/license-manager/latest/APIReference/API_UpdateServiceSettings.html
    */
   UpdateServiceSettings = "license-manager:UpdateServiceSettings",

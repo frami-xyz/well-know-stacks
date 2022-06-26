@@ -5,7 +5,7 @@
 export enum MonitronAction {
 
   /**
-   * Permissions management - Grants permission to associate a user with the project as an administrator
+   * PermissionsManagement - Grants permission to associate a user with the project as an administrator
    * @see https://docs.aws.amazon.com/Monitron/latest/admin-guide/user-management-chapter.html
    * 
    * @remarks
@@ -39,7 +39,7 @@ export enum MonitronAction {
   DeleteProject = "monitron:DeleteProject",
 
   /**
-   * Permissions management - Grants permission to disassociate an administrator from the project
+   * PermissionsManagement - Grants permission to disassociate an administrator from the project
    * @see https://docs.aws.amazon.com/Monitron/latest/admin-guide/mu-remove-project-admin.html
    * 
    * @remarks
@@ -72,7 +72,7 @@ export enum MonitronAction {
   GetProjectAdminUser = "monitron:GetProjectAdminUser",
 
   /**
-   * Permissions management - Grants permission to list all administrators associated with the project
+   * PermissionsManagement - Grants permission to list all administrators associated with the project
    * @see https://docs.aws.amazon.com/Monitron/latest/admin-guide/user-management-chapter.html
    * 
    * @remarks

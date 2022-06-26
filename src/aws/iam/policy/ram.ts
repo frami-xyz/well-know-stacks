@@ -113,7 +113,7 @@ export enum RamAction {
   DisassociateResourceSharePermission = "ram:DisassociateResourceSharePermission",
 
   /**
-   * Permissions management - Grants permission to access customer's organization and create a SLR in the customer's account
+   * PermissionsManagement - Grants permission to access customer's organization and create a SLR in the customer's account
    * @see https://docs.aws.amazon.com/ram/latest/APIReference/API_EnableSharingWithAwsOrganization.html
    */
   EnableSharingWithAwsOrganization = "ram:EnableSharingWithAwsOrganization",

@@ -28,7 +28,7 @@ export enum MediastoreAction {
   DeleteContainer = "mediastore:DeleteContainer",
 
   /**
-   * Permissions management - Grants permission to delete the access policy of a container
+   * PermissionsManagement - Grants permission to delete the access policy of a container
    * @see https://docs.aws.amazon.com/mediastore/latest/apireference/API_DeleteContainerPolicy.html
    * 
    * @remarks
@@ -188,7 +188,7 @@ export enum MediastoreAction {
   ListTagsForResource = "mediastore:ListTagsForResource",
 
   /**
-   * Permissions management - Grants permission to create or replace the access policy of a container
+   * PermissionsManagement - Grants permission to create or replace the access policy of a container
    * @see https://docs.aws.amazon.com/mediastore/latest/apireference/API_PutContainerPolicy.html
    * 
    * @remarks

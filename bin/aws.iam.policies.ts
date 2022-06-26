@@ -4,7 +4,8 @@ import { dom } from './utils'
 
 function toCamelCase(value: string) {
   return value[0].toLowerCase() + value.slice(1)
-    .replace(/-\w/gi, (value) => value.slice(-1).toUpperCase())
+    .replace(/[-|:| |\/]\w/gi, (value) => value.slice(-1).toUpperCase())
+    .replace(/[-|:| |\/]$/, '')
 }
 function toUpperCamelCase(value: string) {
   return value[0].toUpperCase() + toCamelCase(value).slice(1)
@@ -37,12 +38,14 @@ function findTables(tables: Element[]) {
   return [actionTable || null, resourceTable || null, conditionTable || null] as const
 }
 
-function parseActions(actionTable?: Element | null, options: Partial<{ url: URL }> = {}): Action[] {
+function parseActions(actionTable?: Element | null, options: Partial<{ url: URL, actions: Action[] }> = {}): Action[] {
+  const actions: Action[] = options.actions ?? []
   if (!actionTable) {
-    return []
+    return actions
   }
 
-  const actions: Action[] = []
+  let latestActionName: null | string = null
+  const actionMap = new Map(actions.map(action => [action.name, action]))
   const trs = Array.from(actionTable.querySelectorAll('tbody tr'))
   for (const tr of trs) {
     const tds = Array.from(tr.querySelectorAll('td')).filter(Boolean)
@@ -54,36 +57,47 @@ function parseActions(actionTable?: Element | null, options: Partial<{ url: URL 
       const resourceTypes = Array.from(tds[3].querySelectorAll('a'), (a) => (a.textContent || '').trim().replace(/\*/gi, ''))
       const conditionKeys = Array.from(tds[4].querySelectorAll('a'), (a) => (a.textContent || '').trim())
       const dependentActions = Array.from(tds[5].querySelectorAll('a'), (a) => (a.textContent || '').trim())
+      latestActionName = name
 
-      actions.push({ name, description, level, url: new URL(url, options.url).toString(), conditionKeys, resourceTypes, dependentActions })
-    } else {
-      const latestAction = actions.at(-1)
+      if (actionMap.has(name)) {
+        const action = actionMap.get(name)!
+        action.resourceTypes = Array.from(new Set([ ...action.resourceTypes, ...resourceTypes ]))
+        action.conditionKeys = Array.from(new Set([ ...action.conditionKeys, ...conditionKeys ]))
+        action.dependentActions = Array.from(new Set([ ...action.dependentActions, ...dependentActions ]))
+        actionMap.set(name, action)
+      } else {
+        actionMap.set(name, { name, description, level, url: new URL(url, options.url).toString(), conditionKeys, resourceTypes, dependentActions })
+      }
+    } else if (latestActionName) {
+      const latestAction = actionMap.get(latestActionName)
       if (latestAction) {
-        latestAction.resourceTypes = [
+        latestAction.resourceTypes = Array.from(new Set([
           ...latestAction.resourceTypes,
           ...Array.from(tds[0].querySelectorAll('a'), (a) => (a.textContent || '').trim().replace(/\*/gi, ''))
-        ]
-        latestAction.conditionKeys = [
+        ]))
+        latestAction.conditionKeys = Array.from(new Set([
           ...latestAction.conditionKeys,
           ...Array.from(tds[1].querySelectorAll('a'), (a) => (a.textContent || '').trim())
-        ]
-        latestAction.dependentActions = [
+        ]))
+        latestAction.dependentActions = Array.from(new Set([
           ...latestAction.dependentActions,
           ...Array.from(tds[2].querySelectorAll('a'), (a) => (a.textContent || '').trim())
-        ]
+        ]))
       }
     }
   }
 
-  return actions
+  return Array.from(actionMap.values())
 }
 
-function parseResources(resourceTable?: Element | null, options: Partial<{ url: URL }> = {}): Resource[] {
+function parseResources(resourceTable?: Element | null, options: Partial<{ url: URL, resources: Resource[] }> = {}): Resource[] {
+  const resources: Resource[] = options.resources ?? []
   if (!resourceTable) {
     return []
   }
 
-  const resources: Resource[] = []
+  let latestResourceName: string | null = null
+  const resourcesMap = new Map(resources.map(resource => [resource.name, resource]))
   const trs = Array.from(resourceTable.querySelectorAll('tbody tr'))
   for (const tr of trs) {
     const tds = Array.from(tr.querySelectorAll('td'))
@@ -92,14 +106,25 @@ function parseResources(resourceTable?: Element | null, options: Partial<{ url: 
       const arn = (tds[1].textContent || '').trim()
       const url = Array.from(tds[0].querySelectorAll('a'), getHref).find(Boolean) || ''
       const conditionKeys = Array.from(tds[2].querySelectorAll('a'), (a) => (a.textContent || '').trim())
-      resources.push({
-        name,
-        arn,
-        url: new URL(url, options.url).toString(),
-        conditionKeys,
-      })
-    } else {
-      const latestResource = resources.at(-1)
+      latestResourceName = name
+
+      if (resourcesMap.has(name)) {
+        const resource = resourcesMap.get(name)!
+        resource.conditionKeys = Array.from(new Set([
+          ...resource.conditionKeys,
+          ...conditionKeys,
+        ]))
+        resourcesMap.set(name, resource)
+      } else {
+        resourcesMap.set(name, {
+          name,
+          arn,
+          url: new URL(url, options.url).toString(),
+          conditionKeys,
+        })
+      }
+    } else if (latestResourceName) {
+      const latestResource = resourcesMap.get(latestResourceName)
       if (latestResource) {
         latestResource.conditionKeys = [
           ...latestResource.conditionKeys,
@@ -109,15 +134,17 @@ function parseResources(resourceTable?: Element | null, options: Partial<{ url: 
     }
   }
 
-  return resources
+  return Array.from(resourcesMap.values())
 }
 
-function parseConditions(conditionTable?: Element | null, options: Partial<{ url: URL }> = {}): Condition[] {
+function parseConditions(conditionTable?: Element | null, options: Partial<{ url: URL, conditions: Condition[] }> = {}): Condition[] {
+  const conditions: Condition[] = options.conditions ?? []
   if (!conditionTable) {
     return []
   }
 
-  const conditions: Condition[] = []
+
+  const conditionsMap = new Map(conditions.map(condition => [condition.key, condition]))
   const trs = Array.from(conditionTable.querySelectorAll('tbody tr'))
   for (const tr of trs) {
     const tds = Array.from(tr.querySelectorAll('td'))
@@ -126,15 +153,18 @@ function parseConditions(conditionTable?: Element | null, options: Partial<{ url
       const description = (tds[1].textContent || '').trim()
       const type = (tds[2].textContent || '').trim()
       const url = Array.from(tds[0].querySelectorAll('a'), getHref).find(Boolean) || ''
-      conditions.push({
-        key,
-        description,
-        type,
-        url: new URL(url, options.url).toString()
-      })
+      if (!conditionsMap.has(key)) {
+        conditionsMap.set(key, {
+          key,
+          description,
+          type,
+          url: new URL(url, options.url).toString()
+        })
+      }
     }
   }
-  return conditions
+
+  return Array.from(conditionsMap.values())
 }
 
 function createAction(ref: ServiceAuthorizationReference) {
@@ -192,12 +222,12 @@ function createAction(ref: ServiceAuthorizationReference) {
 }
 
 function createResourceFunction(arn: string) {
-  const match = arn.match(/\${\w+}/gi)
+  const match = arn.match(/\${[\w|:]+}/gi)
   if (!match) {
     return `"${arn}"`
   }
 
-  return `(options: Partial<{${match.map(value => `${toCamelCase(value.slice(2, -1))}: string`).join(', ')}}> = {}) => \`${arn.replace(/\${\w+}/gi, (value) => `\${options.${toCamelCase(value.slice(2, -1))} || '*'}`)}\``
+  return `(options: Partial<{${match.map(value => `${toCamelCase(value.slice(2, -1))}: string`).join(', ')}}> = {}) => \`${arn.replace(/\${[\w|:]+}/gi, (value) => `\${options.${toCamelCase(value.slice(2, -1))} || '*'}`)}\``
 }
 
 function createResourceComments(ref: ServiceAuthorizationReference, resources: string[]) {
@@ -320,9 +350,9 @@ Promise.resolve()
       }
 
       ref.urls.push(url.toString())
-      ref.actions.push(...parseActions(actionTable, { url }))
-      ref.resources.push(...parseResources(resourcesTable, { url }))
-      ref.conditions.push(...parseConditions(conditionTable, { url }))
+      ref.actions = parseActions(actionTable, { url, actions: ref.actions })
+      ref.resources = parseResources(resourcesTable, { url, resources: ref.resources })
+      ref.conditions = parseConditions(conditionTable, { url, conditions: ref.conditions })
 
       writeFileSync(`./src/aws/iam/policy/${ref.id}.ts`, [
         createAction(ref),

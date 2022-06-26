@@ -13,6 +13,13 @@ export enum ElasticloadbalancingAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link ElasticloadbalancingResource.loadbalancer `ElasticloadbalancingResource.loadbalancer`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleApp `ElasticloadbalancingResource.listenerRuleApp`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleNet `ElasticloadbalancingResource.listenerRuleNet`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
+   * - {@link ElasticloadbalancingResource.targetgroup `ElasticloadbalancingResource.targetgroup`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: A key that is present in the request the user makes to the ELB service ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -83,6 +90,8 @@ export enum ElasticloadbalancingAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link ElasticloadbalancingResource.loadbalancer `ElasticloadbalancingResource.loadbalancer`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: A key that is present in the request the user makes to the ELB service ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -120,6 +129,8 @@ export enum ElasticloadbalancingAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link ElasticloadbalancingResource.loadbalancer `ElasticloadbalancingResource.loadbalancer`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
    */
   DeleteLoadBalancer = "elasticloadbalancing:DeleteLoadBalancer",
 
@@ -194,6 +205,13 @@ export enum ElasticloadbalancingAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link ElasticloadbalancingResource.loadbalancer `ElasticloadbalancingResource.loadbalancer`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleApp `ElasticloadbalancingResource.listenerRuleApp`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleNet `ElasticloadbalancingResource.listenerRuleNet`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
+   * - {@link ElasticloadbalancingResource.targetgroup `ElasticloadbalancingResource.targetgroup`} 
    */
   DescribeTags = "elasticloadbalancing:DescribeTags",
 
@@ -238,6 +256,8 @@ export enum ElasticloadbalancingAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link ElasticloadbalancingResource.loadbalancer `ElasticloadbalancingResource.loadbalancer`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
    */
   ModifyLoadBalancerAttributes = "elasticloadbalancing:ModifyLoadBalancerAttributes",
 
@@ -260,6 +280,13 @@ export enum ElasticloadbalancingAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link ElasticloadbalancingResource.loadbalancer `ElasticloadbalancingResource.loadbalancer`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleApp `ElasticloadbalancingResource.listenerRuleApp`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleNet `ElasticloadbalancingResource.listenerRuleNet`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
+   * - {@link ElasticloadbalancingResource.targetgroup `ElasticloadbalancingResource.targetgroup`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: A key that is present in the request the user makes to the ELB service ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -307,31 +334,10 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
    */
   AddListenerCertificates = "elasticloadbalancing:AddListenerCertificates",
-
-  /**
-   * Tagging - Adds the specified tags to the specified load balancer. Each load balancer can have a maximum of 10 tags
-   * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_AddTags.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listenerRule/app `ElasticloadbalancingResource.listenerRule/app`} 
-   * - {@link ElasticloadbalancingResource.listenerRule/net `ElasticloadbalancingResource.listenerRule/net`} 
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
-   * - {@link ElasticloadbalancingResource.targetgroup `ElasticloadbalancingResource.targetgroup`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: A key that is present in the request the user makes to the ELB service ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: The list of all the tag key names associated with the resource in the request ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  AddTags = "elasticloadbalancing:AddTags",
 
   /**
    * Write - Creates a listener for the specified Application Load Balancer
@@ -340,8 +346,8 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: A key that is present in the request the user makes to the ELB service ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -350,30 +356,14 @@ export enum ElasticloadbalancingAction {
   CreateListener = "elasticloadbalancing:CreateListener",
 
   /**
-   * Write - Creates a load balancer
-   * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateLoadBalancer.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: A key that is present in the request the user makes to the ELB service ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: The list of all the tag key names associated with the resource in the request ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  CreateLoadBalancer = "elasticloadbalancing:CreateLoadBalancer",
-
-  /**
    * Write - Creates a rule for the specified listener
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateRule.html
    * 
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
    * - `aws:RequestTag/${TagKey}`: A key that is present in the request the user makes to the ELB service ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
@@ -403,22 +393,10 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
    */
   DeleteListener = "elasticloadbalancing:DeleteListener",
-
-  /**
-   * Write - Deletes the specified load balancer
-   * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DeleteLoadBalancer.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
-   */
-  DeleteLoadBalancer = "elasticloadbalancing:DeleteLoadBalancer",
 
   /**
    * Write - Deletes the specified rule
@@ -427,8 +405,8 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listenerRule/app `ElasticloadbalancingResource.listenerRule/app`} 
-   * - {@link ElasticloadbalancingResource.listenerRule/net `ElasticloadbalancingResource.listenerRule/net`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleApp `ElasticloadbalancingResource.listenerRuleApp`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleNet `ElasticloadbalancingResource.listenerRuleNet`} 
    */
   DeleteRule = "elasticloadbalancing:DeleteRule",
 
@@ -473,18 +451,6 @@ export enum ElasticloadbalancingAction {
   DescribeListeners = "elasticloadbalancing:DescribeListeners",
 
   /**
-   * Read - Describes the attributes for the specified load balancer
-   * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeLoadBalancerAttributes.html
-   */
-  DescribeLoadBalancerAttributes = "elasticloadbalancing:DescribeLoadBalancerAttributes",
-
-  /**
-   * Read - Describes the specified the load balancers. If no load balancers are specified, the call describes all of your load balancers
-   * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeLoadBalancers.html
-   */
-  DescribeLoadBalancers = "elasticloadbalancing:DescribeLoadBalancers",
-
-  /**
    * Read - Describes the specified rules or the rules for the specified listener
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeRules.html
    */
@@ -495,23 +461,6 @@ export enum ElasticloadbalancingAction {
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeSSLPolicies.html
    */
   DescribeSSLPolicies = "elasticloadbalancing:DescribeSSLPolicies",
-
-  /**
-   * Read - Describes the tags associated with the specified resource
-   * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_DescribeTags.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listenerRule/app `ElasticloadbalancingResource.listenerRule/app`} 
-   * - {@link ElasticloadbalancingResource.listenerRule/net `ElasticloadbalancingResource.listenerRule/net`} 
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
-   * - {@link ElasticloadbalancingResource.targetgroup `ElasticloadbalancingResource.targetgroup`} 
-   */
-  DescribeTags = "elasticloadbalancing:DescribeTags",
 
   /**
    * Read - Describes the attributes for the specified target group
@@ -538,22 +487,10 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
    */
   ModifyListener = "elasticloadbalancing:ModifyListener",
-
-  /**
-   * Write - Modifies the attributes of the specified load balancer
-   * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_ModifyLoadBalancerAttributes.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
-   */
-  ModifyLoadBalancerAttributes = "elasticloadbalancing:ModifyLoadBalancerAttributes",
 
   /**
    * Write - Modifies the specified rule
@@ -562,8 +499,8 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listenerRule/app `ElasticloadbalancingResource.listenerRule/app`} 
-   * - {@link ElasticloadbalancingResource.listenerRule/net `ElasticloadbalancingResource.listenerRule/net`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleApp `ElasticloadbalancingResource.listenerRuleApp`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleNet `ElasticloadbalancingResource.listenerRuleNet`} 
    */
   ModifyRule = "elasticloadbalancing:ModifyRule",
 
@@ -607,31 +544,10 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
    */
   RemoveListenerCertificates = "elasticloadbalancing:RemoveListenerCertificates",
-
-  /**
-   * Tagging - Removes one or more tags from the specified load balancer
-   * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_RemoveTags.html
-   * 
-   * @remarks
-   * 
-   * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listenerRule/app `ElasticloadbalancingResource.listenerRule/app`} 
-   * - {@link ElasticloadbalancingResource.listenerRule/net `ElasticloadbalancingResource.listenerRule/net`} 
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
-   * - {@link ElasticloadbalancingResource.targetgroup `ElasticloadbalancingResource.targetgroup`} 
-   * 
-   * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
-   * - `aws:RequestTag/${TagKey}`: A key that is present in the request the user makes to the ELB service ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   * - `aws:TagKeys`: The list of all the tag key names associated with the resource in the request ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
-   */
-  RemoveTags = "elasticloadbalancing:RemoveTags",
 
   /**
    * Write - Not found
@@ -640,8 +556,8 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
    */
   SetIpAddressType = "elasticloadbalancing:SetIpAddressType",
 
@@ -652,8 +568,8 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.listenerRule/app `ElasticloadbalancingResource.listenerRule/app`} 
-   * - {@link ElasticloadbalancingResource.listenerRule/net `ElasticloadbalancingResource.listenerRule/net`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleApp `ElasticloadbalancingResource.listenerRuleApp`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleNet `ElasticloadbalancingResource.listenerRuleNet`} 
    */
   SetRulePriorities = "elasticloadbalancing:SetRulePriorities",
 
@@ -664,8 +580,8 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
    */
   SetSecurityGroups = "elasticloadbalancing:SetSecurityGroups",
 
@@ -676,8 +592,8 @@ export enum ElasticloadbalancingAction {
    * @remarks
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
    */
   SetSubnets = "elasticloadbalancing:SetSubnets",
 
@@ -695,12 +611,12 @@ export enum ElasticloadbalancingAction {
    * 
    * It can be used with the following resource types in the `Resource` element of IAM policy statements:
    * - {@link ElasticloadbalancingResource.loadbalancer `ElasticloadbalancingResource.loadbalancer`} 
-   * - {@link ElasticloadbalancingResource.listener/app `ElasticloadbalancingResource.listener/app`} 
-   * - {@link ElasticloadbalancingResource.listener/net `ElasticloadbalancingResource.listener/net`} 
-   * - {@link ElasticloadbalancingResource.listenerRule/app `ElasticloadbalancingResource.listenerRule/app`} 
-   * - {@link ElasticloadbalancingResource.listenerRule/net `ElasticloadbalancingResource.listenerRule/net`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/app/ `ElasticloadbalancingResource.loadbalancer/app/`} 
-   * - {@link ElasticloadbalancingResource.loadbalancer/net/ `ElasticloadbalancingResource.loadbalancer/net/`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleApp `ElasticloadbalancingResource.listenerRuleApp`} 
+   * - {@link ElasticloadbalancingResource.listenerRuleNet `ElasticloadbalancingResource.listenerRuleNet`} 
+   * - {@link ElasticloadbalancingResource.listenerApp `ElasticloadbalancingResource.listenerApp`} 
+   * - {@link ElasticloadbalancingResource.listenerNet `ElasticloadbalancingResource.listenerNet`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerApp `ElasticloadbalancingResource.loadbalancerApp`} 
+   * - {@link ElasticloadbalancingResource.loadbalancerNet `ElasticloadbalancingResource.loadbalancerNet`} 
    * - {@link ElasticloadbalancingResource.targetgroup `ElasticloadbalancingResource.targetgroup`} 
    * 
    * It can be used with the following condition keys in the `Condition` element of an IAM policy statements:
@@ -737,7 +653,7 @@ export const ElasticloadbalancingResource = {
    * - `aws:ResourceTag/${TagKey}`: Global tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    * - `elasticloadbalancing:ResourceTag/${TagKey}`: A tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  listener/app: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string, listenerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:listener/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}/${options.listenerId || '*'}`,
+  listenerApp: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string, listenerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:listener/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}/${options.listenerId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-update-rules.html
@@ -748,7 +664,7 @@ export const ElasticloadbalancingResource = {
    * - `aws:ResourceTag/${TagKey}`: Global tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    * - `elasticloadbalancing:ResourceTag/${TagKey}`: A tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  listenerRule/app: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string, listenerId: string, listenerRuleId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:listener-rule/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}/${options.listenerId || '*'}/${options.listenerRuleId || '*'}`,
+  listenerRuleApp: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string, listenerId: string, listenerRuleId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:listener-rule/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}/${options.listenerId || '*'}/${options.listenerRuleId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html
@@ -759,7 +675,7 @@ export const ElasticloadbalancingResource = {
    * - `aws:ResourceTag/${TagKey}`: Global tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    * - `elasticloadbalancing:ResourceTag/${TagKey}`: A tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  listener/net: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string, listenerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:listener/net/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}/${options.listenerId || '*'}`,
+  listenerNet: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string, listenerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:listener/net/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}/${options.listenerId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-update-rules.html
@@ -770,7 +686,7 @@ export const ElasticloadbalancingResource = {
    * - `aws:ResourceTag/${TagKey}`: Global tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    * - `elasticloadbalancing:ResourceTag/${TagKey}`: A tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  listenerRule/net: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string, listenerId: string, listenerRuleId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:listener-rule/net/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}/${options.listenerId || '*'}/${options.listenerRuleId || '*'}`,
+  listenerRuleNet: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string, listenerId: string, listenerRuleId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:listener-rule/net/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}/${options.listenerId || '*'}/${options.listenerRuleId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html#application-load-balancer-overview
@@ -781,7 +697,7 @@ export const ElasticloadbalancingResource = {
    * - `aws:ResourceTag/${TagKey}`: Global tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    * - `elasticloadbalancing:ResourceTag/${TagKey}`: A tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  loadbalancer/app/: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:loadbalancer/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}`,
+  loadbalancerApp: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:loadbalancer/app/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html#network-load-balancer-overview
@@ -792,7 +708,7 @@ export const ElasticloadbalancingResource = {
    * - `aws:ResourceTag/${TagKey}`: Global tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    * - `elasticloadbalancing:ResourceTag/${TagKey}`: A tag key and value pair ({@link https://docs.aws.amazon.com/service-authorization/latest/reference/list_elasticloadbalancing.html documentation}, type: {@link https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html#Conditions_String `String`})
    */
-  loadbalancer/net/: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:loadbalancer/net/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}`,
+  loadbalancerNet: (options: Partial<{partition: string, region: string, account: string, loadBalancerName: string, loadBalancerId: string}> = {}) => `arn:${options.partition || '*'}:elasticloadbalancing:${options.region || '*'}:${options.account || '*'}:loadbalancer/net/${options.loadBalancerName || '*'}/${options.loadBalancerId || '*'}`,
 
   /**
    * @see https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html

@@ -652,8 +652,6 @@ export enum DevicefarmAction {
    * - devicepool*
    * - project*
    * - upload
-   * - project*
-   * - upload
    */
   ScheduleRun = "devicefarm:ScheduleRun",
 

@@ -101,7 +101,7 @@ export enum EcrAction {
   DeletePullThroughCacheRule = "ecr:DeletePullThroughCacheRule",
 
   /**
-   * Permissions management - Grants permission to delete the registry policy
+   * PermissionsManagement - Grants permission to delete the registry policy
    * @see https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteRegistryPolicy.html
    */
   DeleteRegistryPolicy = "ecr:DeleteRegistryPolicy",
@@ -118,7 +118,7 @@ export enum EcrAction {
   DeleteRepository = "ecr:DeleteRepository",
 
   /**
-   * Permissions management - Grants permission to delete the repository policy from a specified repository
+   * PermissionsManagement - Grants permission to delete the repository policy from a specified repository
    * @see https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DeleteRepositoryPolicy.html
    * 
    * @remarks
@@ -328,7 +328,7 @@ export enum EcrAction {
   PutLifecyclePolicy = "ecr:PutLifecyclePolicy",
 
   /**
-   * Permissions management - Grants permission to update the registry policy
+   * PermissionsManagement - Grants permission to update the registry policy
    * @see https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutRegistryPolicy.html
    */
   PutRegistryPolicy = "ecr:PutRegistryPolicy",
@@ -357,7 +357,7 @@ export enum EcrAction {
   ReplicateImage = "ecr:ReplicateImage",
 
   /**
-   * Permissions management - Grants permission to apply a repository policy on a specified repository to control access permissions
+   * PermissionsManagement - Grants permission to apply a repository policy on a specified repository to control access permissions
    * @see https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_SetRepositoryPolicy.html
    * 
    * @remarks
