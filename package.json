@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "utility collection to makes pulumi easier",
   "main": "lib/index.js",
+  "private": false,
   "engines": {
     "node": "18.*",
     "npm": "8.*"
