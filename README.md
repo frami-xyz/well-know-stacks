@@ -1,12 +1,18 @@
 # well-know-stack
 
-utility collection to makes pulumi easier
+Collection of utilities that makes [pulumi](https://www.pulumi.com/docs/get-started/) easier.
+
+## Why
+
+While [pulumi](https://www.pulumi.com/docs/get-started/) makes it easy to build infrastructure, the large number of options available among different vendors makes it difficult to configure and connect its various parts.
+
+This repository pretends to be a set of utilities and recommendations on how to build and connect services on a cloud provider
 
 ## Features
 
-### Policy types
+### Typed policies
 
-Well documented types for every aws action and resource:
+Well documented types for every AWS action and resource:
 
 ```ts
 import * as aws from '@pulumi/aws'
